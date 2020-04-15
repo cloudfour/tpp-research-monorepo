@@ -24,5 +24,8 @@
   "devDependencies": {
     "@stencil/core": "^1.12.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@stencil/react-output-target": "0.0.4"
+  }
 }

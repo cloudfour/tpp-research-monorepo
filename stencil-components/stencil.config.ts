@@ -1,19 +1,24 @@
-import { Config } from '@stencil/core';
+import { Config } from "@stencil/core";
+import { reactOutputTarget } from "@stencil/react-output-target";
 
 export const config: Config = {
-  namespace: 'stencil-components',
-  taskQueue: 'async',
+  namespace: "stencil-components",
+  taskQueue: "async",
   outputTargets: [
+    reactOutputTarget({
+      componentCorePackage: "stencil-components",
+      proxiesFile: "../react-components/index.ts",
+    }),
     {
-      type: 'dist',
-      esmLoaderPath: '../loader'
+      type: "dist",
+      esmLoaderPath: "../loader",
     },
     {
-      type: 'docs-readme'
+      type: "docs-readme",
     },
     {
-      type: 'www',
-      serviceWorker: null // disable service workers
-    }
-  ]
+      type: "www",
+      serviceWorker: null, // disable service workers
+    },
+  ],
 };
