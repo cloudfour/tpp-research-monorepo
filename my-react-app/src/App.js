@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { C4Button } from "react-components";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         This button is a web component I created using stencil-js and exported
         for use in a React app.
       </p>
-      <c4-button>Hello world!</c4-button>
+      <C4Button>Hello world!</C4Button>
     </div>
   );
 }
