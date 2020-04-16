@@ -1,0 +1,1 @@
+import{p as t,b as s}from"./p-dcd23c7b.js";t().then(t=>s([["p-c13409b7",[[1,"c4-button",{disabled:[4],type:[1],tag:[1],buttonClass:[1,"button-class"]}],[1,"c4-heading",{tag:[1]}]]],["p-d58c34f0",[[1,"my-component",{first:[1],middle:[1],last:[1]}]]]],t));

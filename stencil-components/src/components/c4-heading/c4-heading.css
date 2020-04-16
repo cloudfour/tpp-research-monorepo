@@ -1,0 +1,10 @@
+:host > * {
+  font-size: 3em;
+  background: #eee;
+  color: #183889;
+  font-family: "Source Sans Pro";
+  font-style: italic;
+  margin: 0;
+  padding: 0.2em;
+  text-decoration: underline;
+}

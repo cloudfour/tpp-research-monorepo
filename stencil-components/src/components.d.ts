@@ -12,6 +12,9 @@ export namespace Components {
         "tag": string;
         "type": string;
     }
+    interface C4Heading {
+        "tag": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -34,6 +37,12 @@ declare global {
         prototype: HTMLC4ButtonElement;
         new (): HTMLC4ButtonElement;
     };
+    interface HTMLC4HeadingElement extends Components.C4Heading, HTMLStencilElement {
+    }
+    var HTMLC4HeadingElement: {
+        prototype: HTMLC4HeadingElement;
+        new (): HTMLC4HeadingElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -42,6 +51,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "c4-button": HTMLC4ButtonElement;
+        "c4-heading": HTMLC4HeadingElement;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -51,6 +61,9 @@ declare namespace LocalJSX {
         "disabled"?: boolean;
         "tag"?: string;
         "type"?: string;
+    }
+    interface C4Heading {
+        "tag"?: string;
     }
     interface MyComponent {
         /**
@@ -68,6 +81,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "c4-button": C4Button;
+        "c4-heading": C4Heading;
         "my-component": MyComponent;
     }
 }
@@ -76,6 +90,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "c4-button": LocalJSX.C4Button & JSXBase.HTMLAttributes<HTMLC4ButtonElement>;
+            "c4-heading": LocalJSX.C4Heading & JSXBase.HTMLAttributes<HTMLC4HeadingElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

@@ -1,0 +1,265 @@
+{
+  "_class": "page",
+  "do_objectID": "dfd6c42b-e2e7-4374-ac54-89f7aad4cd92",
+  "exportOptions": {
+    "_class": "exportOptions",
+    "exportFormats": [],
+    "includedLayerIds": [],
+    "layerOptions": 0,
+    "shouldTrim": false
+  },
+  "isFlippedHorizontal": false,
+  "isFlippedVertical": false,
+  "isLocked": false,
+  "isVisible": true,
+  "layerListExpandedType": 0,
+  "name": "DOM Node to Sketch layers",
+  "nameIsFixed": false,
+  "resizingConstraint": 63,
+  "resizingType": 0,
+  "rotation": 0,
+  "shouldBreakMaskChain": false,
+  "layers": [
+    {
+      "_class": "shapeGroup",
+      "do_objectID": "0692e3f2-d814-4ef6-8bd6-d0004f33029e",
+      "exportOptions": {
+        "_class": "exportOptions",
+        "exportFormats": [],
+        "includedLayerIds": [],
+        "layerOptions": 0,
+        "shouldTrim": false
+      },
+      "isFlippedHorizontal": false,
+      "isFlippedVertical": false,
+      "isLocked": false,
+      "isVisible": true,
+      "layerListExpandedType": 0,
+      "name": "/html[1]/body[1]/button[@class=\"reg\"]",
+      "nameIsFixed": false,
+      "resizingConstraint": 63,
+      "resizingType": 0,
+      "rotation": 0,
+      "shouldBreakMaskChain": false,
+      "layers": [
+        {
+          "_class": "rectangle",
+          "do_objectID": "446b21a0-0796-4c9d-8cc2-44a0f730e63c",
+          "exportOptions": {
+            "_class": "exportOptions",
+            "exportFormats": [],
+            "includedLayerIds": [],
+            "layerOptions": 0,
+            "shouldTrim": false
+          },
+          "isFlippedHorizontal": false,
+          "isFlippedVertical": false,
+          "isLocked": false,
+          "isVisible": true,
+          "layerListExpandedType": 0,
+          "name": "rectangle",
+          "nameIsFixed": false,
+          "resizingConstraint": 63,
+          "resizingType": 0,
+          "rotation": 0,
+          "shouldBreakMaskChain": false,
+          "layers": [],
+          "clippingMaskMode": 0,
+          "hasClippingMask": false,
+          "frame": {
+            "_class": "rect",
+            "constrainProportions": false,
+            "height": 39.06666564941406,
+            "width": 225.61666870117188,
+            "x": 0,
+            "y": 0
+          },
+          "path": {
+            "_class": "path",
+            "isClosed": true,
+            "pointRadiusBehaviour": 1,
+            "points": [
+              {
+                "_class": "curvePoint",
+                "cornerRadius": 4,
+                "curveFrom": "{0, 0}",
+                "curveMode": 1,
+                "curveTo": "{0, 0}",
+                "hasCurveFrom": false,
+                "hasCurveTo": false,
+                "point": "{0, 0}"
+              },
+              {
+                "_class": "curvePoint",
+                "cornerRadius": 4,
+                "curveFrom": "{1, 0}",
+                "curveMode": 1,
+                "curveTo": "{1, 0}",
+                "hasCurveFrom": false,
+                "hasCurveTo": false,
+                "point": "{1, 0}"
+              },
+              {
+                "_class": "curvePoint",
+                "cornerRadius": 4,
+                "curveFrom": "{1, 1}",
+                "curveMode": 1,
+                "curveTo": "{1, 1}",
+                "hasCurveFrom": false,
+                "hasCurveTo": false,
+                "point": "{1, 1}"
+              },
+              {
+                "_class": "curvePoint",
+                "cornerRadius": 4,
+                "curveFrom": "{0, 1}",
+                "curveMode": 1,
+                "curveTo": "{0, 1}",
+                "hasCurveFrom": false,
+                "hasCurveTo": false,
+                "point": "{0, 1}"
+              }
+            ]
+          },
+          "hasConvertedToNewRoundCorners": true,
+          "fixedRadius": 0,
+          "edited": false,
+          "booleanOperation": -1
+        }
+      ],
+      "clippingMaskMode": 0,
+      "hasClippingMask": false,
+      "style": {
+        "_class": "style",
+        "fills": [
+          {
+            "_class": "fill",
+            "isEnabled": true,
+            "color": {
+              "_class": "color",
+              "red": 0.12941176470588237,
+              "green": 0.3607843137254902,
+              "blue": 0.792156862745098,
+              "alpha": 1
+            },
+            "fillType": 0,
+            "noiseIndex": 0,
+            "noiseIntensity": 0,
+            "patternFillType": 1,
+            "patternTileScale": 1
+          }
+        ],
+        "borders": [
+          {
+            "_class": "border",
+            "isEnabled": true,
+            "color": {
+              "_class": "color",
+              "red": 0,
+              "green": 0,
+              "blue": 0,
+              "alpha": 0
+            },
+            "fillType": 0,
+            "position": 1,
+            "thickness": null
+          }
+        ],
+        "shadows": [],
+        "innerShadows": [],
+        "endDecorationType": 0,
+        "miterLimit": 10,
+        "startDecorationType": 0,
+        "contextSettings": {
+          "_class": "graphicsContextSettings",
+          "blendMode": 0,
+          "opacity": "1"
+        }
+      },
+      "frame": {
+        "_class": "rect",
+        "constrainProportions": false,
+        "height": 39.06666564941406,
+        "width": 225.61666870117188,
+        "x": 69.31666564941406,
+        "y": 8
+      },
+      "hasClickThrough": false,
+      "windingRule": 1
+    },
+    {
+      "_class": "text",
+      "do_objectID": "c69995a2-ea35-40f5-8343-5875f96c0369",
+      "exportOptions": {
+        "_class": "exportOptions",
+        "exportFormats": [],
+        "includedLayerIds": [],
+        "layerOptions": 0,
+        "shouldTrim": false
+      },
+      "isFlippedHorizontal": false,
+      "isFlippedVertical": false,
+      "isLocked": false,
+      "isVisible": true,
+      "layerListExpandedType": 0,
+      "name": "I'm just a regular button",
+      "nameIsFixed": false,
+      "resizingConstraint": 47,
+      "resizingType": 0,
+      "rotation": 0,
+      "shouldBreakMaskChain": false,
+      "clippingMaskMode": 0,
+      "hasClippingMask": false,
+      "style": {
+        "color": "rgb(255, 255, 255)",
+        "fontSize": 16,
+        "fontFamily": "sans-serif",
+        "fontWeight": 600,
+        "textDecoration": "none",
+        "textAlign": "center",
+        "textTransform": "none"
+      },
+      "frame": {
+        "_class": "rect",
+        "constrainProportions": false,
+        "height": 16.5,
+        "width": 181.61666870117188,
+        "x": 91.31666564941406,
+        "y": 19.283340454101562
+      },
+      "text": "I'm just a regular button",
+      "automaticallyDrawOnUnderlyingPath": false,
+      "dontSynchroniseWithSymbol": false,
+      "lineSpacingBehaviour": 2,
+      "textBehaviour": 0
+    }
+  ],
+  "clippingMaskMode": 0,
+  "hasClippingMask": false,
+  "frame": {
+    "_class": "rect",
+    "constrainProportions": false,
+    "height": 100,
+    "width": 100,
+    "x": 0,
+    "y": 0
+  },
+  "style": {
+    "_class": "style",
+    "endDecorationType": 0,
+    "miterLimit": 10,
+    "startDecorationType": 0
+  },
+  "horizontalRulerData": {
+    "_class": "rulerData",
+    "base": 0,
+    "guides": []
+  },
+  "verticalRulerData": {
+    "_class": "rulerData",
+    "base": 0,
+    "guides": []
+  },
+  "hasClickThrough": true,
+  "includeInCloudUpload": true
+}
