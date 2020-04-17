@@ -9,6 +9,7 @@ export class MyComponent {
   @Prop() disabled: boolean = false;
   @Prop() type: string = "button";
   @Prop() tag: string = "button";
+  @Prop() href: string = "#";
   @Prop() text: string;
   @Prop() buttonClass: string;
 
@@ -23,14 +24,22 @@ export class MyComponent {
   }
 
   render() {
-    return (
-      <this.tag
-        disabled={this.disabled}
-        class={this.getClass()}
-        type={this.type}
-      >
-        <slot />
-      </this.tag>
-    );
+    if (this.tag === "a") {
+      return (
+        <a href={this.href} class={this.getClass()}>
+          <slot />
+        </a>
+      );
+    } else {
+      return (
+        <this.tag
+          disabled={this.disabled}
+          class={this.getClass()}
+          type={this.type}
+        >
+          <slot />
+        </this.tag>
+      );
+    }
   }
 }

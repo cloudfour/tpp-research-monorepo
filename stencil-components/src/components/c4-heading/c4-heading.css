@@ -1,10 +1,30 @@
 :host > * {
-  font-size: 3em;
-  background: #eee;
-  color: #183889;
-  font-family: "Source Sans Pro";
-  font-style: italic;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: "Source Sans Pro Variable", Tahoma, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-weight: 600;
   margin: 0;
-  padding: 0.2em;
-  text-decoration: underline;
+}
+
+h1 {
+  font-size: calc(1.5625em + 0.390625 * ((100vw - 20em) / 28));
+}
+
+h2 {
+  font-size: calc(1.25em + 0.3125 * ((100vw - 20em) / 28));
+}
+
+h3 {
+  font-size: calc(1em + 0.25 * ((100vw - 20em) / 28));
+}
+
+h4 {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+h5,
+h6 {
+  font-size: 0.8em;
+  line-height: inherit;
 }
