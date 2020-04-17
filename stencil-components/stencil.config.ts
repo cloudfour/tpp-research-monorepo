@@ -6,7 +6,7 @@ export const config: Config = {
   taskQueue: "async",
   outputTargets: [
     reactOutputTarget({
-      componentCorePackage: "c4-stencil-components",
+      componentCorePackage: "../../stencil-components",
       proxiesFile: "../react-components/src/components.ts",
     }),
     {

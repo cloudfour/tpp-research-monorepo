@@ -3,9 +3,9 @@
 /* auto-generated react proxies */
 import { createReactComponent } from './react-component-lib';
 
-import { JSX } from 'c4-stencil-components';
+import { JSX } from '../../stencil-components';
 
-import { defineCustomElements, applyPolyfills } from 'c4-stencil-components/loader';
+import { defineCustomElements, applyPolyfills } from '../../stencil-components/loader';
 
 applyPolyfills().then(() => defineCustomElements());
 export const C4Button = /*@__PURE__*/createReactComponent<JSX.C4Button, HTMLC4ButtonElement>('c4-button');

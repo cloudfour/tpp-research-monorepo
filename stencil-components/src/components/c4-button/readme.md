@@ -12,6 +12,7 @@
 | `buttonClass` | `button-class` |             | `string`  | `undefined` |
 | `disabled`    | `disabled`     |             | `boolean` | `false`     |
 | `tag`         | `tag`          |             | `string`  | `"button"`  |
+| `text`        | `text`         |             | `string`  | `undefined` |
 | `type`        | `type`         |             | `string`  | `"button"`  |
 
 

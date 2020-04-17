@@ -10,6 +10,7 @@ export namespace Components {
         "buttonClass": string;
         "disabled": boolean;
         "tag": string;
+        "text": string;
         "type": string;
     }
     interface C4Heading {
@@ -60,6 +61,7 @@ declare namespace LocalJSX {
         "buttonClass"?: string;
         "disabled"?: boolean;
         "tag"?: string;
+        "text"?: string;
         "type"?: string;
     }
     interface C4Heading {

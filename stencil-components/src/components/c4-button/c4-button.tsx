@@ -9,6 +9,7 @@ export class MyComponent {
   @Prop() disabled: boolean = false;
   @Prop() type: string = "button";
   @Prop() tag: string = "button";
+  @Prop() text: string;
   @Prop() buttonClass: string;
 
   private getClass(): string {
