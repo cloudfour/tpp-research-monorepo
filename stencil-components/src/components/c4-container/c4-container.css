@@ -1,6 +1,7 @@
 :host > * {
   margin: 0 auto;
   max-width: 80em;
+  overflow: hidden;
 }
 
 :host > .prose {
