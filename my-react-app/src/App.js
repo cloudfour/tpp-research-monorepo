@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { C4Button } from "c4-react-components";
+import { C4Button } from "../../react-components";
 
 function App() {
   return (
