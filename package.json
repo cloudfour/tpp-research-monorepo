@@ -1,0 +1,19 @@
+{
+  "name": "tpp-research-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-components": "cd stencil-components && npm run build && cd ../react-components && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudfour/tpp-research-monorepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cloudfour/tpp-research-monorepo/issues"
+  },
+  "homepage": "https://github.com/cloudfour/tpp-research-monorepo#readme"
+}

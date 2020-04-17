@@ -13,7 +13,7 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "distro",
+    "outDir": "dist",
     "removeComments": false,
     "sourceMap": true,
     "jsx": "react",

@@ -9,6 +9,7 @@ export namespace Components {
     interface C4Button {
         "buttonClass": string;
         "disabled": boolean;
+        "href": string;
         "tag": string;
         "text": string;
         "type": string;
@@ -60,6 +61,7 @@ declare namespace LocalJSX {
     interface C4Button {
         "buttonClass"?: string;
         "disabled"?: boolean;
+        "href"?: string;
         "tag"?: string;
         "text"?: string;
         "type"?: string;
