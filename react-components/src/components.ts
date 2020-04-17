@@ -9,5 +9,5 @@ import { defineCustomElements, applyPolyfills } from '../../stencil-components/l
 
 applyPolyfills().then(() => defineCustomElements());
 export const C4Button = /*@__PURE__*/createReactComponent<JSX.C4Button, HTMLC4ButtonElement>('c4-button');
+export const C4Container = /*@__PURE__*/createReactComponent<JSX.C4Container, HTMLC4ContainerElement>('c4-container');
 export const C4Heading = /*@__PURE__*/createReactComponent<JSX.C4Heading, HTMLC4HeadingElement>('c4-heading');
-export const MyComponent = /*@__PURE__*/createReactComponent<JSX.MyComponent, HTMLMyComponentElement>('my-component');
