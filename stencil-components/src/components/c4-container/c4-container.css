@@ -1,0 +1,13 @@
+:host > * {
+  margin: 0 auto;
+  max-width: 80em;
+}
+
+:host > .prose {
+  max-width: 40em;
+}
+
+.prose > ::slotted(*) {
+  display: block;
+  margin: 1em 0 0 0;
+}

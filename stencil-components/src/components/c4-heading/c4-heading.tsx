@@ -5,7 +5,7 @@ import { Component, Prop, h } from "@stencil/core";
   styleUrl: "c4-heading.css",
   shadow: true,
 })
-export class MyComponent {
+export class C4Heading {
   @Prop() tag: string = "h1";
 
   render() {

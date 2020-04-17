@@ -14,22 +14,12 @@ export namespace Components {
         "text": string;
         "type": string;
     }
-    interface C4Heading {
+    interface C4Container {
+        "containerClass": string;
         "tag": string;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface C4Heading {
+        "tag": string;
     }
 }
 declare global {
@@ -39,22 +29,22 @@ declare global {
         prototype: HTMLC4ButtonElement;
         new (): HTMLC4ButtonElement;
     };
+    interface HTMLC4ContainerElement extends Components.C4Container, HTMLStencilElement {
+    }
+    var HTMLC4ContainerElement: {
+        prototype: HTMLC4ContainerElement;
+        new (): HTMLC4ContainerElement;
+    };
     interface HTMLC4HeadingElement extends Components.C4Heading, HTMLStencilElement {
     }
     var HTMLC4HeadingElement: {
         prototype: HTMLC4HeadingElement;
         new (): HTMLC4HeadingElement;
     };
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
-    }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
-    };
     interface HTMLElementTagNameMap {
         "c4-button": HTMLC4ButtonElement;
+        "c4-container": HTMLC4ContainerElement;
         "c4-heading": HTMLC4HeadingElement;
-        "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
@@ -66,27 +56,17 @@ declare namespace LocalJSX {
         "text"?: string;
         "type"?: string;
     }
+    interface C4Container {
+        "containerClass"?: string;
+        "tag"?: string;
+    }
     interface C4Heading {
         "tag"?: string;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
-    }
     interface IntrinsicElements {
         "c4-button": C4Button;
+        "c4-container": C4Container;
         "c4-heading": C4Heading;
-        "my-component": MyComponent;
     }
 }
 export { LocalJSX as JSX };
@@ -94,8 +74,8 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "c4-button": LocalJSX.C4Button & JSXBase.HTMLAttributes<HTMLC4ButtonElement>;
+            "c4-container": LocalJSX.C4Container & JSXBase.HTMLAttributes<HTMLC4ContainerElement>;
             "c4-heading": LocalJSX.C4Heading & JSXBase.HTMLAttributes<HTMLC4HeadingElement>;
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
 }

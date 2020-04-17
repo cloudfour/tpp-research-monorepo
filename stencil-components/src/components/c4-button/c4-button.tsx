@@ -5,7 +5,7 @@ import { Component, Prop, h } from "@stencil/core";
   styleUrl: "c4-button.css",
   shadow: true,
 })
-export class MyComponent {
+export class C4Button {
   @Prop() disabled: boolean = false;
   @Prop() type: string = "button";
   @Prop() tag: string = "button";

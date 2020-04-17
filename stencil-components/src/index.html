@@ -12,18 +12,25 @@
     <script nomodule src="/build/stencil-components.js"></script>
   </head>
   <body>
-    <c4-heading>I'm a c4-heading!</c4-heading>
+    <c4-container container-class="prose">
+      <c4-heading>C4 Stencil Components</c4-heading>
 
-    <c4-button>I'm a c4-button!</c4-button>
+      <p>
+        This is a playground to explore stencil components. These components can
+        then be used in a variety of environments.
+      </p>
 
-    <c4-button button-class="secondary">I'm a secondary c4-button!</c4-button>
+      <c4-heading tag="h2">Buttons</c4-heading>
 
-    <c4-button button-class="tertiary">I'm a tertiary c4-button!</c4-button>
+      <c4-button>I'm a c4-button!</c4-button>
 
-    <c4-button disabled="true">I'm a disabled c4-button!</c4-button>
+      <c4-button button-class="secondary">I'm a secondary c4-button!</c4-button>
 
-    <c4-button tag="a">I'm actually a link!</c4-button>
+      <c4-button button-class="tertiary">I'm a tertiary c4-button!</c4-button>
 
-    <button>I'm just a regular button!</button>
+      <c4-button disabled="true">I'm a disabled c4-button!</c4-button>
+
+      <c4-button tag="a">I'm actually a link!</c4-button>
+    </c4-container>
   </body>
 </html>
