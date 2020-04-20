@@ -18,7 +18,7 @@
   max-width: 40em;
 }
 
-.prose > ::slotted(*:not(:first-child)) {
+.container > * > ::slotted(*:not(:first-child)) {
   display: block;
 
   margin: 1em 0 0 0;
