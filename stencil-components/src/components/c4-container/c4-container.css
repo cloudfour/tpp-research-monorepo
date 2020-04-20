@@ -1,14 +1,29 @@
-:host > * {
-  margin: 0 auto;
-  max-width: 80em;
-  overflow: hidden;
+.container {
+  background: var(--background-color, #fff);
+  color: var(--text-color, rgba(0, 0, 0, 0.85));
 }
 
-:host > .prose {
+.dark {
+  --background-color: #215cca;
+  --text-color: #fff;
+}
+
+.container > * {
+  margin: 0 auto;
+  max-width: 80em;
+  padding: 1em;
+}
+
+.prose > * {
   max-width: 40em;
 }
 
-.prose > ::slotted(*) {
+.prose > ::slotted(*:not(:first-child)) {
   display: block;
+
   margin: 1em 0 0 0;
+}
+
+.tall {
+  padding: 3em 1em;
 }

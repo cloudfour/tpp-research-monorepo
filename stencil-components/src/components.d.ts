@@ -16,6 +16,7 @@ export namespace Components {
     }
     interface C4Container {
         "containerClass": string;
+        "contentClass": string;
         "tag": string;
     }
     interface C4Heading {
@@ -58,6 +59,7 @@ declare namespace LocalJSX {
     }
     interface C4Container {
         "containerClass"?: string;
+        "contentClass"?: string;
         "tag"?: string;
     }
     interface C4Heading {

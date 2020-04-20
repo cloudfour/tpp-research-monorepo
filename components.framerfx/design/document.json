@@ -587,7 +587,7 @@
         "rotation" : 0,
         "top" : -428,
         "visible" : true,
-        "width" : 579,
+        "width" : 1077,
         "widthType" : 0
       },
       {
@@ -602,7 +602,8 @@
         "clip" : true,
         "codeComponentIdentifier" : ".\/C4Container.tsx_C4Container",
         "codeComponentProps" : {
-          "containerClass" : "prose",
+          "containerClass" : "dark",
+          "contentClass" : "prose",
           "slot" : [
             {
               "enabled" : true,
@@ -631,12 +632,12 @@
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
         "fillType" : "color",
-        "height" : 227,
+        "height" : 415,
         "heightType" : 0,
         "id" : "gDnggZej4",
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
-        "left" : 152,
+        "left" : 208,
         "locked" : false,
         "name" : null,
         "opacity" : 1,
@@ -654,7 +655,7 @@
         "rotation" : 0,
         "top" : -1091,
         "visible" : true,
-        "width" : 744,
+        "width" : 1111,
         "widthType" : 0
       }
     ],

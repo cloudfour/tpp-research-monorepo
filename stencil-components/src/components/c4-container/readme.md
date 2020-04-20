@@ -1,7 +1,5 @@
 # c4-container
 
-
-
 <!-- Auto Generated Below -->
 
 
@@ -10,6 +8,7 @@
 | Property         | Attribute         | Description | Type     | Default     |
 | ---------------- | ----------------- | ----------- | -------- | ----------- |
 | `containerClass` | `container-class` |             | `string` | `undefined` |
+| `contentClass`   | `content-class`   |             | `string` | `undefined` |
 | `tag`            | `tag`             |             | `string` | `"div"`     |
 
 

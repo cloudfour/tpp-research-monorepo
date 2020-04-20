@@ -10,9 +10,17 @@
 
     <script type="module" src="/build/stencil-components.esm.js"></script>
     <script nomodule src="/build/stencil-components.js"></script>
+
+    <!-- TODO: Make this an exportable stylesheet -->
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
-    <c4-container container-class="prose">
+    <c4-container content-class="prose">
       <c4-heading>C4 Stencil Components</c4-heading>
 
       <p>
@@ -35,6 +43,15 @@
       <c4-button disabled="true">I'm a disabled c4-button!</c4-button>
 
       <c4-button tag="a">I'm actually a link!</c4-button>
+    </c4-container>
+
+    <c4-container content-class="prose tall" container-class="dark">
+      <c4-heading>C4 Stencil Components</c4-heading>
+
+      <p>
+        This container has the dark theme. The dark theme updates custom
+        properties to change colors.
+      </p>
     </c4-container>
   </body>
 </html>
