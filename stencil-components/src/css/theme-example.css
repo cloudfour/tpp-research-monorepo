@@ -1,0 +1,11 @@
+:root {
+  --font-brand: "Georgia";
+
+  --color-white: #eee;
+  --color-dark: rgba(40, 0, 0, 0.85);
+  --color-brand: #f00;
+  --color-focus: #8abfff;
+
+  --color-background: var(--color-white);
+  --color-text: var(--color-dark);
+}

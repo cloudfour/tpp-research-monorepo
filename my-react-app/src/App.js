@@ -1,8 +1,12 @@
 import React from "react";
-import "./App.css";
-import "../../stencil-components/src/css/base.css";
-import { C4Button, C4Heading, C4Container } from "../../react-components";
 
+import "./App.css";
+// Define our base custom properties
+import "../../stencil-components/src/css/base.css";
+// These can be overridden with theme files
+// import "../../stencil-components/src/css/theme-example.css";
+
+import { C4Button, C4Heading, C4Container } from "../../react-components";
 import { SwatchWrapper } from "./components/swatch-wrapper";
 
 function App() {

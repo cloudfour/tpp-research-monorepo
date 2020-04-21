@@ -603,7 +603,7 @@
         "codeComponentIdentifier" : ".\/C4Container.tsx_C4Container",
         "codeComponentProps" : {
           "containerClass" : "dark tall",
-          "contentClass" : "prose tall",
+          "contentClass" : "pros",
           "slot" : [
             {
               "enabled" : true,
@@ -791,7 +791,7 @@
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
         "fillType" : "color",
-        "height" : 218,
+        "height" : 287,
         "heightType" : 0,
         "id" : "Wf0Z_0OQs",
         "intrinsicHeight" : null,
@@ -869,7 +869,7 @@
         "rotation" : 0,
         "top" : -1078,
         "visible" : true,
-        "width" : 300,
+        "width" : 348,
         "widthType" : 0
       },
       {
