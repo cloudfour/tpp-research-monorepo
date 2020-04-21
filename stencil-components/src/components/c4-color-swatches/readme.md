@@ -7,10 +7,11 @@
 
 ## Properties
 
-| Property       | Attribute       | Description | Type     | Default     |
-| -------------- | --------------- | ----------- | -------- | ----------- |
-| `colorsData`   | --              |             | `any[]`  | `null`      |
-| `colorsString` | `colors-string` |             | `string` | `undefined` |
+| Property       | Attribute       | Description | Type       | Default     |
+| -------------- | --------------- | ----------- | ---------- | ----------- |
+| `callback`     | --              |             | `Function` | `null`      |
+| `colorsData`   | --              |             | `any[]`    | `null`      |
+| `colorsString` | `colors-string` |             | `string`   | `undefined` |
 
 
 ## Events

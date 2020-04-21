@@ -17,8 +17,12 @@ export class C4ColorSwatches {
   // TODO: Why can't I set this to Color?
   @Prop() colorsData?: Array<any> = null;
   @Event() colorChanged: EventEmitter;
+  @Prop() callback?: Function = null;
 
   changeHandler(color: Color) {
+    if (this.callback !== null) {
+      this.callback(color);
+    }
     return this.colorChanged.emit(color);
   }
 

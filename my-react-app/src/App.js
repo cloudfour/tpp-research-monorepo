@@ -1,11 +1,8 @@
 import React from "react";
 import "./App.css";
-import {
-  C4Button,
-  C4Heading,
-  C4Container,
-  C4ColorSwatches,
-} from "../../react-components";
+import { C4Button, C4Heading, C4Container } from "../../react-components";
+
+import { SwatchWrapper } from "./components/swatch-wrapper";
 
 function App() {
   return (
@@ -29,19 +26,16 @@ function App() {
 
         <C4Button>Hello world!</C4Button>
       </C4Container>
-      <C4Container contentClass="prose">
-        <C4Heading tag="h2">Color Swatches</C4Heading>
 
-        <C4ColorSwatches
-          colorsData={[
-            { hex: "#215cca", name: "Cloud Blue", id: "123" },
-            { hex: "#158466", name: "PNW Green", id: "124" },
-            { hex: "#d9118f", name: "PWA Pink", id: "125" },
-            { hex: "#f27041", name: "Orange", id: "126" },
-            { hex: "#485968", name: "Grey", id: "127" },
-          ]}
-        ></C4ColorSwatches>
-      </C4Container>
+      <SwatchWrapper
+        colorsData={[
+          { hex: "#215cca", name: "Cloud Blue", id: "123" },
+          { hex: "#158466", name: "PNW Green", id: "124" },
+          { hex: "#d9118f", name: "PWA Pink", id: "125" },
+          { hex: "#f27041", name: "Orange", id: "126" },
+          { hex: "#485968", name: "Grey", id: "127" },
+        ]}
+      ></SwatchWrapper>
     </div>
   );
 }
