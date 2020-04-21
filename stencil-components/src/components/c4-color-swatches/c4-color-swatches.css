@@ -1,0 +1,62 @@
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border-radius: 0.25em;
+  border: 0.125rem solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 0;
+  margin-right: 0.5em;
+  width: 5em;
+  height: 4em;
+  text-align: center;
+  transition: filter 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+input:focus {
+  box-shadow: 0 0 0 0.25em #8abfff;
+}
+
+input:hover {
+  filter: brightness(110%);
+  transform: scale(1.05);
+}
+
+input:active {
+  filter: brightness(80%);
+  transform: scale(0.95);
+}
+
+input::before {
+  content: "✓";
+  color: #fff;
+  display: block;
+  font-size: 2.9em;
+  font-weight: bold;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+input:checked::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+label {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.swatches {
+  display: flex;
+}

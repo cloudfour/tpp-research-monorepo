@@ -14,6 +14,9 @@ export namespace Components {
         "text": string;
         "type": string;
     }
+    interface C4ColorSwatches {
+        "colors": string;
+    }
     interface C4Container {
         "containerClass": string;
         "contentClass": string;
@@ -30,6 +33,12 @@ declare global {
         prototype: HTMLC4ButtonElement;
         new (): HTMLC4ButtonElement;
     };
+    interface HTMLC4ColorSwatchesElement extends Components.C4ColorSwatches, HTMLStencilElement {
+    }
+    var HTMLC4ColorSwatchesElement: {
+        prototype: HTMLC4ColorSwatchesElement;
+        new (): HTMLC4ColorSwatchesElement;
+    };
     interface HTMLC4ContainerElement extends Components.C4Container, HTMLStencilElement {
     }
     var HTMLC4ContainerElement: {
@@ -44,6 +53,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "c4-button": HTMLC4ButtonElement;
+        "c4-color-swatches": HTMLC4ColorSwatchesElement;
         "c4-container": HTMLC4ContainerElement;
         "c4-heading": HTMLC4HeadingElement;
     }
@@ -57,6 +67,10 @@ declare namespace LocalJSX {
         "text"?: string;
         "type"?: string;
     }
+    interface C4ColorSwatches {
+        "colors"?: string;
+        "onColorChanged"?: (event: CustomEvent<any>) => void;
+    }
     interface C4Container {
         "containerClass"?: string;
         "contentClass"?: string;
@@ -67,6 +81,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "c4-button": C4Button;
+        "c4-color-swatches": C4ColorSwatches;
         "c4-container": C4Container;
         "c4-heading": C4Heading;
     }
@@ -76,6 +91,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "c4-button": LocalJSX.C4Button & JSXBase.HTMLAttributes<HTMLC4ButtonElement>;
+            "c4-color-swatches": LocalJSX.C4ColorSwatches & JSXBase.HTMLAttributes<HTMLC4ColorSwatchesElement>;
             "c4-container": LocalJSX.C4Container & JSXBase.HTMLAttributes<HTMLC4ContainerElement>;
             "c4-heading": LocalJSX.C4Heading & JSXBase.HTMLAttributes<HTMLC4HeadingElement>;
         }
