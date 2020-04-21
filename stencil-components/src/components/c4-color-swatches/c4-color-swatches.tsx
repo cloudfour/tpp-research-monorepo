@@ -1,5 +1,4 @@
 import { Component, Prop, h, Event, EventEmitter } from "@stencil/core";
-// TODO: Emit events on change
 
 interface Color {
   name: string;
@@ -18,6 +17,7 @@ export class C4ColorSwatches {
   @Prop() colorsData?: Array<any> = null;
   @Event() colorChanged: EventEmitter;
   @Prop() callback?: Function = null;
+  @Prop() radioName: string;
 
   changeHandler(color: Color) {
     if (this.callback !== null) {
@@ -49,7 +49,7 @@ export class C4ColorSwatches {
               <input
                 type="radio"
                 id={color.id}
-                name="color"
+                name={this.radioName}
                 value={color.id}
                 style={styles}
                 checked={checked}

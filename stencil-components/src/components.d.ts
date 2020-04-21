@@ -18,6 +18,7 @@ export namespace Components {
         "callback"?: Function;
         "colorsData"?: Array<any>;
         "colorsString"?: string;
+        "radioName": string;
     }
     interface C4Container {
         "containerClass": string;
@@ -74,6 +75,7 @@ declare namespace LocalJSX {
         "colorsData"?: Array<any>;
         "colorsString"?: string;
         "onColorChanged"?: (event: CustomEvent<any>) => void;
+        "radioName"?: string;
     }
     interface C4Container {
         "containerClass"?: string;

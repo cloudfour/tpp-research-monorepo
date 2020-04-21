@@ -12,6 +12,7 @@
 | `callback`     | --              |             | `Function` | `null`      |
 | `colorsData`   | --              |             | `any[]`    | `null`      |
 | `colorsString` | `colors-string` |             | `string`   | `undefined` |
+| `radioName`    | `radio-name`    |             | `string`   | `undefined` |
 
 
 ## Events

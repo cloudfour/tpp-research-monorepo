@@ -3,16 +3,18 @@ import { ControlType, addPropertyControls, Stack, Frame } from "framer"
 import { C4Container as _C4Container } from "../../react-components/dist"
 
 export const C4Container = (props: any) => {
-    const frameStyles = props.containerClass.includes("dark")
-        ? {
-              backgroundColor: "#215cca",
-              width: "100%",
-              height: "100%",
-              left: 0,
-              top: 0,
-              position: "absolute" as "absolute",
-          }
-        : {}
+    const background = props.containerClass.includes("dark")
+        ? "#215cca"
+        : "#fff"
+
+    const frameStyles = {
+        backgroundColor: background,
+        width: "100%",
+        height: "100%",
+        left: 0,
+        top: 0,
+        position: "absolute" as "absolute",
+    }
 
     return (
         <_C4Container {...props} style={frameStyles}>
