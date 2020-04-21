@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "../../stencil-components/src/css/base.css";
 import { C4Button, C4Heading, C4Container } from "../../react-components";
 
 import { SwatchWrapper } from "./components/swatch-wrapper";
