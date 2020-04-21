@@ -29,6 +29,7 @@ function App() {
       </C4Container>
 
       <SwatchWrapper
+        radioName="colors"
         colorsData={[
           { hex: "#215cca", name: "Cloud Blue", id: "123" },
           { hex: "#158466", name: "PNW Green", id: "124" },

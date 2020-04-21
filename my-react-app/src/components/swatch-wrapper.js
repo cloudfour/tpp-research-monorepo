@@ -31,6 +31,7 @@ export class SwatchWrapper extends React.Component {
         <C4ColorSwatches
           callback={this.updateColor.bind(this)}
           colorsData={this.props.colorsData}
+          radioName={this.props.radioName}
         ></C4ColorSwatches>
       </C4Container>
     );
