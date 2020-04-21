@@ -1,15 +1,12 @@
 .container {
-  --background-color: var(--color-white, #fff);
-  --text-color: var(--color-dark, rgba(0, 0, 0, 0.85));
-
-  background: var(--background-color);
-  color: var(--text-color);
+  background: var(--color-background);
+  color: var(--color-text);
   font-family: var(--font-brand, "sans-serif");
 }
 
 .dark {
-  --background-color: var(--color-brand, #215cca);
-  --text-color: var(--color-white, #fff);
+  --color-background: var(--color-brand, #215cca);
+  --color-text: var(--color-white, #fff);
 }
 
 .container > * {

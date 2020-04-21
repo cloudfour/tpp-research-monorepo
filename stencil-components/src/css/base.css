@@ -6,4 +6,7 @@
   --color-dark: rgba(0, 0, 0, 0.85);
   --color-brand: #215cca;
   --color-focus: #8abfff;
+
+  --color-background: var(--color-white);
+  --color-text: var(--color-dark);
 }
