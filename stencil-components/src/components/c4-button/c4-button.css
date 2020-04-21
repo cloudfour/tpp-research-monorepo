@@ -1,14 +1,13 @@
 .button {
-  background: #215cca;
-  border-color: #183889;
+  background: var(--color-brand, #215cca);
+  border-color: var(--color-button-border, #183889);
   border-radius: 0.25em;
   border-style: solid;
   border-width: 0.125rem;
-  color: #fff;
+  color: var(--color-white, #fff);
   cursor: pointer;
   display: inline-block;
-  font-family: "Source Sans Pro Variable", Tahoma, "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
+  font-family: var(--font-brand, "sans-serif");
   font-size: 1em;
   font-weight: 600;
   height: 2.44140625em;
@@ -41,17 +40,17 @@
 }
 
 .button:focus {
-  box-shadow: 0 0 0 0.25em #8abfff;
+  box-shadow: 0 0 0 0.25em var(--color-focus);
 }
 
 .secondary,
 .tertiary {
   background-color: transparent;
-  color: #215cca;
+  color: var(--color-brand);
 }
 
 .secondary {
-  border-color: #3d84f5;
+  border-color: var(--color-secondary-button-border, #3d84f5);
 }
 
 .tertiary {

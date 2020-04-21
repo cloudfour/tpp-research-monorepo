@@ -31,8 +31,9 @@ input:active {
 
 input::before {
   content: "✓";
-  color: #fff;
+  color: var(--color-white, #fff);
   display: block;
+  font-family: var(--font-brand, "sans-serif");
   font-size: 2.9em;
   font-weight: bold;
   opacity: 0;
@@ -46,6 +47,7 @@ input:checked::before {
   transform: scale(1);
 }
 
+/* sr-only class */
 label {
   border: 0;
   clip: rect(0 0 0 0);

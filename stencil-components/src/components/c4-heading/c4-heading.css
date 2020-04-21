@@ -1,7 +1,6 @@
 :host > * {
-  color: var(--text-color, rgba(0, 0, 0, 0.85));
-  font-family: "Source Sans Pro Variable", Tahoma, "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
+  color: var(--color-dark, rgba(0, 0, 0, 0.85));
+  font-family: var(--font-brand, sans-serif);
   font-weight: 600;
   margin: 0;
 }
