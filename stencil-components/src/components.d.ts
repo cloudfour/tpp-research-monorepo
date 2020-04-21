@@ -15,7 +15,8 @@ export namespace Components {
         "type": string;
     }
     interface C4ColorSwatches {
-        "colors": string;
+        "colorsData"?: Array<any>;
+        "colorsString"?: string;
     }
     interface C4Container {
         "containerClass": string;
@@ -68,7 +69,8 @@ declare namespace LocalJSX {
         "type"?: string;
     }
     interface C4ColorSwatches {
-        "colors"?: string;
+        "colorsData"?: Array<any>;
+        "colorsString"?: string;
         "onColorChanged"?: (event: CustomEvent<any>) => void;
     }
     interface C4Container {

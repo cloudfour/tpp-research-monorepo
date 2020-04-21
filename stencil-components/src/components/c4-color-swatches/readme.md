@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `colors` | `colors`  |             | `string` | `undefined` |
+| Property       | Attribute       | Description | Type     | Default     |
+| -------------- | --------------- | ----------- | -------- | ----------- |
+| `colorsData`   | --              |             | `any[]`  | `null`      |
+| `colorsString` | `colors-string` |             | `string` | `undefined` |
 
 
 ## Events

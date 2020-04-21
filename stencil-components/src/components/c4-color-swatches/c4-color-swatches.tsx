@@ -13,7 +13,9 @@ interface Color {
   shadow: true,
 })
 export class C4ColorSwatches {
-  @Prop() colors: string;
+  @Prop() colorsString?: string;
+  // TODO: Why can't I set this to Color?
+  @Prop() colorsData?: Array<any> = null;
   @Event() colorChanged: EventEmitter;
 
   changeHandler(color: Color) {
@@ -21,7 +23,11 @@ export class C4ColorSwatches {
   }
 
   private parsedColors(): Array<Color> {
-    return JSON.parse(this.colors);
+    if (this.colorsData !== null) {
+      return this.colorsData;
+    }
+
+    return JSON.parse(this.colorsString);
   }
 
   render() {
