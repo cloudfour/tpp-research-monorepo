@@ -73,6 +73,14 @@
         The color swatches emit an event when the color is changed. This page is
         using vanilla JS to listen for this event and update the selected color.
       </p>
+
+      <script>
+        document
+          .querySelector("c4-color-swatches")
+          .addEventListener("colorChanged", ({ detail }) => {
+            document.getElementById("selected-color").innerText = detail.name;
+          });
+      </script>
     </c4-container>
 
     <c4-container content-class="prose tall" container-class="dark">
@@ -83,13 +91,5 @@
         properties to change colors.
       </p>
     </c4-container>
-
-    <script>
-      document
-        .querySelector("c4-color-swatches")
-        .addEventListener("colorChanged", ({ detail }) => {
-          document.getElementById("selected-color").innerText = detail.name;
-        });
-    </script>
   </body>
 </html>

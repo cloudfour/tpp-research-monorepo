@@ -1,0 +1,111 @@
+import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
+import { html } from "lit-html";
+import { text, boolean, withKnobs, select } from "@storybook/addon-knobs";
+
+<Meta title="Components/Color Swatches" decorators={[withKnobs]} />
+
+## Color Swatches
+
+Color swatches allow customers to select a color of product when ordering.
+
+<Preview>
+  <Story name="Interactive">
+    {() => {
+      return html`
+        <c4-color-swatches
+          radio-name="colors"
+          colors-string='[
+            {"hex": "#215cca", "name": "Cloud Blue", "id": "123"},
+            {"hex": "#158466", "name": "PNW Green", "id": "124"},
+            {"hex": "#d9118f", "name": "PWA Pink", "id": "125"},
+            {"hex": "#f27041", "name": "Orange", "id": "126"},
+            {"hex": "#485968", "name": "Grey", "id": "127"}
+          ]'
+        ></c4-color-swatches>
+      `;
+    }}
+  </Story>
+</Preview>
+
+## Interaction
+
+Color swatches emit events and call callbacks when a color is selected.
+Depending on your framework and code style you can choose either approach.
+
+## Listening for events
+
+Here's an example of how you could listen for events to trigger updates.
+
+```html
+<p>
+  Selected Color:
+  <em id="selected-color">
+    Cloud Blue
+  </em>
+</p>
+
+<c4-color-swatches
+  radio-name="colors"
+  colors-string='[
+    {"hex": "#215cca", "name": "Cloud Blue", "id": "123"},
+    {"hex": "#158466", "name": "PNW Green", "id": "124"},
+    {"hex": "#d9118f", "name": "PWA Pink", "id": "125"},
+    {"hex": "#f27041", "name": "Orange", "id": "126"},
+    {"hex": "#485968", "name": "Grey", "id": "127"}
+  ]'
+></c4-color-swatches>
+
+<script>
+  document
+    .querySelector("c4-color-swatches")
+    .addEventListener("colorChanged", ({ detail }) => {
+      document.getElementById("selected-color").innerText = detail.name;
+    });
+</script>
+```
+
+## Passing in a Callback
+
+Alternately you can trigger a callback function when a color is selected.
+
+Due to how React handles events you'll need to use this method in React (though
+you'd use our `C4ColorSwatches` React wrapper instead of the custom element.)
+
+Here's a React example using a callback:
+
+```jsx
+import React from "react";
+import { C4ColorSwatches} from "../../../react-components";
+
+export class SwatchWrapper extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      color: props.colorsData[0],
+    };
+  }
+
+  updateColor(color) {
+    this.setState({ color });
+  }
+
+  render() {
+    return (
+      <div>
+        <p>
+          Selected Color:
+          <em>{this.state.color.name}</em>
+        </p>
+
+        <C4ColorSwatches
+          callback={this.updateColor.bind(this)}
+          colorsData={this.props.colorsData}
+          radioName={this.props.radioName}
+        ></C4ColorSwatches>
+      </div>
+    );
+  }
+}
+
+```
