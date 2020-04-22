@@ -1,4 +1,5 @@
 import { Story, Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+import { html } from 'lit-html';
 
 <Meta title="Button" />
 
@@ -6,6 +7,6 @@ import { Story, Preview, Meta, Props } from '@storybook/addon-docs/blocks';
 
 <Preview>
   <Story name="Button">
-    {() => `<c4-button>Button</c4-button>`}
+    {() => html`<c4-button>Button</c4-button>`}
   </Story>
 </Preview>
