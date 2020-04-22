@@ -1,0 +1,17 @@
+svg {
+  --color-star-full: #f27041;
+  --color-star-empty: #c0cfd8;
+}
+
+svg {
+  width: 1em;
+  height: 1em;
+}
+
+svg.empty * {
+  fill: var(--color-star-empty);
+}
+
+svg.full * {
+  fill: var(--color-star-full);
+}

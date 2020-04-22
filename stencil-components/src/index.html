@@ -49,6 +49,12 @@
 
       <c4-button tag="a">I'm actually a link!</c4-button>
 
+      <div>
+        <c4-heading tag="h2">Star Rating</c4-heading>
+
+        <c4-star-rating rating="4.6" style="font-size: 3em;"></c4-star-rating>
+      </div>
+
       <c4-heading tag="h2">Color Swatches</c4-heading>
 
       <p>
@@ -73,15 +79,15 @@
         The color swatches emit an event when the color is changed. This page is
         using vanilla JS to listen for this event and update the selected color.
       </p>
-
-      <script>
-        document
-          .querySelector("c4-color-swatches")
-          .addEventListener("colorChanged", ({ detail }) => {
-            document.getElementById("selected-color").innerText = detail.name;
-          });
-      </script>
     </c4-container>
+
+    <script>
+      document
+        .querySelector("c4-color-swatches")
+        .addEventListener("colorChanged", ({ detail }) => {
+          document.getElementById("selected-color").innerText = detail.name;
+        });
+    </script>
 
     <c4-container content-class="prose tall" container-class="dark">
       <c4-heading>C4 Stencil Components</c4-heading>
