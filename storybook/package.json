@@ -1,11 +1,11 @@
 {
-  "name": "web-components-kitchen-sink",
-  "version": "6.0.0-alpha.41",
+  "name": "portable-patterns-storybook",
+  "version": "0.0.1",
   "private": true,
   "description": "",
   "keywords": [],
   "license": "MIT",
-  "author": "",
+  "author": "Cloud Four",
   "main": "index.js",
   "scripts": {
     "build-storybook": "build-storybook",
