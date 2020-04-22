@@ -1,26 +1,33 @@
 /* global window */
 
-import { configure, addParameters } from '@storybook/web-components';
-import { defineCustomElements } from '../../stencil-components/loader/index';
-import '../../stencil-components/src/css/base.css';
+import { configure, addParameters } from "@storybook/web-components";
+import { defineCustomElements } from "../../stencil-components/loader/index";
+import "../../stencil-components/src/css/base.css";
 
 defineCustomElements();
+
+const getStoryCategory = (story) => story[1].kind.split("/")[0];
 
 addParameters({
   a11y: {
     config: {},
     options: {
-      checks: { 'color-contrast': { options: { noScroll: true } } },
+      checks: { "color-contrast": { options: { noScroll: true } } },
       restoreScroll: true,
     },
   },
   docs: {
-    iframeHeight: '200px',
+    iframeHeight: "200px",
+  },
+  options: {
+    storySort: (a, b) => {
+      return getStoryCategory(a) === "Welcome" ? -1 : 1;
+    },
   },
 });
 
 // force full reload to not re-register web components
-const req = require.context('../stories', true, /\.stories\.(js|mdx)$/);
+const req = require.context("../stories", true, /\.stories\.(js|mdx)$/);
 
 configure(req, module);
 
