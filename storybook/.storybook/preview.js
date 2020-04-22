@@ -21,7 +21,9 @@ addParameters({
   },
   options: {
     storySort: (a, b) => {
-      return getStoryCategory(a) === "Welcome" ? -1 : 1;
+      const aIsWelcome = getStoryCategory(a) === "Welcome";
+      const bIsWelcome = getStoryCategory(b) === "Welcome";
+      return bIsWelcome - aIsWelcome;
     },
   },
 });
