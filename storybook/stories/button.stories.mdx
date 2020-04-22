@@ -1,12 +1,18 @@
-import { Story, Preview, Meta, Props } from '@storybook/addon-docs/blocks';
-import { html } from 'lit-html';
+import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
+import { html } from "lit-html";
+import { text } from "@storybook/addon-knobs";
 
-<Meta title="Button" />
+<Meta title="Button" decorators={[withKnobs]} />
 
 # Buttons
 
 <Preview>
   <Story name="Button">
-    {() => html`<c4-button>Button</c4-button>`}
+    {() => {
+      const slot = text("slot", "Button");
+      return html`
+        <c4-button>${slot}</c4-button>
+      `;
+    }}
   </Story>
 </Preview>
