@@ -21,6 +21,7 @@ addPropertyControls(C4Button, {
     type: ControlType.Enum,
     defaultValue: "button",
     options: ["a", "button"],
+    displaySegmentedControl: true,
   },
   disabled: {
     type: ControlType.Boolean,
@@ -33,6 +34,7 @@ addPropertyControls(C4Button, {
     type: ControlType.Enum,
     defaultValue: "button",
     options: ["submit", "reset", "button"],
+    displaySegmentedControl: true,
     hidden(props) {
       return props.tag === "a";
     },

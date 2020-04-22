@@ -14,6 +14,7 @@ addPropertyControls(C4Heading, {
   tag: {
     type: ControlType.Enum,
     defaultValue: "h1",
+    displaySegmentedControl: true,
     options: ["h1", "h2", "h3", "h4", "h5", "h6"],
   },
 });

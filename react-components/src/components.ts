@@ -12,3 +12,4 @@ export const C4Button = /*@__PURE__*/createReactComponent<JSX.C4Button, HTMLC4Bu
 export const C4ColorSwatches = /*@__PURE__*/createReactComponent<JSX.C4ColorSwatches, HTMLC4ColorSwatchesElement>('c4-color-swatches');
 export const C4Container = /*@__PURE__*/createReactComponent<JSX.C4Container, HTMLC4ContainerElement>('c4-container');
 export const C4Heading = /*@__PURE__*/createReactComponent<JSX.C4Heading, HTMLC4HeadingElement>('c4-heading');
+export const C4StarRating = /*@__PURE__*/createReactComponent<JSX.C4StarRating, HTMLC4StarRatingElement>('c4-star-rating');

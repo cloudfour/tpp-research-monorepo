@@ -13,7 +13,6 @@
 | `disabled`    | `disabled`     |             | `boolean` | `false`     |
 | `href`        | `href`         |             | `string`  | `"#"`       |
 | `tag`         | `tag`          |             | `string`  | `"button"`  |
-| `text`        | `text`         |             | `string`  | `undefined` |
 | `type`        | `type`         |             | `string`  | `"button"`  |
 
 
