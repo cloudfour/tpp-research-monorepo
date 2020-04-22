@@ -1,8 +1,8 @@
 # TPP Research Monorepo
 
-This repo is exploring translating components from native web components (Stencil.js) into front end frameworks and design tools.
+This repo is exploring translating components from native web components (Stencil.js) into front end frameworks, documentation tools, and design tools.
 
-It currently shows how to use these components in React and FramerX.
+It currently shows how to use these components in React, FramerX, and StoryBook.
 
 ## Component Development
 
@@ -52,3 +52,17 @@ After building our React components, navigate to `react-components/dist/componen
 I think there's a disconnect between TypeScript and JavaScript imports here. I'm sure there's a solution, but I haven't dug into it yet.
 
 After building the components and making that change you should be able to open the `components.framerfx` file in Framer X and begin designing with components.
+
+## Viewing Components in Storybook
+
+The web components are also documented in storybook. After running the `stencil-components` project, or running `npm build-components` Storybook should
+be ready to document these components. To launch storybook run the following
+commands
+
+```zsh
+# Navigate to the `storybook` repo
+cd storybook
+
+# Run and watch a Storybook server
+npm run storybook
+```
