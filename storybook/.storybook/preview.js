@@ -1,10 +1,10 @@
 /* global window */
 
-import { configure, addParameters, setCustomElements } from '@storybook/web-components';
+import { configure, addParameters } from '@storybook/web-components';
+import { defineCustomElements } from '../../stencil-components/loader/index';
+import '../../stencil-components/src/css/base.css';
 
-import customElements from '../custom-elements.json';
-
-setCustomElements(customElements);
+defineCustomElements();
 
 addParameters({
   a11y: {
@@ -18,8 +18,6 @@ addParameters({
     iframeHeight: '200px',
   },
 });
-
-// configure(require.context('../stories', true, /\.stories\.(js|mdx)$/), module);
 
 // force full reload to not re-register web components
 const req = require.context('../stories', true, /\.stories\.(js|mdx)$/);
