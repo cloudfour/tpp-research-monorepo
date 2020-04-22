@@ -30,8 +30,9 @@ addPropertyControls(C4Button, {
     },
   },
   type: {
-    type: ControlType.String,
+    type: ControlType.Enum,
     defaultValue: "button",
+    options: ["submit", "reset", "button"],
     hidden(props) {
       return props.tag === "a";
     },

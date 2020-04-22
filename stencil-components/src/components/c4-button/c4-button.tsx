@@ -10,7 +10,6 @@ export class C4Button {
   @Prop() type: string = "button";
   @Prop() tag: string = "button";
   @Prop() href: string = "#";
-  @Prop() text: string;
   @Prop() buttonClass: string;
 
   private getClass(): string {

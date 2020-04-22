@@ -1,18 +1,74 @@
 import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
 import { html } from "lit-html";
-import { text } from "@storybook/addon-knobs";
+import { text, boolean, withKnobs, select } from "@storybook/addon-knobs";
 
 <Meta title="Button" decorators={[withKnobs]} />
 
 # Buttons
 
+Our `c4-button` component can be used to display a styled `<button`> or `<a>`
+tag. It has a number of options.
+
 <Preview>
   <Story name="Button">
     {() => {
-      const slot = text("slot", "Button");
+      const slot = text("Slot Content", "Button");
+      const disabled = boolean("Disabled", false);
+      const tag = select("Tag", ["button", "a"], "button");
+      const type = select("Type", ["button", "reset", "submit"], "button");
+      const href = text("href", "#");
+      const buttonClass = select(
+        "Modifier Class",
+        ["", "secondary", "tertiary"],
+        ""
+      );
       return html`
-        <c4-button>${slot}</c4-button>
+        <c4-button
+          disabled="${disabled}"
+          tag="${tag}"
+          type="${type}"
+          href="${href}"
+          button-class="${buttonClass}"
+        >
+          ${slot}
+        </c4-button>
       `;
     }}
+  </Story>
+</Preview>
+
+## Disabled Buttons
+
+Disabled buttons display with a faded background and disabled cursor. Only
+`<button>` tags can be disabled, not `<a>` tags.
+
+<Preview>
+  <Story name="Disabled">
+    {() => html`
+      <c4-button disabled="true">
+        Disabled Button
+      </c4-button>
+    `}
+  </Story>
+</Preview>
+
+## Secondary and Tertiary Buttons
+
+Secondary and Tertiary buttons can be used to communicate actions outside of the
+primary flow.
+
+<Preview>
+  <Story name="Secondary and Tertiary">
+    {() => html`
+      <c4-button>
+        Primary Button
+      </c4-button>
+      <c4-button buttonClass="secondary">
+        Secondary Button
+      </c4-button>
+      <c4-button buttonClass="tertiary">
+        Tertiary Button
+      </c4-button>
+    `}
   </Story>
 </Preview>
