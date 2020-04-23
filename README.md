@@ -44,7 +44,7 @@ Many components rely on the inclusion of `base.css` for styling. `base.css` defi
 }
 ```
 
-_(This is not a pretty theme)_
+_(This is not a pretty theme.)_
 
 In addition to theming, `base.css` will also provide some basic browser resets, and utility classes. The details on this are fuzzy at the moment. In the long run they may be separated into separate CSS files.
 
