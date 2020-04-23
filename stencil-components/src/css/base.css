@@ -10,3 +10,8 @@
   --color-background: var(--color-white);
   --color-text: var(--color-dark);
 }
+
+html,
+body {
+  margin: 0;
+}

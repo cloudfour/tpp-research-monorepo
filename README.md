@@ -26,18 +26,54 @@ cd stencil-components
 npm start
 ```
 
-## Converting the Components to React Components
+## Base.css
+
+Many components rely on the inclusion of `base.css` for styling. `base.css` defines a number of custom properties which are referenced in component CSS. This makes the components easier to maintain and theme. Theming can be achieved by overriding these custom properties like so:
+
+```css
+:root {
+  --font-brand: "Georgia";
+
+  --color-white: #eee;
+  --color-dark: rgba(40, 0, 0, 0.85);
+  --color-brand: #f00;
+  --color-focus: #8abfff;
+
+  --color-background: var(--color-white);
+  --color-text: var(--color-dark);
+}
+```
+
+_(This is not a pretty theme)_
+
+In addition to theming, `base.css` will also provide some basic browser resets, and utility classes. The details on this are fuzzy at the moment. In the long run they may be separated into separate CSS files.
+
+## Converting Stencil Components to Other Formats
+
+This repo is set up to export Stencil components to a variety of output targets
+
+### Building React Components
 
 This project uses Stencil's `@stencil/react-output-target` plugin to generate React wrappers for components. Building these components is a two step process:
 
 1. Building the output of our `stencil-components` directory which adds files to our `react-components` directory
 2. Building the output of our `react-components` directory with the new files from `stencil-components`
 
-From the project root you can achieve this in a single command: `npm run build-components`.
+### Copying Files For Our Express App
+
+We copy our stencil components into our Express app's `public` directory so we can access them from our app.
+
+### Building All Components
+
+From the project root you can build Stencil components, convert them to React components, and populate our Express app in a single command: `npm run build`.
+
+## Building an Express App
+
+Once the
 
 ## Building a React Site
 
-These components are then consumed by a simple React app. After building our react components you can develop this site by running the following commands:
+Our React componemts are consumed by a simple React app. After building our react components you can develop this site by running the following commands:
 
 ```zsh
 # Navigate to the `my-react-app` repo
