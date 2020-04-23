@@ -1,8 +1,7 @@
 import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
 import { html } from "lit-html";
-import { text, boolean, withKnobs, select } from "@storybook/addon-knobs";
 
-<Meta title="Components/Color Swatches" decorators={[withKnobs]} />
+<Meta title="Components/Color Swatches" />
 
 ## Color Swatches
 
@@ -75,7 +74,7 @@ Here's a React example using a callback:
 
 ```jsx
 import React from "react";
-import { C4ColorSwatches} from "../../../react-components";
+import { C4ColorSwatches } from "../../../react-components";
 
 export class SwatchWrapper extends React.Component {
   constructor(props) {
@@ -107,5 +106,4 @@ export class SwatchWrapper extends React.Component {
     );
   }
 }
-
 ```
