@@ -1,0 +1,25 @@
+import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
+import { html } from "lit-html";
+import { number, withKnobs } from "@storybook/addon-knobs";
+
+<Meta title="Components/Star Rating" decorators={[withKnobs]} />
+
+# Star Ratings
+
+Our `c4-star-rating` component can be used to display a 5 star rating.
+
+<Preview>
+  <Story name="Star Rating">
+    {() => {
+      const rating = number("Rating", "3.5", {
+        range: true,
+        min: 0,
+        max: 5,
+        step: 0.01,
+      });
+      return html`
+        <c4-star-rating rating="${rating}"></c4-star-rating>
+      `;
+    }}
+  </Story>
+</Preview>

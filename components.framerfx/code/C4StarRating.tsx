@@ -12,7 +12,7 @@ export const C4StarRating = (props: any) => (
 addPropertyControls(C4StarRating, {
   rating: {
     type: ControlType.Number,
-    defaultValue: 3,
+    defaultValue: 3.5,
     step: 0.01,
     min: 0,
     max: 5,
