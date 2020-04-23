@@ -69,15 +69,23 @@ From the project root you can build Stencil components, convert them to React co
 
 ## Building an Express App
 
-Once the
+After running `npm run build` you can develop the Express app by running the following commands:
+
+```zsh
+# Navigate to the `express-app` repo
+cd express-app
+
+# Run and watch a Express server
+npm start
+```
 
 ## Building a React Site
 
 Our React componemts are consumed by a simple React app. After building our react components you can develop this site by running the following commands:
 
 ```zsh
-# Navigate to the `my-react-app` repo
-cd my-react-app
+# Navigate to the `react-app` repo
+cd react-app
 
 # Run and watch a React server
 npm start
