@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-components": "cd stencil-components && npm run build && cd ../react-components && npm run build"
+    "build:stencil": "cd stencil-components && npm run build && cd ../",
+    "build:react-components": "cd react-components && npm run build && cd ../",
+    "copy-components-to-express": "node copy-components",
+    "build": "npm-run-all -s build:* copy-components-to-express"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/cloudfour/tpp-research-monorepo/issues"
   },
-  "homepage": "https://github.com/cloudfour/tpp-research-monorepo#readme"
+  "homepage": "https://github.com/cloudfour/tpp-research-monorepo#readme",
+  "dependencies": {
+    "copy-dir": "^1.2.0",
+    "npm-run-all": "^4.1.5"
+  }
 }

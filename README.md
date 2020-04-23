@@ -4,6 +4,16 @@ This repo is exploring translating components from native web components (Stenci
 
 It currently shows how to use these components in React, FramerX, and StoryBook.
 
+## Local Development Approach
+
+In the long run we'll likely want to publish a number of packages to a package registry:
+
+- Stencil Components
+- React Components
+- FramerX Components
+
+Individual projects can then easily install and reference the relevant components. However, this approach would slow down local development. For now, all files are referenced locally in between directories. A few hacks are required to make this work, but it should speed up local development.
+
 ## Component Development
 
 The core of the project is a stencil.js directory. To develop these components run the following command:
