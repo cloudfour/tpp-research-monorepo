@@ -2,14 +2,15 @@
 
 This repo is exploring translating components from native web components (Stencil.js) into front end frameworks, documentation tools, and design tools.
 
-It currently shows how to use these components in React, FramerX, and StoryBook.
+It currently shows how to use these components in React, Express, Vue, FramerX, and StoryBook.
 
 ## Local Development Approach
 
 In the long run we'll likely want to publish a number of packages to a package registry:
 
-- Stencil Components
+- Vanilla Web Components
 - React Components
+- Vue Components
 - FramerX Components
 
 Individual projects can then easily install and reference the relevant components. However, this approach would slow down local development. For now, all files are referenced locally in between directories. A few hacks are required to make this work, but it should speed up local development.
@@ -89,6 +90,20 @@ cd react-app
 
 # Run and watch a React server
 npm start
+```
+
+## Building a Vue Site
+
+Unfortunately there's no way to automatically wrap web components in Vue components, so if you want the Vue syntax you'll need to manually wrap your web components as Vue components.
+
+Luckily, Vue works well with web components, so it doesn't take a ton of work to create wrappers. You can see some examples in our Vue app. To run the Vue app, run the following commands:
+
+```zsh
+# Navigate to the `vue-app` repo
+cd vue-app
+
+# Run and watch a Vue server
+npm run dev
 ```
 
 ## Designing with Components in FramerX
