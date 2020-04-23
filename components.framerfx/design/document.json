@@ -762,6 +762,11 @@
             {
               "enabled" : true,
               "type" : "componentinstance",
+              "value" : "kQNgh8Qc1"
+            },
+            {
+              "enabled" : true,
+              "type" : "componentinstance",
               "value" : "sNjfXnaZo"
             },
             {
@@ -846,7 +851,7 @@
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
         "fillType" : "color",
-        "height" : 64,
+        "height" : 48,
         "heightType" : 0,
         "id" : "LnARjHJtC",
         "intrinsicHeight" : null,
@@ -944,7 +949,7 @@
         "codeComponentIdentifier" : ".\/C4Heading.tsx_C4Heading",
         "codeComponentProps" : {
           "slot" : "Color Options",
-          "tag" : "h4"
+          "tag" : "h3"
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -999,7 +1004,7 @@
         "codeComponentIdentifier" : ".\/C4StarRating.tsx_C4StarRating",
         "codeComponentProps" : {
           "rating" : 3.73,
-          "size" : 3.5
+          "size" : 2
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -1015,12 +1020,12 @@
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
         "fillType" : "color",
-        "height" : 200,
+        "height" : 32,
         "heightType" : 0,
         "id" : "kQNgh8Qc1",
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
-        "left" : 150,
+        "left" : -582,
         "locked" : false,
         "name" : null,
         "opacity" : 1,
@@ -1036,7 +1041,7 @@
         "radiusTopRight" : 0,
         "right" : null,
         "rotation" : 0,
-        "top" : -2166,
+        "top" : -1415,
         "visible" : true,
         "width" : 200,
         "widthType" : 0
