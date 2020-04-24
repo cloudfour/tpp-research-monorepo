@@ -13,7 +13,7 @@ export const config: Config = {
       proxiesFile: "../react-components/src/components.ts",
     }),
     angularOutputTarget({
-      componentCorePackage: '../../stencil-components/',
+      componentCorePackage: '../../stencil-components',
       directivesProxyFile: '../angular-components/src/components.ts',
     }),
     {
