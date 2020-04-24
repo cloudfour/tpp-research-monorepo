@@ -24,6 +24,7 @@
     "dist/"
   ],
   "dependencies": {
+    "c4-stencil-components": "^0.0.1",
     "tslib": "^1.9.3"
   },
   "peerDependencies": {

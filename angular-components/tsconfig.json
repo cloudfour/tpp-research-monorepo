@@ -16,6 +16,7 @@
     "declarationDir": "dist",
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
     "lib": ["dom", "es2017"],
     "module": "es2015",
     "moduleResolution": "node",
