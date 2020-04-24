@@ -1,17 +1,17 @@
 import { NgModule } from "@angular/core";
 import { defineCustomElements } from "../../../stencil-components/loader";
 
-// import { DemoComponent } from "./directives/proxies";
+import { C4Button, C4ColorSwatches, C4Container, C4Heading, C4StarRating } from "../components";
 
 defineCustomElements(window);
 
-// const DECLARATIONS = [
-//   // DemoComponent
-// ];
+const DECLARATIONS = [
+  C4Button, C4ColorSwatches, C4Container, C4Heading, C4StarRating
+];
 
 @NgModule({
-  // declarations: DECLARATIONS,
-  // exports: DECLARATIONS,
+  declarations: DECLARATIONS,
+  exports: DECLARATIONS,
   imports: [],
   providers: []
 })
