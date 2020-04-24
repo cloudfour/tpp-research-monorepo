@@ -1,5 +1,5 @@
 // DIRECTIVES
-export * from '../components';
+export * from './components';
 
 // PACKAGE MODULE
 export { ComponentLibraryModule } from './component-library-module';
