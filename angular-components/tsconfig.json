@@ -24,7 +24,7 @@
     "noImplicitReturns": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "outDir": "build/es2015",
+    "outDir": "es2015",
     "pretty": true,
     "removeComments": false,
     "importHelpers": true,

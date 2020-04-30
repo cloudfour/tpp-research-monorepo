@@ -3,7 +3,7 @@
  * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 import { NgModule } from "@angular/core";
-import { defineCustomElements } from "c4-stencil-components/loader";
+import { defineCustomElements } from "../../stencil-components/loader";
 import { C4Button, C4ColorSwatches, C4Container, C4Heading, C4StarRating } from "./components";
 defineCustomElements(window);
 /** @type {?} */
