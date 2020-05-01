@@ -18,8 +18,8 @@ export default {
     return !(id.startsWith('.') || id.startsWith('/') || id.charAt(colonPosition) === ':');
   },
   plugins: [
-    resolve({
-      module: true,
-    })
+    // resolve({
+    //   module: true,
+    // })
   ]
 };
