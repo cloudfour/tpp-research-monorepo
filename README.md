@@ -2,7 +2,7 @@
 
 This repo is exploring translating components from native web components (Stencil.js) into front end frameworks, documentation tools, and design tools.
 
-It currently shows how to use these components in React, Express, Vue, FramerX, and StoryBook.
+It currently shows how to use these components in React, Vue, Angular, Express, FramerX, and StoryBook.
 
 ## Local Development Approach
 
@@ -60,6 +60,13 @@ This project uses Stencil's `@stencil/react-output-target` plugin to generate Re
 1. Building the output of our `stencil-components` directory which adds files to our `react-components` directory
 2. Building the output of our `react-components` directory with the new files from `stencil-components`
 
+### Building Angular Components
+
+This project uses Stencil's `@stencil/angular-output-target` plugin to generate Angular wrappers for components. Building these components is a two step process:
+
+1. Building the output of our `stencil-components` directory which adds files to our `angular-components` directory
+2. Building the output of our `angular-components` directory with the new files from `stencil-components`
+
 ### Copying Files For Our Express App
 
 We copy our stencil components into our Express app's `public` directory so we can access them from our app.
@@ -82,13 +89,25 @@ npm start
 
 ## Building a React Site
 
-Our React componemts are consumed by a simple React app. After building our react components you can develop this site by running the following commands:
+Our React components are consumed by a simple React app. After building our React components you can develop this site by running the following commands:
 
 ```zsh
 # Navigate to the `react-app` repo
 cd react-app
 
 # Run and watch a React server
+npm start
+```
+
+## Building an Angular Site
+
+Our Angular components are consumed by a simple Angular app. After building our Angular components you can develop this site by running the following commands:
+
+```zsh
+# Navigate to the `angular-app` repo
+cd angular-app
+
+# Run and watch an Angular server
 npm start
 ```
 
