@@ -5,10 +5,9 @@
   "license": "MIT",
   "scripts": {
     "build": "npm run build.ng",
-    "build.fesm": "rollup --config ./scripts/rollup.config.js",
     "build.ng": "npm run build.es2015 && npm run build.es5",
-    "build.es2015": "ngc -p tsconfig.json && rollup --config ./scripts/rollup.config.js",
-    "build.es5": "ngc -p tsconfig.legacy.json && rollup --config ./scripts/rollup.config.legacy.js",
+    "build.es2015": "ngc -p tsconfig.json",
+    "build.es5": "ngc -p tsconfig.legacy.json",
     "lint": "npm run lint.ts",
     "lint.ts": "tslint --project .",
     "lint.fix": "tslint --project . --fix",
