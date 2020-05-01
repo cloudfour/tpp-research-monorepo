@@ -1,0 +1,17 @@
+:root {
+  --font-brand: "Source Sans Pro Variable", Tahoma, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+
+  --color-white: #fff;
+  --color-dark: rgba(0, 0, 0, 0.85);
+  --color-brand: #215cca;
+  --color-focus: #8abfff;
+
+  --color-background: var(--color-white);
+  --color-text: var(--color-dark);
+}
+
+html,
+body {
+  margin: 0;
+}
