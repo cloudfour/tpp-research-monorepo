@@ -27,6 +27,12 @@ export namespace Components {
     interface C4Heading {
         "tag": string;
     }
+    interface C4RadioButtons {
+        "callback"?: Function;
+        "optionsData"?: Array<any>;
+        "optionsString"?: string;
+        "radioName": string;
+    }
     interface C4StarRating {
         "guid": string;
         "rating": number;
@@ -57,6 +63,12 @@ declare global {
         prototype: HTMLC4HeadingElement;
         new (): HTMLC4HeadingElement;
     };
+    interface HTMLC4RadioButtonsElement extends Components.C4RadioButtons, HTMLStencilElement {
+    }
+    var HTMLC4RadioButtonsElement: {
+        prototype: HTMLC4RadioButtonsElement;
+        new (): HTMLC4RadioButtonsElement;
+    };
     interface HTMLC4StarRatingElement extends Components.C4StarRating, HTMLStencilElement {
     }
     var HTMLC4StarRatingElement: {
@@ -68,6 +80,7 @@ declare global {
         "c4-color-swatches": HTMLC4ColorSwatchesElement;
         "c4-container": HTMLC4ContainerElement;
         "c4-heading": HTMLC4HeadingElement;
+        "c4-radio-buttons": HTMLC4RadioButtonsElement;
         "c4-star-rating": HTMLC4StarRatingElement;
     }
 }
@@ -94,6 +107,13 @@ declare namespace LocalJSX {
     interface C4Heading {
         "tag"?: string;
     }
+    interface C4RadioButtons {
+        "callback"?: Function;
+        "onColorChanged"?: (event: CustomEvent<any>) => void;
+        "optionsData"?: Array<any>;
+        "optionsString"?: string;
+        "radioName"?: string;
+    }
     interface C4StarRating {
         "guid"?: string;
         "rating"?: number;
@@ -103,6 +123,7 @@ declare namespace LocalJSX {
         "c4-color-swatches": C4ColorSwatches;
         "c4-container": C4Container;
         "c4-heading": C4Heading;
+        "c4-radio-buttons": C4RadioButtons;
         "c4-star-rating": C4StarRating;
     }
 }
@@ -114,6 +135,7 @@ declare module "@stencil/core" {
             "c4-color-swatches": LocalJSX.C4ColorSwatches & JSXBase.HTMLAttributes<HTMLC4ColorSwatchesElement>;
             "c4-container": LocalJSX.C4Container & JSXBase.HTMLAttributes<HTMLC4ContainerElement>;
             "c4-heading": LocalJSX.C4Heading & JSXBase.HTMLAttributes<HTMLC4HeadingElement>;
+            "c4-radio-buttons": LocalJSX.C4RadioButtons & JSXBase.HTMLAttributes<HTMLC4RadioButtonsElement>;
             "c4-star-rating": LocalJSX.C4StarRating & JSXBase.HTMLAttributes<HTMLC4StarRatingElement>;
         }
     }

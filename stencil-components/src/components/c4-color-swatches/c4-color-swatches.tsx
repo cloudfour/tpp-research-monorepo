@@ -55,9 +55,7 @@ export class C4ColorSwatches {
                 checked={checked}
                 onClick={() => this.changeHandler(color)}
               />
-              <label htmlFor={color.id} class="screen-reader-label">
-                {color.name}
-              </label>
+              <label htmlFor={color.id}>{color.name}</label>
             </div>
           );
         })}
