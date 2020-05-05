@@ -36,6 +36,14 @@ export declare class C4Heading {
     protected el: HTMLElement;
     constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
 }
+export declare interface C4RadioButtons extends Components.C4RadioButtons {
+}
+export declare class C4RadioButtons {
+    protected z: NgZone;
+    colorChanged: EventEmitter<CustomEvent>;
+    protected el: HTMLElement;
+    constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+}
 export declare interface C4StarRating extends Components.C4StarRating {
 }
 export declare class C4StarRating {
