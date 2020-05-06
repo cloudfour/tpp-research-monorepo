@@ -2,7 +2,28 @@
 
 This repo is exploring translating components from native web components (Stencil.js) into front end frameworks, documentation tools, and design tools.
 
-It currently shows how to use these components in React, Vue, Angular, Express, FramerX, and StoryBook.
+The goal is to show how patterns and components can be shared and reused through every step of the web publishing process. Designers, developers, and content authors can all leverage the same shared components as they work.
+
+## Developers
+
+Components are written as web components using Stencil JS. These web components can then be easily translated into a number of frameworks and front-end environments. This repo shows how to use these components in the following contexts:
+
+- A React app
+- A Vue app
+- An Angular app
+- A vanilla JS Express app
+
+## Designers
+
+These same components can be used in design tools allowing you to design with our prebuilt components. Currently components have only been translated for use in Framer X.
+
+## Content Authors
+
+These components can also be used to give content authors high fidelity previews of the content they're editing from within their CMS. Currently this has only been set up for Storyblok.
+
+# Technical Implementation
+
+This monorepo houses code showing how to enable all the integrations mentioned above. Most code is written using various front-end frameworks, JS, HTML, and CSS.
 
 ## Local Development Approach
 
@@ -48,6 +69,10 @@ Many components rely on the inclusion of `base.css` for styling. `base.css` defi
 _(This is not a pretty theme.)_
 
 In addition to theming, `base.css` will also provide some basic browser resets, and utility classes. The details on this are fuzzy at the moment. In the long run they may be separated into separate CSS files.
+
+## Fonts
+
+_TODO: Set up system to share fonts between projects._
 
 ## Converting Stencil Components to Other Formats
 
