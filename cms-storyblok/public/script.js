@@ -73,7 +73,7 @@ components = {
   },
   heading(blok) {
     return `${blok._editable}
-      <c4-heading>${blok.text}</c4-heading>`;
+      <c4-heading tag="${blok.tag}">${blok.text}</c4-heading>`;
   },
   button(blok) {
     return `${blok._editable}
