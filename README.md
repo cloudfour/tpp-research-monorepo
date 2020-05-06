@@ -21,6 +21,10 @@ These same components can be used in design tools allowing you to design with ou
 
 These components can also be used to give content authors high fidelity previews of the content they're editing from within their CMS. Currently this has only been set up for Storyblok.
 
+## Documentation
+
+All of these different stakeholders can also find information about these components in a single source of truth. The raw web components are documented in a Storybook instance.
+
 # Technical Implementation
 
 This monorepo houses code showing how to enable all the integrations mentioned above. Most code is written using various front-end frameworks, JS, HTML, and CSS.
