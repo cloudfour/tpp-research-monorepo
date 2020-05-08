@@ -7,8 +7,8 @@
     "build:stencil": "cd stencil-components && npm run build && cd ../",
     "build:react-components": "cd react-components && npm run build && cd ../",
     "build:angular-components": "cd angular-components && npm run build && cd ../",
-    "copy-components": "node copy-components",
-    "build": "npm-run-all -s build:* copy-components"
+    "copy-stencil-output": "node copy-stencil-output",
+    "build": "npm-run-all -s build:* copy-stencil-output"
   },
   "repository": {
     "type": "git",
