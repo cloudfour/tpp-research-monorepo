@@ -8,9 +8,16 @@ var loadStory = function () {
   var path =
     window.location.pathname == "/" ? "home" : window.location.pathname;
 
-  window.storyblok.get({ slug: path, version: "draft" }, function (data) {
-    renderBlocks(data);
-  });
+  window.storyblok.get(
+    {
+      slug: path,
+      version: "draft",
+      resolve_relations: "colors",
+    },
+    function (data) {
+      renderBlocks(data);
+    }
+  );
 };
 loadStory();
 
@@ -25,8 +32,6 @@ window.storyblok.on("published", function () {
 // Simple rendering engine
 renderBlocks = function (data) {
   var blok = data.story.content;
-  console.log(blok);
-  console.log(blok.component);
 
   var contentDiv = document.querySelector(".content");
   contentDiv.innerHTML = "";
@@ -42,8 +47,24 @@ renderBlocks = function (data) {
 };
 
 components = {
-  body(blok) {
+  product_page(blok) {
     return `${blok._editable}
+
+    <c4-container>
+      <c4-heading>${blok.title}</c4-heading>
+    
+      <c4-star-rating rating=${blok.rating}></c4-star-rating>
+
+      <p>${blok.description}</p>
+
+      <c4-color-swatches
+        radio-name='${blok.radio_name}'
+        colors-string='${stringifyColors(blok.colors)}'>
+      </c4-color-swatches>
+
+      <c4-button>Buy Now</c4-button>
+    </c4-container>
+
     ${blok.blocks
       .map((column) => {
         if (components[column.component]) {
@@ -83,4 +104,24 @@ components = {
     return `${blok._editable}
       <c4-star-rating rating=${blok.rating}></c4-star-rating>`;
   },
+  swatches(blok) {
+    return `${blok._editable}
+      <c4-color-swatches
+        radio-name='${blok.radio_name}'
+        colors-string='${stringifyColors(blok.colors)}'>
+      </c4-color-swatches>`;
+  },
 };
+
+function stringifyColors(colorData) {
+  try {
+    return colorData
+      ? JSON.stringify(
+          colorData.map((data) => {
+            const { hex, id, name } = data.content;
+            return { hex, id, name };
+          })
+        )
+      : "";
+  } catch {}
+}
