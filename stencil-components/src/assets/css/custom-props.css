@@ -5,14 +5,19 @@
 
 /* TODO: Should these be namespaced? */
 :root {
-  --font-brand: "Source Sans Pro Variable", Tahoma, "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
-
+  --font-brand: "Source Sans Pro", Tahoma, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   --color-white: #fff;
   --color-dark: rgba(0, 0, 0, 0.85);
   --color-brand: #215cca;
   --color-focus: #8abfff;
-
   --color-background: var(--color-white);
   --color-text: var(--color-dark);
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    --font-brand: "Source Sans Pro Variable", Tahoma, "Helvetica Neue",
+      Helvetica, Arial, sans-serif;
+  }
 }
