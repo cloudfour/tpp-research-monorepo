@@ -25,7 +25,7 @@ export const config: Config = {
     },
     {
       type: "www",
-      copy: [{ src: "css" }],
+      copy: [{ src: "assets" }],
     },
   ],
 };

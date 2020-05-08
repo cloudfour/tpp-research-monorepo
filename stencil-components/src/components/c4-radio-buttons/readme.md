@@ -7,12 +7,12 @@
 
 ## Properties
 
-| Property       | Attribute       | Description | Type       | Default     |
-| -------------- | --------------- | ----------- | ---------- | ----------- |
-| `callback`     | --              |             | `Function` | `null`      |
-| `colorsData`   | --              |             | `any[]`    | `null`      |
-| `colorsString` | `colors-string` |             | `string`   | `undefined` |
-| `radioName`    | `radio-name`    |             | `string`   | `undefined` |
+| Property        | Attribute        | Description | Type       | Default     |
+| --------------- | ---------------- | ----------- | ---------- | ----------- |
+| `callback`      | --               |             | `Function` | `null`      |
+| `optionsData`   | --               |             | `any[]`    | `null`      |
+| `optionsString` | `options-string` |             | `string`   | `undefined` |
+| `radioName`     | `radio-name`     |             | `string`   | `undefined` |
 
 
 ## Events

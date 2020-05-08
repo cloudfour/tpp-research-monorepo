@@ -52,27 +52,15 @@ cd stencil-components
 npm start
 ```
 
-## Base.css
+## CSS Output
 
-Many components rely on the inclusion of `base.css` for styling. `base.css` defines a number of custom properties which are referenced in component CSS. This makes the components easier to maintain and theme. Theming can be achieved by overriding these custom properties like so:
+Most of our stencil component CSS is defined within our custom elements but a few CSS files are provided to improve the styling and allow theming of these components.
 
-```css
-:root {
-  --font-brand: "Georgia";
+- **document-styles.css** — This file applies some base styles to your document so its styles will match our component styles
+- **custom-props.css** — This file defines custom props which are referenced within the shadow DOM CSS of our custom elements.
+-- **theme-example.css** — This file is an (ugly) example of overriding the custom props defined above to theme our components.
 
-  --color-white: #eee;
-  --color-dark: rgba(40, 0, 0, 0.85);
-  --color-brand: #f00;
-  --color-focus: #8abfff;
-
-  --color-background: var(--color-white);
-  --color-text: var(--color-dark);
-}
-```
-
-_(This is not a pretty theme.)_
-
-In addition to theming, `base.css` will also provide some basic browser resets, and utility classes. The details on this are fuzzy at the moment. In the long run they may be separated into separate CSS files.
+Down the road there will also likely be a CSS file outputting utility classes which can be applied to components to control component base sizes and other styling.
 
 ## Fonts
 
@@ -104,6 +92,11 @@ We copy our stencil components into our Express app's `public` directory so we c
 
 From the project root you can build Stencil components, convert them to React components, and populate our Express app in a single command: `npm run build`.
 
+**Note:** Before this command to work you'll need to have installed dependencies in the following subdirectories (`npm ci`):
+- `angular-components`
+- `react-components`
+- `stencil-components`
+
 ## Building an Express App
 
 After running `npm run build` you can develop the Express app by running the following commands:
@@ -111,6 +104,9 @@ After running `npm run build` you can develop the Express app by running the fol
 ```zsh
 # Navigate to the `express-app` repo
 cd express-app
+
+# Install dependencies
+npm ci
 
 # Run and watch a Express server
 npm start
@@ -124,6 +120,9 @@ Our React components are consumed by a simple React app. After building our Reac
 # Navigate to the `react-app` repo
 cd react-app
 
+# Install dependencies
+npm ci
+
 # Run and watch a React server
 npm start
 ```
@@ -135,6 +134,9 @@ Our Angular components are consumed by a simple Angular app. After building our 
 ```zsh
 # Navigate to the `angular-app` repo
 cd angular-app
+
+# Install dependencies
+npm ci
 
 # Run and watch an Angular server
 npm start
@@ -149,6 +151,9 @@ Luckily, Vue works well with web components, so it doesn't take a ton of work to
 ```zsh
 # Navigate to the `vue-app` repo
 cd vue-app
+
+# Install dependencies
+npm ci
 
 # Run and watch a Vue server
 npm run dev
@@ -179,6 +184,9 @@ commands
 ```zsh
 # Navigate to the `storybook` repo
 cd storybook
+
+# Install dependencies
+npm ci
 
 # Run and watch a Storybook server
 npm run storybook

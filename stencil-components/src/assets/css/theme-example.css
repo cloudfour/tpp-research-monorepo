@@ -1,5 +1,8 @@
+/**
+ * An (ugly) example of overriding our custom properties to theme our components
+ */
 :root {
-  --font-brand: "Georgia";
+  --font-brand: "Georgia", "serif";
 
   --color-white: #eee;
   --color-dark: rgba(40, 0, 0, 0.85);

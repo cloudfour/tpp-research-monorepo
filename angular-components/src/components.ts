@@ -89,6 +89,19 @@ export class C4Heading {
   }
 }
 
+export declare interface C4RadioButtons extends Components.C4RadioButtons {}
+@ProxyCmp({inputs: ['callback', 'optionsData', 'optionsString', 'radioName']})
+@Component({ selector: 'c4-radio-buttons', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['callback', 'optionsData', 'optionsString', 'radioName'] })
+export class C4RadioButtons {
+  colorChanged!: EventEmitter<CustomEvent>;
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+    proxyOutputs(this, this.el, ['colorChanged']);
+  }
+}
+
 export declare interface C4StarRating extends Components.C4StarRating {}
 @ProxyCmp({inputs: ['guid', 'rating']})
 @Component({ selector: 'c4-star-rating', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['guid', 'rating'] })

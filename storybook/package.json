@@ -9,7 +9,8 @@
   "main": "index.js",
   "scripts": {
     "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 9006"
+    "storybook": "start-storybook -p 9006",
+    "start": "start-storybook -p 9006"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^5.3.18",

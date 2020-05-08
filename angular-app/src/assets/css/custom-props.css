@@ -1,3 +1,9 @@
+/**
+ * Custom props that will be referenced from within our custom elements to allow
+ * theming from outside the shadow DOM
+ */
+
+/* TODO: Should these be namespaced? */
 :root {
   --font-brand: "Source Sans Pro Variable", Tahoma, "Helvetica Neue", Helvetica,
     Arial, sans-serif;
@@ -9,9 +15,4 @@
 
   --color-background: var(--color-white);
   --color-text: var(--color-dark);
-}
-
-html,
-body {
-  margin: 0;
 }

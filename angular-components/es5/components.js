@@ -245,6 +245,43 @@ if (false) {
      */
     C4Heading.prototype.z;
 }
+var C4RadioButtons = /** @class */ (function () {
+    function C4RadioButtons(c, r, z) {
+        this.z = z;
+        c.detach();
+        this.el = r.nativeElement;
+        proxyOutputs(this, this.el, ['colorChanged']);
+    }
+    C4RadioButtons.decorators = [
+        { type: Component, args: [{ selector: 'c4-radio-buttons', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['callback', 'optionsData', 'optionsString', 'radioName'] },] },
+    ];
+    /** @nocollapse */
+    C4RadioButtons.ctorParameters = function () { return [
+        { type: ChangeDetectorRef },
+        { type: ElementRef },
+        { type: NgZone }
+    ]; };
+    C4RadioButtons = tslib_1.__decorate([
+        ProxyCmp({ inputs: ['callback', 'optionsData', 'optionsString', 'radioName'] }),
+        tslib_1.__metadata("design:paramtypes", [ChangeDetectorRef, ElementRef, NgZone])
+    ], C4RadioButtons);
+    return C4RadioButtons;
+}());
+export { C4RadioButtons };
+if (false) {
+    /** @type {?} */
+    C4RadioButtons.prototype.colorChanged;
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4RadioButtons.prototype.el;
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4RadioButtons.prototype.z;
+}
 var C4StarRating = /** @class */ (function () {
     function C4StarRating(c, r, z) {
         this.z = z;
