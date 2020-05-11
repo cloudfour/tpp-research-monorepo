@@ -1,3 +1,5 @@
+/static/assets/stencil
+
 .DS_Store
 node_modules/
 /dist/
