@@ -111,10 +111,6 @@ This project uses Stencil's `@stencil/angular-output-target` plugin to generate 
 1. Building the output of our `stencil-components` directory which adds files to our `angular-components` directory
 2. Building the output of our `angular-components` directory with the new files from `stencil-components`
 
-### Copying Files For Our Express App
-
-We copy our stencil components into our Express app's `public` directory so we can access them from our app.
-
 ### Building All Components
 
 From the project root you can build Stencil components, convert them to React components, and populate our Express app in a single command: `npm run build`.
