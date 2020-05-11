@@ -7,8 +7,15 @@
     "build:stencil": "cd stencil-components && npm run build && cd ../",
     "build:react-components": "cd react-components && npm run build && cd ../",
     "build:angular-components": "cd angular-components && npm run build && cd ../",
+    "build": "npm-run-all -s build:* copy-stencil-output",
     "copy-stencil-output": "node copy-stencil-output",
-    "build": "npm-run-all -s build:* copy-stencil-output"
+    "start:stencil": "cd stencil-components && npm start && cd ../",
+    "start:react": "cd react-app && npm start && cd ../",
+    "start:angular": "cd angular-app && npm start && cd ../",
+    "start:express": "cd express-app && npm start && cd ../",
+    "start:vue": "cd vue-app && npm start && cd ../",
+    "start:storyblok": "cd cms-storyblok && npm start && cd ../",
+    "start:storybook": "cd storybook && npm start && cd ../"
   },
   "repository": {
     "type": "git",
