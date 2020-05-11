@@ -58,13 +58,40 @@ Most of our stencil component CSS is defined within our custom elements but a fe
 
 - **document-styles.css** — This file applies some base styles to your document so its styles will match our component styles
 - **custom-props.css** — This file defines custom props which are referenced within the shadow DOM CSS of our custom elements.
--- **theme-example.css** — This file is an (ugly) example of overriding the custom props defined above to theme our components.
-
-Down the road there will also likely be a CSS file outputting utility classes which can be applied to components to control component base sizes and other styling.
+  -- **theme-example.css** — This file is an (ugly) example of overriding the custom props defined above to theme our components.
+- **utilities.css** — _Coming soon..._
+- **fonts.css** — This file loads our brand fonts. It loads a variable version as well as a non-variable fallback. Omit this file if you're using an alternate font or font loading strategy.
 
 ## Fonts
 
-_TODO: Set up system to share fonts between projects._
+For our font CSS to work our font files will need to be in the correct location in relation to the font CSS:
+
+```
+├─ css
+|  └── fonts.css
+└ fonts
+   └── source-sans-pro-latin-extendeed
+        └── font files...
+```
+
+If you would like to load different fonts, or locate your fonts in a different location, you should omit fonts.css and add your own font loading strategy.
+
+We recommend preloading the variable fonts. (Browsers that don't support variable fonts mostly don't support preloading so won't be affected.):
+
+```
+<link
+  rel="preload"
+  href="/assets/fonts/source-sans-pro-latin-extended/variable-italic.woff2"
+  as="font"
+  type="font/woff2"
+/>
+<link
+  rel="preload"
+  href="/assets/fonts/source-sans-pro-latin-extended/variable-regular.woff2"
+  as="font"
+  type="font/woff2"
+/>
+```
 
 ## Converting Stencil Components to Other Formats
 
@@ -93,6 +120,7 @@ We copy our stencil components into our Express app's `public` directory so we c
 From the project root you can build Stencil components, convert them to React components, and populate our Express app in a single command: `npm run build`.
 
 **Note:** Before this command to work you'll need to have installed dependencies in the following subdirectories (`npm ci`):
+
 - `angular-components`
 - `react-components`
 - `stencil-components`
