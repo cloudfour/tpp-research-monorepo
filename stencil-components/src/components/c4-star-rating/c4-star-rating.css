@@ -4,8 +4,8 @@ svg {
 }
 
 svg {
-  width: 1em;
-  height: 1em;
+  width: var(--c4-size-0);
+  height: var(--c4-size-0);
 }
 
 svg.empty * {

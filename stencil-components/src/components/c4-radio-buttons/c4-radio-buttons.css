@@ -5,12 +5,12 @@ input {
   -ms-appearance: none;
   background: #f2f5f7;
   border-style: solid;
-  border-width: 0.125rem calc(0.125rem / 2);
+  border-width: var(--c4-border-med) calc(var(--c4-border-med) / 2);
   border-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
   margin: 0;
-  width: 5em;
-  height: 4em;
+  height: var(--c4-size-6);
+  width: 100%;
 }
 
 input,
@@ -22,20 +22,20 @@ input + * {
 }
 
 .option:first-of-type input {
-  border-top-left-radius: 0.25em;
-  border-bottom-left-radius: 0.25em;
-  border-left-width: 0.125rem;
+  border-top-left-radius: var(--c4-border-radius-med);
+  border-bottom-left-radius: var(--c4-border-radius-med);
+  border-left-width: var(--c4-border-med);
 }
 
 .option:last-of-type input {
-  border-top-right-radius: 0.25em;
-  border-bottom-right-radius: 0.25em;
-  border-right-width: 0.125rem;
+  border-top-right-radius: var(--c4-border-radius-med);
+  border-bottom-right-radius: var(--c4-border-radius-med);
+  border-right-width: var(--c4-border-med);
 }
 
 input:focus,
 input:focus + * {
-  box-shadow: 0 0 0 0.25em #8abfff;
+  box-shadow: 0 0 0 var(--c4-border-thick) #8abfff;
 }
 
 input:hover,
@@ -61,6 +61,7 @@ input:checked {
 .option {
   display: flex;
   position: relative;
+  flex-grow: 1;
 }
 
 .option-text {
@@ -74,6 +75,6 @@ input:checked {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.25em;
+  font-size: var(--c4-size-1);
   letter-spacing: 0.05em;
 }

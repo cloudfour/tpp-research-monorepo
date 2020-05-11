@@ -12,7 +12,7 @@
 .container > * {
   margin: 0 auto;
   max-width: 80em;
-  padding: 1em;
+  padding: var(--c4-size-0);
 }
 
 .prose > * {
@@ -21,10 +21,9 @@
 
 .container > * > ::slotted(*:not(:first-child)) {
   display: block;
-
-  margin: 1em 0 0 0;
+  margin: var(--c4-size-0) 0 0 0;
 }
 
 .tall {
-  padding: 3em 1em;
+  padding: var(--c4-size-5)  var(--c4-size-0) ;
 }
