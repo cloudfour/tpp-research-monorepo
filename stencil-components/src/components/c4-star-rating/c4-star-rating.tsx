@@ -29,11 +29,11 @@ export class C4Container {
             <linearGradient id={gradientId}>
               <stop
                 offset={`${remainingPercent}%`}
-                stop-color="var(--color-star-full)"
+                stop-color="var(--c4-color-star-full)"
               />
               <stop
                 offset={`${remainingPercent}%`}
-                stop-color="var(--color-star-empty)"
+                stop-color="var(--c4-color-star-empty)"
               />
             </linearGradient>
           </defs>

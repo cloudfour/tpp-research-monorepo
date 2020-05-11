@@ -58,7 +58,7 @@ Most of our stencil component CSS is defined within our custom elements but a fe
 
 - **document-styles.css** — This file applies some base styles to your document so its styles will match our component styles
 - **custom-props.css** — This file defines custom props which are referenced within the shadow DOM CSS of our custom elements.
-  -- **theme-example.css** — This file is an (ugly) example of overriding the custom props defined above to theme our components.
+- **theme-example.css** — This file is an (ugly) example of overriding the custom props defined above to theme our components.
 - **utilities.css** — _Coming soon..._
 - **fonts.css** — This file loads our brand fonts. It loads a variable version as well as a non-variable fallback. Omit this file if you're using an alternate font or font loading strategy.
 

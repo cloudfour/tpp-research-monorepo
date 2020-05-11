@@ -1,6 +1,6 @@
 svg {
-  --color-star-full: #f27041;
-  --color-star-empty: #c0cfd8;
+  --c4-color-star-full: #f27041;
+  --c4-color-star-empty: #c0cfd8;
 }
 
 svg {
@@ -9,9 +9,9 @@ svg {
 }
 
 svg.empty * {
-  fill: var(--color-star-empty);
+  fill: var(--c4-color-star-empty);
 }
 
 svg.full * {
-  fill: var(--color-star-full);
+  fill: var(--c4-color-star-full);
 }

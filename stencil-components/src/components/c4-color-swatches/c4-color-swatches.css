@@ -31,9 +31,9 @@ input:active {
 
 input::before {
   content: "✓";
-  color: var(--color-white, #fff);
+  color: var(--c4-color-white, #fff);
   display: block;
-  font-family: var(--font-brand, "sans-serif");
+  font-family: var(--c4-font-brand, "sans-serif");
   font-size: 2.9em;
   font-weight: bold;
   opacity: 0;

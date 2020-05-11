@@ -64,7 +64,7 @@ input:checked {
 }
 
 .option-text {
-  color: var(--color-dark);
+  color: var(--c4-color-dark);
   position: absolute;
   width: 100%;
   left: 0;
