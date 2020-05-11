@@ -3,6 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- TODO: React best practices suggest `import`ing fonts and stylesheets but I couldn't get
+    my @font-face file paths to resolve. -->
+    <link
+      rel="preload"
+      href="%PUBLIC_URL%/assets/stencil/fonts/source-sans-pro-latin-extended/variable-italic.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="%PUBLIC_URL%/assets/stencil/fonts/source-sans-pro-latin-extended/variable-regular.woff2"
+      as="font"
+      type="font/woff2"
+    />
+
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/stencil/css/custom-props.css"
+    />
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/assets/stencil/css/document-styles.css"
+    />
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/stencil/css/fonts.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
