@@ -8,9 +8,9 @@
   "author": "Cloud Four",
   "main": "index.js",
   "scripts": {
-    "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 9006",
-    "start": "start-storybook -p 9006"
+    "build-storybook": "build-storybook -s ./public",
+    "storybook": "start-storybook -s ./public -p 9006",
+    "start": "start-storybook -s ./public -p 9006"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^5.3.18",

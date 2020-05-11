@@ -27,4 +27,7 @@ copydir("stencil-components/src/assets", "react-app/public/assets/stencil", {});
 // Copy CSS and fonts to Vue app
 copydir("stencil-components/src/assets", "vue-app/static/assets/stencil", {});
 
+// Copy CSS and fonts to Storybobok
+copydir("stencil-components/src/assets", "storybook/src/assets/stencil", {});
+
 // Other apps import the required files via relative paths so don't need copies.
