@@ -21,6 +21,7 @@
 :root {
   --c4-color-white: #fff;
   --c4-color-dark: rgba(0, 0, 0, 0.85);
+  --c4-color-gray: #738da0;
   --c4-color-brand: #215cca;
   --c4-color-focus: #8abfff;
   --c4-color-background: var(--c4-color-white);
@@ -49,4 +50,5 @@
   --c4-border-med: 0.125rem;
   --c4-border-thick: var(--c4-size-n6);
   --c4-border-radius-med: var(--c4-size-n6);
+  --c4-focus-shadow: 0 0 0 var(--c4-border-thick) #8abfff;
 }

@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+input {
+  border-color: var(--c4-color-gray);
+  border-width: var(--c4-border-med);
+  border-style: solid none;
+  font-size: var(--c4-size-0);
+  text-align: center;
+  min-width: var(--c4-size-5);
+  flex-grow: 1;
+  -moz-appearance: textfield;
+}
+
+input::-moz-inner-spin-button,
+input::-moz-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input:focus {
+  box-shadow: var(--c4-focus-shadow);
+  z-index: 1;
+}
+
+.button-content {
+  font-size: var(--c4-size-2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}

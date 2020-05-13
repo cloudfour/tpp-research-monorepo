@@ -22,6 +22,16 @@
   user-select: none;
 }
 
+.button--left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.button--right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .button:hover {
   filter: brightness(110%);
   transform: scale(1.05);
