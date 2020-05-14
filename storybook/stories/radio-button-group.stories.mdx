@@ -1,0 +1,29 @@
+import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
+import { html } from "lit-html";
+import { number, withKnobs } from "@storybook/addon-knobs";
+
+<Meta title="Components/Radio Button Groups" decorators={[withKnobs]} />
+
+# Radio Button Groups
+
+Our `c4-radio-buttons` component can be used to enhance radio button groups
+visually. Here's an example of using this component for a product size selector.
+
+<Preview>
+  <Story name="Stepper">
+    {() => html`
+      <c4-radio-buttons
+        radio-name="sizes"
+        options-string='[
+            {"name": "XXS", "id": "123"},
+            {"name": "XS", "id": "124"},
+            {"name": "S", "id": "125"},
+            {"name": "M", "id": "126"},
+            {"name": "L", "id": "127"},
+            {"name": "XL", "id": "128"},
+            {"name": "XXL", "id": "129"}
+          ]'
+      ></c4-radio-buttons>
+    `}
+  </Story>
+</Preview>
