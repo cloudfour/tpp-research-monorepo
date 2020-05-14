@@ -112,3 +112,14 @@ export class C4StarRating {
     this.el = r.nativeElement;
   }
 }
+
+export declare interface C4Stepper extends Components.C4Stepper {}
+@ProxyCmp({inputs: ['max', 'min', 'startValue']})
+@Component({ selector: 'c4-stepper', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['max', 'min', 'startValue'] })
+export class C4Stepper {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}

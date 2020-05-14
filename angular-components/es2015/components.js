@@ -336,3 +336,41 @@ if (false) {
      */
     C4StarRating.prototype.z;
 }
+let C4Stepper = class C4Stepper {
+    /**
+     * @param {?} c
+     * @param {?} r
+     * @param {?} z
+     */
+    constructor(c, r, z) {
+        this.z = z;
+        c.detach();
+        this.el = r.nativeElement;
+    }
+};
+C4Stepper.decorators = [
+    { type: Component, args: [{ selector: 'c4-stepper', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['max', 'min', 'startValue'] },] },
+];
+/** @nocollapse */
+C4Stepper.ctorParameters = () => [
+    { type: ChangeDetectorRef },
+    { type: ElementRef },
+    { type: NgZone }
+];
+C4Stepper = tslib_1.__decorate([
+    ProxyCmp({ inputs: ['max', 'min', 'startValue'] }),
+    tslib_1.__metadata("design:paramtypes", [ChangeDetectorRef, ElementRef, NgZone])
+], C4Stepper);
+export { C4Stepper };
+if (false) {
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4Stepper.prototype.el;
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4Stepper.prototype.z;
+}

@@ -51,3 +51,10 @@ export declare class C4StarRating {
     protected el: HTMLElement;
     constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
 }
+export declare interface C4Stepper extends Components.C4Stepper {
+}
+export declare class C4Stepper {
+    protected z: NgZone;
+    protected el: HTMLElement;
+    constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+}

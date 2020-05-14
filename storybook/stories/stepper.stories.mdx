@@ -1,0 +1,29 @@
+import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
+import { html } from "lit-html";
+import { number, withKnobs } from "@storybook/addon-knobs";
+
+<Meta title="Components/Steppers" decorators={[withKnobs]} />
+
+# Steppers
+
+Our `c4-stepper` component can be used to enhance a number picker. It adds
+custom plus and minus buttons with much larger interaction targets.
+
+These buttons are automatically disabled when the input reaches its minimumm or
+maximumm value.
+
+<Preview>
+  <Story name="Stepper">
+    {() => {
+      const min = number("Min", null, {
+        step: 1,
+      });
+      const max = number("Max", null, {
+        step: 1,
+      });
+      return html`
+        <c4-stepper min="${min}" max="${max}"></c4-stepper>
+      `;
+    }}
+  </Story>
+</Preview>
