@@ -21,10 +21,14 @@ export class C4Stepper {
   render() {
     return (
       <Host>
+        {/* Buttons are hidden from screen readers to avoid a confusing
+        experience. Since they're likely using a keyboard they can use the
+        built-in keyboard controls */}
         <c4-button
           buttonClass="button--left"
           onClick={this.updateCount.bind(this, this.quantity - 1)}
           disabled={this.quantity === 1}
+          aria-hidden="true"
         >
           <span class="button-content">&minus;</span>
         </c4-button>
@@ -39,14 +43,11 @@ export class C4Stepper {
         <c4-button
           buttonClass="button--right"
           onClick={this.updateCount.bind(this, this.quantity + 1)}
+          aria-hidden="true"
         >
           <span class="button-content">+</span>
         </c4-button>
       </Host>
     );
-  }
-
-  componentDidLoad() {
-    console.log("loaded");
   }
 }
