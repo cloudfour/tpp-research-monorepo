@@ -7,9 +7,9 @@ import { Component, Prop, h } from "@stencil/core";
 })
 export class C4Container {
   @Prop() tag: string = "div";
-  @Prop() isProse: string;
-  @Prop() isDark: string;
-  @Prop() isTall: string;
+  @Prop() isProse: boolean;
+  @Prop() isDark: boolean;
+  @Prop() isTall: boolean;
 
   private getContainerClass(): string {
     let className = "container";

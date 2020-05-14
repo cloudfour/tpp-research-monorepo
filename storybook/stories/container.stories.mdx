@@ -1,0 +1,90 @@
+import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
+import { html } from "lit-html";
+import { boolean, withKnobs } from "@storybook/addon-knobs";
+
+<Meta title="Components/Containers" decorators={[withKnobs]} />
+
+# Containers
+
+Our `c4-container` component can be used to wrap and contain content. It has
+modifiers for consistent `max-width`, `padding`, and theming that can be applied with props.
+
+<Preview>
+  <Story name="Container">
+    {() => {
+      const isProse = boolean("is-prose", false);
+      const isTall = boolean("is-tall", false);
+      const isDark = boolean("is-dark", false);
+      return html`
+        <c4-container
+          is-prose="${isProse}"
+          is-tall="${isTall}"
+          is-dark="${isDark}"
+        >
+          <p>
+            This is the content of the container. As you can see when the text
+            becomes very long it will wrap at predefined breakpoints on large
+            screens. Depending on whether the <code>prose</code> class is
+            assigned
+          </p>
+        </c4-container>
+      `;
+    }}
+  </Story>
+</Preview>
+
+## Prose
+
+Prose containers have a smaller max width for ideal paragraph line length.
+
+<Preview>
+  <Story name="Prose">
+    {() => html`
+      <c4-container is-prose="${true}">
+        <p>
+          This is the content of the container. As you can see when the text
+          becomes very long it will wrap at predefined breakpoints on large
+          screens. Depending on whether the <code>prose</code> class is assigned
+        </p>
+      </c4-container>
+    `}
+  </Story>
+</Preview>
+
+## Dark
+
+Dark containers apply a dark theme to themselves and their children by updating
+custom properties. Only certain components are currently designed with dark
+theme alternates.
+
+<Preview>
+  <Story name="Dark">
+    {() => html`
+      <c4-container is-dark="${true}">
+        <p>
+          This is the content of the container. As you can see when the text
+          becomes very long it will wrap at predefined breakpoints on large
+          screens. Depending on whether the <code>prose</code> class is assigned
+        </p>
+      </c4-container>
+    `}
+  </Story>
+</Preview>
+
+## Tall
+
+Tall containers have a additional vertical padding
+
+<Preview>
+  <Story name="Tall">
+    {() => html`
+      <c4-container is-tall="${true}">
+        <p>
+          This is the content of the container. As you can see when the text
+          becomes very long it will wrap at predefined breakpoints on large
+          screens. Depending on whether the <code>prose</code> class is assigned
+        </p>
+      </c4-container>
+    `}
+  </Story>
+</Preview>
