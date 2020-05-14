@@ -3,9 +3,7 @@ import { ControlType, addPropertyControls, Stack, Frame } from "framer"
 import { C4Container as _C4Container } from "../../react-components/dist"
 
 export const C4Container = (props: any) => {
-    const background = props.containerClass.includes("dark")
-        ? "#215cca"
-        : "#fff"
+    const background = props.isDark ? "#215cca" : "#fff"
 
     const frameStyles = {
         backgroundColor: background,
@@ -36,12 +34,16 @@ addPropertyControls(C4Container, {
         type: ControlType.String,
         defaultValue: "div",
     },
-    contentClass: {
-        type: ControlType.String,
-        defaultValue: "",
+    isProse: {
+        type: ControlType.Boolean,
+        defaultValue: false,
     },
-    containerClass: {
-        type: ControlType.String,
-        defaultValue: "",
+    isDark: {
+        type: ControlType.Boolean,
+        defaultValue: false,
+    },
+    isTall: {
+        type: ControlType.Boolean,
+        defaultValue: false,
     },
 })

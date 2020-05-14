@@ -602,8 +602,9 @@
         "clip" : true,
         "codeComponentIdentifier" : ".\/C4Container.tsx_C4Container",
         "codeComponentProps" : {
-          "containerClass" : "dark tall",
-          "contentClass" : "pros",
+          "isDark" : true,
+          "isProse" : false,
+          "isTall" : true,
           "slot" : [
             {
               "enabled" : true,
@@ -751,8 +752,9 @@
         "clip" : true,
         "codeComponentIdentifier" : ".\/C4Container.tsx_C4Container",
         "codeComponentProps" : {
-          "containerClass" : "",
-          "contentClass" : "prose",
+          "isDark" : false,
+          "isProse" : false,
+          "isTall" : false,
           "slot" : [
             {
               "enabled" : true,
