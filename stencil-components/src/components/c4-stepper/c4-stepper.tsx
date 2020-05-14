@@ -43,7 +43,7 @@ export class C4Stepper {
         </c4-button>
         <input
           type="number"
-          {...{min: this.min, max: this.max}}
+          {...{ min: this.min, max: this.max }}
           value={this.value}
           onChange={(event) =>
             this.updateCount((event.target as HTMLInputElement).value)

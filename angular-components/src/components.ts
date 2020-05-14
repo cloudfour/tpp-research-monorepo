@@ -68,8 +68,8 @@ export class C4ColorSwatches {
 }
 
 export declare interface C4Container extends Components.C4Container {}
-@ProxyCmp({inputs: ['containerClass', 'contentClass', 'tag']})
-@Component({ selector: 'c4-container', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['containerClass', 'contentClass', 'tag'] })
+@ProxyCmp({inputs: ['isDark', 'isProse', 'isTall', 'tag']})
+@Component({ selector: 'c4-container', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['isDark', 'isProse', 'isTall', 'tag'] })
 export class C4Container {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {

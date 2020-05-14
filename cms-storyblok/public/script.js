@@ -77,7 +77,7 @@ components = {
     let classes = "";
 
     if (blok.isDarkTheme) {
-      classes += 'container-class="dark"';
+      classes += 'is-dark="true"';
     }
 
     return `${blok._editable}

@@ -10,12 +10,12 @@
 }
 
 .container > * {
+  padding: var(--c4-size-0);
   margin: 0 auto;
   max-width: 80em;
-  padding: var(--c4-size-0);
 }
 
-.prose > * {
+.prose {
   max-width: 40em;
 }
 
@@ -25,5 +25,5 @@
 }
 
 .tall {
-  padding: var(--c4-size-5)  var(--c4-size-0) ;
+  padding: var(--c4-size-5) var(--c4-size-0);
 }

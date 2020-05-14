@@ -5,11 +5,12 @@
 
 ## Properties
 
-| Property         | Attribute         | Description | Type     | Default     |
-| ---------------- | ----------------- | ----------- | -------- | ----------- |
-| `containerClass` | `container-class` |             | `string` | `undefined` |
-| `contentClass`   | `content-class`   |             | `string` | `undefined` |
-| `tag`            | `tag`             |             | `string` | `"div"`     |
+| Property  | Attribute  | Description | Type     | Default     |
+| --------- | ---------- | ----------- | -------- | ----------- |
+| `isDark`  | `is-dark`  |             | `string` | `undefined` |
+| `isProse` | `is-prose` |             | `string` | `undefined` |
+| `isTall`  | `is-tall`  |             | `string` | `undefined` |
+| `tag`     | `tag`      |             | `string` | `"div"`     |
 
 
 ----------------------------------------------

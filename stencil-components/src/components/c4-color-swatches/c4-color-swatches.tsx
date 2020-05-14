@@ -19,7 +19,7 @@ export class C4ColorSwatches {
   @Prop() callback?: Function = null;
   @Prop() radioName: string;
 
-  changeHandler(color: Color) {
+  private changeHandler(color: Color) {
     if (this.callback !== null) {
       this.callback(color);
     }

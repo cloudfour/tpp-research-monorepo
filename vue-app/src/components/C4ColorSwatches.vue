@@ -2,7 +2,7 @@
   <c4-color-swatches
     :radio-name.prop='radioName'
     :colors-data.prop='colors'
-    @colorChanged="emitEvent"
+    @colorChanged='emitEvent'
   ></c4-color-swatches>
 </template>
 

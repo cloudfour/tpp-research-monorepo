@@ -184,7 +184,7 @@ var C4Container = /** @class */ (function () {
         this.el = r.nativeElement;
     }
     C4Container.decorators = [
-        { type: Component, args: [{ selector: 'c4-container', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['containerClass', 'contentClass', 'tag'] },] },
+        { type: Component, args: [{ selector: 'c4-container', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['isDark', 'isProse', 'isTall', 'tag'] },] },
     ];
     /** @nocollapse */
     C4Container.ctorParameters = function () { return [
@@ -193,7 +193,7 @@ var C4Container = /** @class */ (function () {
         { type: NgZone }
     ]; };
     C4Container = tslib_1.__decorate([
-        ProxyCmp({ inputs: ['containerClass', 'contentClass', 'tag'] }),
+        ProxyCmp({ inputs: ['isDark', 'isProse', 'isTall', 'tag'] }),
         tslib_1.__metadata("design:paramtypes", [ChangeDetectorRef, ElementRef, NgZone])
     ], C4Container);
     return C4Container;

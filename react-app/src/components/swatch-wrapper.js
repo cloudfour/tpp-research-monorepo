@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  C4Container,
-  C4Heading,
-  C4ColorSwatches,
-} from "../../../react-components";
+import { C4Heading, C4ColorSwatches } from "../../../react-components";
 
 export class SwatchWrapper extends React.Component {
   constructor(props) {
@@ -20,7 +16,7 @@ export class SwatchWrapper extends React.Component {
 
   render() {
     return (
-      <C4Container contentClass="prose">
+      <div>
         <C4Heading tag="h2">Color Swatches</C4Heading>
 
         <p>
@@ -33,7 +29,7 @@ export class SwatchWrapper extends React.Component {
           colorsData={this.props.colorsData}
           radioName={this.props.radioName}
         ></C4ColorSwatches>
-      </C4Container>
+      </div>
     );
   }
 }

@@ -20,8 +20,9 @@ export namespace Components {
         "radioName": string;
     }
     interface C4Container {
-        "containerClass": string;
-        "contentClass": string;
+        "isDark": string;
+        "isProse": string;
+        "isTall": string;
         "tag": string;
     }
     interface C4Heading {
@@ -112,8 +113,9 @@ declare namespace LocalJSX {
         "radioName"?: string;
     }
     interface C4Container {
-        "containerClass"?: string;
-        "contentClass"?: string;
+        "isDark"?: string;
+        "isProse"?: string;
+        "isTall"?: string;
         "tag"?: string;
     }
     interface C4Heading {

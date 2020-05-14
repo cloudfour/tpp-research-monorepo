@@ -7,14 +7,29 @@ import { Component, Prop, h } from "@stencil/core";
 })
 export class C4Container {
   @Prop() tag: string = "div";
-  @Prop() containerClass: string;
-  @Prop() contentClass: string;
+  @Prop() isProse: string;
+  @Prop() isDark: string;
+  @Prop() isTall: string;
 
-  private getClass(): string {
+  private getContainerClass(): string {
     let className = "container";
 
-    if (this.containerClass) {
-      className += ` ${this.containerClass}`;
+    if (this.isDark) {
+      className += ` dark`;
+    }
+
+    return className;
+  }
+
+  private getContentClass(): string {
+    let className = "";
+
+    if (this.isProse) {
+      className += ` prose`;
+    }
+
+    if (this.isTall) {
+      className += ` tall`;
     }
 
     return className;
@@ -22,8 +37,8 @@ export class C4Container {
 
   render() {
     return (
-      <this.tag class={this.getClass()}>
-        <div class={this.contentClass}>
+      <this.tag class={this.getContainerClass()}>
+        <div class={this.getContentClass()}>
           <slot />
         </div>
       </this.tag>

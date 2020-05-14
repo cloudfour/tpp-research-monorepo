@@ -1,5 +1,5 @@
 <template>
-  <C4Container>
+  <C4Container is-prose="true">
     <h1>Vue App</h1>
 
     <p>
@@ -13,9 +13,7 @@
 
     <p>
       Selected Color:
-      <em>
-        {{ selectedColor }}
-      </em>
+      <em>{{ selectedColor }}</em>
     </p>
 
     <C4ColorSwatches

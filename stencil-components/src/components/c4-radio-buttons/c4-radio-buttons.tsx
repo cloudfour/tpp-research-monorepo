@@ -19,7 +19,7 @@ export class C4RadioButtons {
   @Prop() callback?: Function = null;
   @Prop() radioName: string;
 
-  changeHandler(option: Option) {
+  private changeHandler(option: Option) {
     if (this.callback !== null) {
       this.callback(option);
     }
