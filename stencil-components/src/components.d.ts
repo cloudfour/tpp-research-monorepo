@@ -38,6 +38,9 @@ export namespace Components {
         "rating": number;
     }
     interface C4Stepper {
+        "max"?: number;
+        "min"?: number;
+        "startValue"?: number;
     }
 }
 declare global {
@@ -128,6 +131,9 @@ declare namespace LocalJSX {
         "rating"?: number;
     }
     interface C4Stepper {
+        "max"?: number;
+        "min"?: number;
+        "startValue"?: number;
     }
     interface IntrinsicElements {
         "c4-button": C4Button;

@@ -1,4 +1,4 @@
-import { Component, Host, h, State } from "@stencil/core";
+import { Component, Host, h, State, Prop } from "@stencil/core";
 
 @Component({
   tag: "c4-stepper",
@@ -6,15 +6,24 @@ import { Component, Host, h, State } from "@stencil/core";
   shadow: true,
 })
 export class C4Stepper {
-  @State() quantity = 1;
+  @Prop() min?: number = null;
+  @Prop() max?: number = null;
+  @Prop() startValue?: number = null;
+  @State() value: number = this.startValue || this.min || 1;
 
-  updateCount(newQuantity) {
-    const parsedQuantity = parseInt(newQuantity);
+  updateCount(newValue: string) {
+    const parsedValue = parseInt(newValue);
 
-    if (Number.isNaN(parsedQuantity) || parsedQuantity < 1) {
-      this.quantity = 1;
+    const notANumber = Number.isNaN(parsedValue);
+    const lessThanMin = parsedValue < this.min;
+    const moreThanMax = parsedValue > this.max;
+
+    if (notANumber || lessThanMin) {
+      this.value = 1;
+    } else if (moreThanMax) {
+      this.value = this.max;
     } else {
-      this.quantity = parsedQuantity;
+      this.value = parsedValue;
     }
   }
 
@@ -26,23 +35,24 @@ export class C4Stepper {
         built-in keyboard controls */}
         <c4-button
           buttonClass="button--left"
-          onClick={this.updateCount.bind(this, this.quantity - 1)}
-          disabled={this.quantity === 1}
+          onClick={this.updateCount.bind(this, this.value - 1)}
+          disabled={this.value === this.min}
           aria-hidden="true"
         >
           <span class="button-content">&minus;</span>
         </c4-button>
         <input
           type="number"
-          min="0"
-          value={this.quantity}
+          {...{min: this.min, max: this.max}}
+          value={this.value}
           onChange={(event) =>
             this.updateCount((event.target as HTMLInputElement).value)
           }
         />
         <c4-button
           buttonClass="button--right"
-          onClick={this.updateCount.bind(this, this.quantity + 1)}
+          onClick={this.updateCount.bind(this, this.value + 1)}
+          disabled={this.value === this.max}
           aria-hidden="true"
         >
           <span class="button-content">+</span>
