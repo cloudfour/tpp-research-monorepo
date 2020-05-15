@@ -6,6 +6,7 @@ input {
   border-radius: var(--c4-border-radius-med);
   border: var(--c4-border-med) solid rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  font-size: inherit;
   margin: 0;
   margin-right: var(--c4-size-n3);
   width: var(--c4-size-6);

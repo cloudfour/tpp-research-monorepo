@@ -1,9 +1,10 @@
 import * as React from "react";
 import { ControlType, addPropertyControls } from "framer";
 import { C4Button as _C4Button } from "../../react-components/dist";
+import { sizeSelectorPresets, sizeToUtility } from "./Utilities";
 
 export const C4Button = (props: any) => (
-  <_C4Button height="60" width="100" {...props}>
+  <_C4Button {...props} className={sizeToUtility(props.size)}>
     {props.slot}
   </_C4Button>
 );
@@ -45,5 +46,9 @@ addPropertyControls(C4Button, {
     hidden(props) {
       return props.tag !== "a";
     },
+  },
+  size: {
+    type: ControlType.Number,
+    ...sizeSelectorPresets,
   },
 });

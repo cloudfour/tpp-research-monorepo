@@ -86,6 +86,7 @@
                   "buttonClass" : "",
                   "disabled" : false,
                   "href" : "href",
+                  "size" : 0,
                   "slot" : "Primary",
                   "tag" : "button",
                   "type" : "button"
@@ -145,6 +146,7 @@
                   "buttonClass" : "secondary",
                   "disabled" : false,
                   "href" : "href",
+                  "size" : 0,
                   "slot" : "Secondary",
                   "tag" : "button",
                   "type" : "button"
@@ -204,6 +206,7 @@
                   "buttonClass" : "tertiary",
                   "disabled" : false,
                   "href" : "href",
+                  "size" : 0,
                   "slot" : "Tertiary",
                   "tag" : "button",
                   "type" : "button"
@@ -263,6 +266,7 @@
                   "buttonClass" : "y",
                   "disabled" : true,
                   "href" : "href",
+                  "size" : 0,
                   "slot" : "Disabled",
                   "tag" : "button",
                   "type" : "button"
@@ -322,6 +326,7 @@
                   "buttonClass" : "y",
                   "disabled" : false,
                   "href" : "href",
+                  "size" : 0,
                   "slot" : "Link",
                   "tag" : "a",
                   "type" : "button"
@@ -491,6 +496,7 @@
           "buttonClass" : "",
           "disabled" : false,
           "href" : "href",
+          "size" : 0,
           "slot" : "Button",
           "tag" : "button",
           "type" : "button"
@@ -698,7 +704,8 @@
               "value" : "hsl(120, 75%, 34%)"
             }
           ],
-          "radioName" : "color"
+          "radioName" : "color",
+          "size" : -1
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -894,6 +901,7 @@
           "buttonClass" : "",
           "disabled" : false,
           "href" : "href",
+          "size" : 6,
           "slot" : "Check Out",
           "tag" : "button",
           "type" : "button"
@@ -912,7 +920,7 @@
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
         "fillType" : "color",
-        "height" : 200,
+        "height" : 287,
         "heightType" : 0,
         "id" : "g38_CNo13",
         "intrinsicHeight" : null,
@@ -935,7 +943,7 @@
         "rotation" : 0,
         "top" : -1130,
         "visible" : true,
-        "width" : 200,
+        "width" : 481,
         "widthType" : 0
       },
       {
@@ -1061,7 +1069,8 @@
         "codeComponentIdentifier" : ".\/C4Stepper.tsx_C4Stepper",
         "codeComponentProps" : {
           "max" : 100,
-          "min" : 0
+          "min" : 0,
+          "size" : 0
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -1142,7 +1151,8 @@
               "value" : "XXL"
             }
           ],
-          "radioName" : "color"
+          "radioName" : "color",
+          "size" : 0
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
