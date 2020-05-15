@@ -12,7 +12,7 @@ var loadStory = function () {
     {
       slug: path,
       version: "draft",
-      resolve_relations: "colors",
+      resolve_relations: ["colors", "sizes"],
     },
     function (data) {
       renderBlocks(data);
@@ -48,21 +48,34 @@ renderBlocks = function (data) {
 
 components = {
   product_page(blok) {
+    console.log(blok);
     return `${blok._editable}
 
     <c4-container>
       <c4-heading>${blok.title}</c4-heading>
+
+      <p>$${blok.price}</p>
     
       <c4-star-rating rating=${blok.rating}></c4-star-rating>
 
       <p>${blok.description}</p>
 
       <c4-color-swatches
-        radio-name='${blok.radio_name}'
+        radio-name='colors'
         colors-string='${stringifyColors(blok.colors)}'>
       </c4-color-swatches>
 
-      <c4-button>Buy Now</c4-button>
+      <c4-radio-buttons
+        radio-name='sizes'
+        options-string='${stringifyOptions(blok.sizes)}'>
+      </c4-radio-buttons>
+
+      <c4-stepper
+        min="1"
+        max="${blok.remaining_count ? blok.remaining_count : null}">
+      </c4-stepper>
+
+      <c4-button>${blok.cta_text ? blok.cta_text : "Buy Now"}</c4-button>
     </c4-container>
 
     ${blok.blocks
@@ -120,6 +133,20 @@ function stringifyColors(colorData) {
           colorData.map((data) => {
             const { hex, id, name } = data.content;
             return { hex, id, name };
+          })
+        )
+      : "";
+  } catch {}
+}
+
+function stringifyOptions(optionsData) {
+  console.log(optionsData);
+  try {
+    return optionsData
+      ? JSON.stringify(
+          optionsData.map((data) => {
+            const { id, name } = data.content;
+            return { id, name };
           })
         )
       : "";

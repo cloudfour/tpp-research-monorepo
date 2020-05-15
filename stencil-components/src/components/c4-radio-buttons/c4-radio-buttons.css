@@ -11,7 +11,7 @@ input {
   margin: 0;
   height: var(--c4-size-6);
   width: 100%;
-  font-size: inherit;
+  font-size: var(--c4-size-n2);
 }
 
 input,

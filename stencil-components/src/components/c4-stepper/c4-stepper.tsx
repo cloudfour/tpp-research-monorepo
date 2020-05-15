@@ -1,4 +1,4 @@
-import { Component, Host, h, State, Prop } from "@stencil/core";
+import { Component, h, State, Prop } from "@stencil/core";
 
 @Component({
   tag: "c4-stepper",
@@ -29,7 +29,7 @@ export class C4Stepper {
 
   render() {
     return (
-      <Host>
+      <div class="wrapper">
         {/* Buttons are hidden from screen readers to avoid a confusing
         experience. Since they're likely using a keyboard they can use the
         built-in keyboard controls */}
@@ -57,7 +57,7 @@ export class C4Stepper {
         >
           <span class="button-content">+</span>
         </c4-button>
-      </Host>
+      </div>
     );
   }
 }
