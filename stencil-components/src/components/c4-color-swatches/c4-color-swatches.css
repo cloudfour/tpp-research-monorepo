@@ -9,6 +9,7 @@ input {
   font-size: inherit;
   margin: 0;
   margin-right: var(--c4-size-n3);
+  position: relative;
   width: var(--c4-size-6);
   height: var(--c4-size-5);
   text-align: center;
@@ -31,9 +32,11 @@ input:active {
 }
 
 input::before {
-  /* TODO: Switch to background image */
-  content: "✓";
-  color: var(--c4-color-white, #fff);
+  content: "";
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' stroke='white'%3E %3Cpolyline points='2.67 12 8.6 19 21.33 5' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'/%3E %3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   display: block;
   font-family: var(--c4-font-brand, "sans-serif");
   font-size: var(--c4-size-3);
@@ -42,6 +45,11 @@ input::before {
   transform: scale(0);
   transition: opacity 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: absolute;
+  bottom: var(--c4-size-n6);
+  top: var(--c4-size-n6);
+  left: var(--c4-size-n6);
+  right: var(--c4-size-n6);
 }
 
 input:checked::before {
