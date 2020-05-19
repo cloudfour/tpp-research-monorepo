@@ -8,6 +8,7 @@ import { Component, h, Prop } from "@stencil/core";
 export class C4ProductIllustration {
   @Prop() color: string = "#215CCA";
   @Prop() altText: string;
+  @Prop() reference: string;
 
   render() {
     const styles = { "--illustration-color": this.color };
@@ -27,7 +28,7 @@ export class C4ProductIllustration {
           aria-labelledby="product-title"
         >
           <title id="product-title">{this.altText}</title>
-          <use href="/assets/illustrations/socks.svg#socks"></use>
+          <use href={this.reference}></use>
         </svg>
       </div>
     );
