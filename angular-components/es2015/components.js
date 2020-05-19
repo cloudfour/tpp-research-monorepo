@@ -257,6 +257,44 @@ if (false) {
      */
     C4Heading.prototype.z;
 }
+let C4ProductIllustration = class C4ProductIllustration {
+    /**
+     * @param {?} c
+     * @param {?} r
+     * @param {?} z
+     */
+    constructor(c, r, z) {
+        this.z = z;
+        c.detach();
+        this.el = r.nativeElement;
+    }
+};
+C4ProductIllustration.decorators = [
+    { type: Component, args: [{ selector: 'c4-product-illustration', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['altText', 'color', 'reference'] },] },
+];
+/** @nocollapse */
+C4ProductIllustration.ctorParameters = () => [
+    { type: ChangeDetectorRef },
+    { type: ElementRef },
+    { type: NgZone }
+];
+C4ProductIllustration = tslib_1.__decorate([
+    ProxyCmp({ inputs: ['altText', 'color', 'reference'] }),
+    tslib_1.__metadata("design:paramtypes", [ChangeDetectorRef, ElementRef, NgZone])
+], C4ProductIllustration);
+export { C4ProductIllustration };
+if (false) {
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4ProductIllustration.prototype.el;
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4ProductIllustration.prototype.z;
+}
 let C4RadioButtons = class C4RadioButtons {
     /**
      * @param {?} c

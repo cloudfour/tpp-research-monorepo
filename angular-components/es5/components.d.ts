@@ -36,6 +36,13 @@ export declare class C4Heading {
     protected el: HTMLElement;
     constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
 }
+export declare interface C4ProductIllustration extends Components.C4ProductIllustration {
+}
+export declare class C4ProductIllustration {
+    protected z: NgZone;
+    protected el: HTMLElement;
+    constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+}
 export declare interface C4RadioButtons extends Components.C4RadioButtons {
 }
 export declare class C4RadioButtons {

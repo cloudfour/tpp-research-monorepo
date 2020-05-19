@@ -245,6 +245,40 @@ if (false) {
      */
     C4Heading.prototype.z;
 }
+var C4ProductIllustration = /** @class */ (function () {
+    function C4ProductIllustration(c, r, z) {
+        this.z = z;
+        c.detach();
+        this.el = r.nativeElement;
+    }
+    C4ProductIllustration.decorators = [
+        { type: Component, args: [{ selector: 'c4-product-illustration', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['altText', 'color', 'reference'] },] },
+    ];
+    /** @nocollapse */
+    C4ProductIllustration.ctorParameters = function () { return [
+        { type: ChangeDetectorRef },
+        { type: ElementRef },
+        { type: NgZone }
+    ]; };
+    C4ProductIllustration = tslib_1.__decorate([
+        ProxyCmp({ inputs: ['altText', 'color', 'reference'] }),
+        tslib_1.__metadata("design:paramtypes", [ChangeDetectorRef, ElementRef, NgZone])
+    ], C4ProductIllustration);
+    return C4ProductIllustration;
+}());
+export { C4ProductIllustration };
+if (false) {
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4ProductIllustration.prototype.el;
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4ProductIllustration.prototype.z;
+}
 var C4RadioButtons = /** @class */ (function () {
     function C4RadioButtons(c, r, z) {
         this.z = z;

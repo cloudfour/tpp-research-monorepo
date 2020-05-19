@@ -89,6 +89,17 @@ export class C4Heading {
   }
 }
 
+export declare interface C4ProductIllustration extends Components.C4ProductIllustration {}
+@ProxyCmp({inputs: ['altText', 'color', 'reference']})
+@Component({ selector: 'c4-product-illustration', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['altText', 'color', 'reference'] })
+export class C4ProductIllustration {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
 export declare interface C4RadioButtons extends Components.C4RadioButtons {}
 @ProxyCmp({inputs: ['callback', 'optionsData', 'optionsString', 'radioName']})
 @Component({ selector: 'c4-radio-buttons', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['callback', 'optionsData', 'optionsString', 'radioName'] })
