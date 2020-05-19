@@ -7,13 +7,26 @@ import { Component, h, Prop } from "@stencil/core";
 })
 export class C4ProductIllustration {
   @Prop() color: string = "#215CCA";
+  @Prop() altText: string;
 
   render() {
-    var styles = { "--illustration-color": this.color };
+    const styles = { "--illustration-color": this.color };
+
+    const altTextErrorMessage = this.altText
+      ? ""
+      : "ERROR: Please provide alt text for this product illustration!";
 
     return (
       <div style={styles}>
-        <svg height="500" width="500" viewBox="0 0 500 500">
+        {altTextErrorMessage}
+
+        <svg
+          height="500"
+          width="500"
+          viewBox="0 0 500 500"
+          aria-labelledby="product-title"
+        >
+          <title id="product-title">{this.altText}</title>
           <use href="/assets/illustrations/socks.svg#socks"></use>
         </svg>
       </div>

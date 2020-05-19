@@ -29,6 +29,7 @@ export namespace Components {
         "tag": string;
     }
     interface C4ProductIllustration {
+        "altText": string;
         "color": string;
     }
     interface C4RadioButtons {
@@ -132,6 +133,7 @@ declare namespace LocalJSX {
         "tag"?: string;
     }
     interface C4ProductIllustration {
+        "altText"?: string;
         "color"?: string;
     }
     interface C4RadioButtons {

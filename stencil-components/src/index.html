@@ -105,6 +105,7 @@
       <c4-product-illustration
         color="#215cca"
         reference="/assets/illustrations/socks.svg#socks"
+        alt-text="A pair of blue socks with the Cloud Four logo repeated in white."
       ></c4-product-illustration>
 
       <c4-color-swatches
@@ -128,9 +129,15 @@
       document
         .querySelector("c4-color-swatches")
         .addEventListener("colorChanged", ({ detail }) => {
-          document
-            .querySelector("c4-product-illustration")
-            .setAttribute("color", detail.hex);
+          const illustration = document.querySelector(
+            "c4-product-illustration"
+          );
+          illustration.setAttribute("color", detail.hex);
+          illustration.setAttribute(
+            "alt-text",
+            `A pair of ${detail.name} socks with the Cloud Four logo repeated in white.`
+          );
+
           document.getElementById("selected-color").innerHTML = detail.name;
         });
     </script>
