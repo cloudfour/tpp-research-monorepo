@@ -60,6 +60,10 @@ components = {
 
       <p>${blok.description}</p>
 
+      <c4-product-illustration alt-text="filler" reference="${
+        blok.image
+      }" color="${blok.colors[0].content.hex}"></c4-product-illustration>
+
       <c4-color-swatches
         radio-name='colors'
         colors-string='${stringifyColors(blok.colors)}'>

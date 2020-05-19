@@ -28,7 +28,7 @@ export class C4ProductIllustration {
           aria-labelledby="product-title"
         >
           <title id="product-title">{this.altText}</title>
-          <use href={this.reference}></use>
+          <use href={`${this.reference}#illustration`}></use>
         </svg>
       </div>
     );
