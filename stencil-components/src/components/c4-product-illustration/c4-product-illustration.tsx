@@ -13,7 +13,9 @@ export class C4ProductIllustration {
 
     return (
       <div style={styles}>
-        <slot />
+        <svg height="500" width="500" viewBox="0 0 500 500">
+          <use href="/assets/illustrations/socks.svg#socks"></use>
+        </svg>
       </div>
     );
   }

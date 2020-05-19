@@ -36,7 +36,8 @@ input + * {
 
 input:focus,
 input:focus + * {
-  box-shadow: --c4-focus-shadow;
+  box-shadow: var(--c4-focus-shadow);
+  z-index: 1;
 }
 
 input:hover,

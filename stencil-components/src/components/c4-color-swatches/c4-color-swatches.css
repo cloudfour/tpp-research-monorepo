@@ -17,7 +17,7 @@ input {
 }
 
 input:focus {
-  box-shadow: --c4-focus-shadow;
+  box-shadow: var(--c4-focus-shadow);
 }
 
 input:hover {

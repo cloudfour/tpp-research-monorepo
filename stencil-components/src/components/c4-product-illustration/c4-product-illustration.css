@@ -2,7 +2,42 @@
   display: block;
 }
 
-::slotted(svg) {
+div {
+  --base-filters: saturate(300%) brightness(120%) opacity(25%);
+  background: #fff;
+  position: relative;
   height: 30em;
-  width: auto;
+  width: 30em;
+}
+
+div::before,
+div::after {
+  content: "";
+  background: linear-gradient(
+    -30deg,
+    var(--illustration-color),
+    rgba(255, 255, 255, 0)
+  );
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+div::before {
+  filter: hue-rotate(220deg) var(--base-filters);
+  position: absolute;
+}
+
+div::after {
+  filter: hue-rotate(140deg) var(--base-filters);
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
