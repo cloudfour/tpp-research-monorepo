@@ -1206,9 +1206,7 @@
         "clip" : true,
         "codeComponentIdentifier" : ".\/C4ProductIllustration.tsx_C4ProductIllustration",
         "codeComponentProps" : {
-          "color" : "hsl(100, 100%, 49%)",
-          "size" : 0,
-          "svg" : "design\/assets\/socks.svg"
+          "SVG" : "design\/assets\/socks (1).svg"
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -1224,12 +1222,12 @@
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
         "fillType" : "color",
-        "height" : 336,
+        "height" : 651,
         "heightType" : 0,
-        "id" : "OyPHpc_pP",
+        "id" : "h4Iner_gQ",
         "intrinsicHeight" : null,
         "intrinsicWidth" : null,
-        "left" : 43,
+        "left" : 63,
         "locked" : false,
         "name" : null,
         "opacity" : 1,
@@ -1245,9 +1243,9 @@
         "radiusTopRight" : 0,
         "right" : null,
         "rotation" : 0,
-        "top" : -1653,
+        "top" : -1895,
         "visible" : true,
-        "width" : 330,
+        "width" : 646,
         "widthType" : 0
       }
     ],
