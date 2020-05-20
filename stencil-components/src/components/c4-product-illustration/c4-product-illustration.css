@@ -7,7 +7,7 @@ div {
   background: #fff;
   position: relative;
   height: 30em;
-  width: 30em;
+  max-width: 100%;
 }
 
 div::before,
