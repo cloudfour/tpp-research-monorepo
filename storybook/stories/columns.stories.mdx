@@ -1,12 +1,15 @@
 import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
 import { html } from "lit-html";
-import { select, withKnobs } from "@storybook/addon-knobs";
+import { boolean, select, withKnobs } from "@storybook/addon-knobs";
 
 <Meta title="Components/Columns" decorators={[withKnobs]} />
 
 # Columns
 
 A simple flexbox grid system can be leveraged through the `c4-columns` component.
+
+Whether or not the grid has a gutter can be controlled with the `has-gutter`
+property.
 
 By default, direct children of `c4-columns` will render as columns and stretch
 to share available space evenly. These children can optionally receive a number
@@ -23,6 +26,7 @@ On smaller screens these classes will not apply.
 <Preview>
   <Story name="Columns">
     {() => {
+      const hasGutter = boolean("Has Gutter", true);
       const firstColumnClass = select("First Column Width", {
         auto: "",
         "1/4": "column--one-fourth",
@@ -34,11 +38,8 @@ On smaller screens these classes will not apply.
       return html`
         <div>
           <c4-columns
-            has-gutter="true"
+            has-gutter="${hasGutter}"
             style="
-            margin-bottom: 1em;
-            padding-bottom: 1em;
-            border-bottom: 1px solid #ccc;
           "
           >
             <div class="${firstColumnClass}">
