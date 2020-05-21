@@ -177,6 +177,36 @@ if (false) {
      */
     C4ColorSwatches.prototype.z;
 }
+var C4Columns = /** @class */ (function () {
+    function C4Columns(c, r, z) {
+        this.z = z;
+        c.detach();
+        this.el = r.nativeElement;
+    }
+    C4Columns.decorators = [
+        { type: Component, args: [{ selector: 'c4-columns', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' },] },
+    ];
+    /** @nocollapse */
+    C4Columns.ctorParameters = function () { return [
+        { type: ChangeDetectorRef },
+        { type: ElementRef },
+        { type: NgZone }
+    ]; };
+    return C4Columns;
+}());
+export { C4Columns };
+if (false) {
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4Columns.prototype.el;
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4Columns.prototype.z;
+}
 var C4Container = /** @class */ (function () {
     function C4Container(c, r, z) {
         this.z = z;

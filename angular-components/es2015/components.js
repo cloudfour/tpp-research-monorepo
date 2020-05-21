@@ -181,6 +181,39 @@ if (false) {
      */
     C4ColorSwatches.prototype.z;
 }
+export class C4Columns {
+    /**
+     * @param {?} c
+     * @param {?} r
+     * @param {?} z
+     */
+    constructor(c, r, z) {
+        this.z = z;
+        c.detach();
+        this.el = r.nativeElement;
+    }
+}
+C4Columns.decorators = [
+    { type: Component, args: [{ selector: 'c4-columns', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' },] },
+];
+/** @nocollapse */
+C4Columns.ctorParameters = () => [
+    { type: ChangeDetectorRef },
+    { type: ElementRef },
+    { type: NgZone }
+];
+if (false) {
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4Columns.prototype.el;
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4Columns.prototype.z;
+}
 let C4Container = class C4Container {
     /**
      * @param {?} c

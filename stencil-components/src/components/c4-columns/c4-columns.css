@@ -1,0 +1,55 @@
+*,
+::slotted(*) {
+  box-sizing: border-box;
+}
+
+.columns {
+  --c4-columns-gap: var(--c4-size-1);
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columns > ::slotted(*) {
+  flex: 1 1 10em;
+}
+
+.colummns--with-gutter {
+  margin: calc(var(--c4-colummns-gap) / -2);
+}
+
+.columns--with-gutter > ::slotted(*) {
+  padding: calc(var(--c4-columns-gap) / 2);
+}
+
+.columns > ::slotted(.column-one-third) {
+  flex: 0 0 calc(100% / 3);
+}
+
+.columns > ::slotted(.column-two-thirds) {
+  flex: 0 0 calc(100% * 2 / 3);
+}
+
+.columns > ::slotted(.column-one-fourth) {
+  flex: 0 0 25%;
+}
+
+.columns > ::slotted(.column-one-half) {
+  flex: 0 0 50%;
+}
+
+.columns > ::slotted(.column-three-fourths) {
+  flex: 0 0 75%;
+}
+
+@media (max-width: 40em) {
+  .columns > ::slotted([class^="column"]) {
+    flex: 1 1 100% !important;
+  }
+}
+
+@media (max-width: 30em) {
+  .columns > ::slotted(*) {
+    flex: 1 1 100%;
+  }
+}

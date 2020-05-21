@@ -19,6 +19,9 @@ export namespace Components {
         "colorsString"?: string;
         "radioName": string;
     }
+    interface C4Columns {
+        "hasGutter": boolean;
+    }
     interface C4Container {
         "isDark": boolean;
         "isProse": boolean;
@@ -62,6 +65,12 @@ declare global {
         prototype: HTMLC4ColorSwatchesElement;
         new (): HTMLC4ColorSwatchesElement;
     };
+    interface HTMLC4ColumnsElement extends Components.C4Columns, HTMLStencilElement {
+    }
+    var HTMLC4ColumnsElement: {
+        prototype: HTMLC4ColumnsElement;
+        new (): HTMLC4ColumnsElement;
+    };
     interface HTMLC4ContainerElement extends Components.C4Container, HTMLStencilElement {
     }
     var HTMLC4ContainerElement: {
@@ -101,6 +110,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "c4-button": HTMLC4ButtonElement;
         "c4-color-swatches": HTMLC4ColorSwatchesElement;
+        "c4-columns": HTMLC4ColumnsElement;
         "c4-container": HTMLC4ContainerElement;
         "c4-heading": HTMLC4HeadingElement;
         "c4-product-illustration": HTMLC4ProductIllustrationElement;
@@ -123,6 +133,9 @@ declare namespace LocalJSX {
         "colorsString"?: string;
         "onColorChanged"?: (event: CustomEvent<any>) => void;
         "radioName"?: string;
+    }
+    interface C4Columns {
+        "hasGutter"?: boolean;
     }
     interface C4Container {
         "isDark"?: boolean;
@@ -157,6 +170,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "c4-button": C4Button;
         "c4-color-swatches": C4ColorSwatches;
+        "c4-columns": C4Columns;
         "c4-container": C4Container;
         "c4-heading": C4Heading;
         "c4-product-illustration": C4ProductIllustration;
@@ -171,6 +185,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "c4-button": LocalJSX.C4Button & JSXBase.HTMLAttributes<HTMLC4ButtonElement>;
             "c4-color-swatches": LocalJSX.C4ColorSwatches & JSXBase.HTMLAttributes<HTMLC4ColorSwatchesElement>;
+            "c4-columns": LocalJSX.C4Columns & JSXBase.HTMLAttributes<HTMLC4ColumnsElement>;
             "c4-container": LocalJSX.C4Container & JSXBase.HTMLAttributes<HTMLC4ContainerElement>;
             "c4-heading": LocalJSX.C4Heading & JSXBase.HTMLAttributes<HTMLC4HeadingElement>;
             "c4-product-illustration": LocalJSX.C4ProductIllustration & JSXBase.HTMLAttributes<HTMLC4ProductIllustrationElement>;

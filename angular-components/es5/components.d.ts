@@ -22,6 +22,13 @@ export declare class C4ColorSwatches {
     protected el: HTMLElement;
     constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
 }
+export declare interface C4Columns extends Components.C4Columns {
+}
+export declare class C4Columns {
+    protected z: NgZone;
+    protected el: HTMLElement;
+    constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+}
 export declare interface C4Container extends Components.C4Container {
 }
 export declare class C4Container {

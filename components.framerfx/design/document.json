@@ -1206,7 +1206,9 @@
         "clip" : true,
         "codeComponentIdentifier" : ".\/C4ProductIllustration.tsx_C4ProductIllustration",
         "codeComponentProps" : {
-          "SVG" : "design\/assets\/socks (1).svg"
+          "color" : "#09F",
+          "size" : 0,
+          "svg" : "socks"
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -1246,6 +1248,96 @@
         "top" : -1895,
         "visible" : true,
         "width" : 646,
+        "widthType" : 0
+      },
+      {
+        "__class" : "TextNode",
+        "autoSize" : true,
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "exportOptions" : [
+
+        ],
+        "height" : 19,
+        "heightType" : 0,
+        "id" : "XX9bCCYI2",
+        "isTarget" : false,
+        "left" : 373,
+        "locked" : false,
+        "name" : null,
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "mcillDQkZ",
+        "right" : null,
+        "rotation" : 0,
+        "styledText" : {
+          "__class" : "StyledTextDraft",
+          "blocks" : [
+            {
+              "data" : {
+                "emptyStyle" : [
+                  "FONT:__SystemDefault-400-normal__",
+                  "COLOR:rgb(0, 0, 0)",
+                  "SIZE:16",
+                  "LETTERSPACING:0",
+                  "LINEHEIGHT:1.2"
+                ]
+              },
+              "depth" : 0,
+              "entityRanges" : [
+
+              ],
+              "inlineStyleRanges" : [
+                {
+                  "length" : 36,
+                  "offset" : 0,
+                  "style" : "FONT:__SystemDefault-400-normal__"
+                },
+                {
+                  "length" : 36,
+                  "offset" : 0,
+                  "style" : "COLOR:rgb(0, 0, 0)"
+                },
+                {
+                  "length" : 36,
+                  "offset" : 0,
+                  "style" : "SIZE:16"
+                },
+                {
+                  "length" : 36,
+                  "offset" : 0,
+                  "style" : "LETTERSPACING:0"
+                },
+                {
+                  "length" : 36,
+                  "offset" : 0,
+                  "style" : "LINEHEIGHT:1.2"
+                }
+              ],
+              "key" : "ci2r",
+              "text" : "This is some text that I am writing!",
+              "type" : "unstyled"
+            }
+          ],
+          "cached" : {
+            "html" : "<div data-offset-key=\"ci2r-0-0\" class=\"public-DraftStyleDefault-block public-DraftStyleDefault-ltr\"><span data-offset-key=\"ci2r-0-0\" style=\"tab-size:4;font-family:&quot;system-ui&quot;, &quot;-apple-system&quot;, &quot;BlinkMacSystemFont&quot;, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;, &quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, &quot;sans-serif&quot;, serif;-webkit-text-fill-color:rgb(0, 0, 0);font-size:16px;letter-spacing:0px;line-height:1.2\"><span data-text=\"true\">This is some text that I am writing!<\/span><\/span><\/div>",
+            "os" : "macos 10_15 framerx",
+            "size" : {
+              "height" : 19,
+              "width" : 249
+            },
+            "width" : 0
+          },
+          "entityMap" : {
+
+          }
+        },
+        "top" : -1180,
+        "visible" : true,
+        "width" : 249,
         "widthType" : 0
       }
     ],
