@@ -1224,7 +1224,7 @@
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
         "fillType" : "color",
-        "height" : 651,
+        "height" : 355,
         "heightType" : 0,
         "id" : "h4Iner_gQ",
         "intrinsicHeight" : null,
@@ -1247,7 +1247,7 @@
         "rotation" : 0,
         "top" : -1895,
         "visible" : true,
-        "width" : 646,
+        "width" : 373,
         "widthType" : 0
       },
       {
@@ -1338,6 +1338,76 @@
         "top" : -1180,
         "visible" : true,
         "width" : 249,
+        "widthType" : 0
+      },
+      {
+        "__class" : "CodeComponentNode",
+        "aspectRatio" : null,
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+
+        ],
+        "clip" : true,
+        "codeComponentIdentifier" : ".\/C4Columns.tsx_C4Columns",
+        "codeComponentProps" : {
+          "slot" : [
+            {
+              "enabled" : true,
+              "type" : "componentinstance",
+              "value" : "h4Iner_gQ"
+            },
+            {
+              "enabled" : true,
+              "type" : "componentinstance",
+              "value" : "g38_CNo13"
+            },
+            {
+              "enabled" : true,
+              "type" : "componentinstance",
+              "value" : "cDB773XMu"
+            }
+          ]
+        },
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(255,255,255,1)",
+        "fillEnabled" : false,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "height" : 228,
+        "heightType" : 0,
+        "id" : "UZSuPw2Tg",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "left" : -1444,
+        "locked" : false,
+        "name" : null,
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "mcillDQkZ",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "right" : null,
+        "rotation" : 0,
+        "top" : -1964,
+        "visible" : true,
+        "width" : 808,
         "widthType" : 0
       }
     ],
