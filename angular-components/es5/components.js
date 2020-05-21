@@ -184,7 +184,7 @@ var C4Columns = /** @class */ (function () {
         this.el = r.nativeElement;
     }
     C4Columns.decorators = [
-        { type: Component, args: [{ selector: 'c4-columns', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' },] },
+        { type: Component, args: [{ selector: 'c4-columns', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['hasGutter'] },] },
     ];
     /** @nocollapse */
     C4Columns.ctorParameters = function () { return [
@@ -192,6 +192,10 @@ var C4Columns = /** @class */ (function () {
         { type: ElementRef },
         { type: NgZone }
     ]; };
+    C4Columns = tslib_1.__decorate([
+        ProxyCmp({ inputs: ['hasGutter'] }),
+        tslib_1.__metadata("design:paramtypes", [ChangeDetectorRef, ElementRef, NgZone])
+    ], C4Columns);
     return C4Columns;
 }());
 export { C4Columns };

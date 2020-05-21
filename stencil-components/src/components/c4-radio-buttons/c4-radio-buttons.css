@@ -44,6 +44,7 @@ input:hover,
 input:hover + * {
   filter: brightness(110%);
   transform: scale(1.05);
+  z-index: 1;
 }
 
 input:active,

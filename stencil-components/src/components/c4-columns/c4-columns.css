@@ -14,7 +14,7 @@
   flex: 1 1 10em;
 }
 
-.colummns--with-gutter {
+.columns--with-gutter {
   margin: calc(var(--c4-colummns-gap) / -2);
 }
 
@@ -22,23 +22,23 @@
   padding: calc(var(--c4-columns-gap) / 2);
 }
 
-.columns > ::slotted(.column-one-third) {
+.columns > ::slotted(.column--one-third) {
   flex: 0 0 calc(100% / 3);
 }
 
-.columns > ::slotted(.column-two-thirds) {
+.columns > ::slotted(.column--two-thirds) {
   flex: 0 0 calc(100% * 2 / 3);
 }
 
-.columns > ::slotted(.column-one-fourth) {
+.columns > ::slotted(.column--one-fourth) {
   flex: 0 0 25%;
 }
 
-.columns > ::slotted(.column-one-half) {
+.columns > ::slotted(.column--one-half) {
   flex: 0 0 50%;
 }
 
-.columns > ::slotted(.column-three-fourths) {
+.columns > ::slotted(.column--three-fourths) {
   flex: 0 0 75%;
 }
 

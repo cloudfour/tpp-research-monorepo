@@ -48,38 +48,50 @@ renderBlocks = function (data) {
 
 components = {
   product_page(blok) {
-    console.log(blok);
     return `${blok._editable}
 
     <c4-container>
-      <c4-heading>${blok.title}</c4-heading>
+      <c4-columns has-gutter="true">
+        <div class="column--two-thirds">
+          <c4-product-illustration alt-text="filler" reference="${
+            blok.image
+          }" color="${blok.colors[0].content.hex}"></c4-product-illustration>
+        </div>
 
-      <p>$${blok.price}</p>
-    
-      <c4-star-rating rating=${blok.rating}></c4-star-rating>
+        <div class="column--one-third">
+          <c4-heading>${blok.title}</c4-heading>
 
-      <p>${blok.description}</p>
+          <p>$${blok.price}</p>
+        
+          <c4-star-rating rating=${blok.rating}></c4-star-rating>
 
-      <c4-product-illustration alt-text="filler" reference="${
-        blok.image
-      }" color="${blok.colors[0].content.hex}"></c4-product-illustration>
+          <p>${blok.description}</p>
 
-      <c4-color-swatches
-        radio-name='colors'
-        colors-string='${stringifyColors(blok.colors)}'>
-      </c4-color-swatches>
+          <c4-color-swatches
+            radio-name='colors'
+            colors-string='${stringifyColors(blok.colors)}'>
+          </c4-color-swatches>
 
-      <c4-radio-buttons
-        radio-name='sizes'
-        options-string='${stringifyOptions(blok.sizes)}'>
-      </c4-radio-buttons>
+          <c4-radio-buttons
+            radio-name='sizes'
+            options-string='${stringifyOptions(blok.sizes)}'>
+          </c4-radio-buttons>
 
-      <c4-stepper
-        min="1"
-        max="${blok.remaining_count ? blok.remaining_count : null}">
-      </c4-stepper>
+          <c4-columns has-gutter="true">
+            <div>
+              <c4-stepper
+                min="1"
+                max="${blok.remaining_count ? blok.remaining_count : null}">
+              </c4-stepper>
+            </div>
 
-      <c4-button>${blok.cta_text ? blok.cta_text : "Buy Now"}</c4-button>
+            <div>
+              <c4-button>${
+                blok.cta_text ? blok.cta_text : "Buy Now"
+              }</c4-button>
+            </div>
+          </c4-columns>
+        </div>
     </c4-container>
 
     ${blok.blocks
@@ -100,9 +112,9 @@ components = {
     return `${blok._editable}
     <c4-container ${classes}>
       ${blok.blocks
-        .map((column) => {
-          if (components[column.component]) {
-            return components[column.component](column);
+        .map((block) => {
+          if (components[block.component]) {
+            return components[block.component](block);
           }
         })
         .join("")}
@@ -128,6 +140,29 @@ components = {
         colors-string='${stringifyColors(blok.colors)}'>
       </c4-color-swatches>`;
   },
+  columns(blok) {
+    return `${blok._editable}
+      <c4-columns has-gutter=${blok.hasGutter}>
+        ${blok.columns
+          .map((column) => {
+            return components.column(column);
+          })
+          .join("")}
+      </c4-columns>`;
+  },
+  column(blok) {
+    return `${blok._editable}
+      <div ${blok.width ? `class="column--${blok.width}"` : ""}>
+
+      ${blok.content
+        .map((block) => {
+          if (components[block.component]) {
+            return components[block.component](block);
+          }
+        })
+        .join("")}     
+      </div>`;
+  },
 };
 
 function stringifyColors(colorData) {
@@ -144,7 +179,6 @@ function stringifyColors(colorData) {
 }
 
 function stringifyOptions(optionsData) {
-  console.log(optionsData);
   try {
     return optionsData
       ? JSON.stringify(

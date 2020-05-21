@@ -68,8 +68,8 @@ export class C4ColorSwatches {
 }
 
 export declare interface C4Columns extends Components.C4Columns {}
-
-@Component({ selector: 'c4-columns', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
+@ProxyCmp({inputs: ['hasGutter']})
+@Component({ selector: 'c4-columns', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['hasGutter'] })
 export class C4Columns {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
