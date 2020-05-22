@@ -145,3 +145,14 @@ export class C4Stepper {
     this.el = r.nativeElement;
   }
 }
+
+export declare interface C4Text extends Components.C4Text {}
+
+@Component({ selector: 'c4-text', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
+export class C4Text {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}

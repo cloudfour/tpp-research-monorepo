@@ -418,3 +418,33 @@ if (false) {
      */
     C4Stepper.prototype.z;
 }
+var C4Text = /** @class */ (function () {
+    function C4Text(c, r, z) {
+        this.z = z;
+        c.detach();
+        this.el = r.nativeElement;
+    }
+    C4Text.decorators = [
+        { type: Component, args: [{ selector: 'c4-text', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' },] },
+    ];
+    /** @nocollapse */
+    C4Text.ctorParameters = function () { return [
+        { type: ChangeDetectorRef },
+        { type: ElementRef },
+        { type: NgZone }
+    ]; };
+    return C4Text;
+}());
+export { C4Text };
+if (false) {
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4Text.prototype.el;
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4Text.prototype.z;
+}

@@ -1,0 +1,43 @@
+import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
+import { html } from "lit-html";
+
+<Meta title="Components/Text" />
+
+# Text
+
+To apply our base typographic styles to blocks of text, wrap them in the
+`c4-text` component.
+
+<Preview>
+  <Story name="Text">
+    {() => html`
+      <c4-text>
+        <h1>C4 Stencil Components</h1>
+        <p>
+          This is a playground to explore stencil components. These components
+          can then be used in a variety of environments:
+        </p>
+        <ul>
+          <li>Storybook (Documentation)</li>
+          <li>Storyblok (CMS Preview)</li>
+          <li>Framer (Design Tool)</li>
+          <li>Vanilla JS (Express)</li>
+          <li>React</li>
+          <li>Vue</li>
+          <li>Angular</li>
+        </ul>
+        <p>There are a few reasons we built these using web components:</p>
+        <ol>
+          <li>Standards Based</li>
+          <li>Browser Native</li>
+          <li>Portability</li>
+        </ol>
+        <blockquote>
+          These components are dope! I mean, like really super dope! So dope
+          that I'm going to say a long quote that breaks to multiple lines!
+        </blockquote>
+        <em class="c4-size-n1">— Albert Einstein</em>
+      </c4-text>
+    `}
+  </Story>
+</Preview>

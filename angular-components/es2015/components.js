@@ -450,3 +450,36 @@ if (false) {
      */
     C4Stepper.prototype.z;
 }
+export class C4Text {
+    /**
+     * @param {?} c
+     * @param {?} r
+     * @param {?} z
+     */
+    constructor(c, r, z) {
+        this.z = z;
+        c.detach();
+        this.el = r.nativeElement;
+    }
+}
+C4Text.decorators = [
+    { type: Component, args: [{ selector: 'c4-text', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' },] },
+];
+/** @nocollapse */
+C4Text.ctorParameters = () => [
+    { type: ChangeDetectorRef },
+    { type: ElementRef },
+    { type: NgZone }
+];
+if (false) {
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4Text.prototype.el;
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4Text.prototype.z;
+}

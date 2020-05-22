@@ -17,3 +17,4 @@ export const C4ProductIllustration = /*@__PURE__*/createReactComponent<JSX.C4Pro
 export const C4RadioButtons = /*@__PURE__*/createReactComponent<JSX.C4RadioButtons, HTMLC4RadioButtonsElement>('c4-radio-buttons');
 export const C4StarRating = /*@__PURE__*/createReactComponent<JSX.C4StarRating, HTMLC4StarRatingElement>('c4-star-rating');
 export const C4Stepper = /*@__PURE__*/createReactComponent<JSX.C4Stepper, HTMLC4StepperElement>('c4-stepper');
+export const C4Text = /*@__PURE__*/createReactComponent<JSX.C4Text, HTMLC4TextElement>('c4-text');

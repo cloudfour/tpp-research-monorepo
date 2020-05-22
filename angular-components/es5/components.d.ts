@@ -72,3 +72,10 @@ export declare class C4Stepper {
     protected el: HTMLElement;
     constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
 }
+export declare interface C4Text extends Components.C4Text {
+}
+export declare class C4Text {
+    protected z: NgZone;
+    protected el: HTMLElement;
+    constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+}
