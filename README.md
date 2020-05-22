@@ -220,4 +220,4 @@ npm run storybook
 
 These components have been hooked up to a Storyblok CMS instance. These components are used to show a high fidelity preview of the rendered pages as they edit content.
 
-In order to actually test this out you'll need to have an account with access to our Storyblok instance.
+In order to actually test this out you'll need to have an account with access to our Storyblok instance. You'll then add your API key to the `.env` file in the Storyblok directory, run `npm start` and load the editor at storyblok.com
