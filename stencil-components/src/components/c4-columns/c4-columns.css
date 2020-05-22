@@ -14,8 +14,13 @@
   flex: 1 1 10em;
 }
 
+.columns > ::slotted(*) > * {
+  display: block;
+  margin-top: var(--c4-staggered-margin);
+}
+
 .columns--with-gutter {
-  margin: calc(var(--c4-colummns-gap) / -2);
+  margin: calc(var(--c4-columns-gap) / -2);
 }
 
 .columns--with-gutter > ::slotted(*) {

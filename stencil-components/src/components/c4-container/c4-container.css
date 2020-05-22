@@ -21,7 +21,7 @@
 
 .container > * > ::slotted(*:not(:first-child)) {
   display: block;
-  margin: var(--c4-size-0) 0 0 0;
+  margin: var(--c4-staggered-margin) 0 0 0;
 }
 
 .tall {

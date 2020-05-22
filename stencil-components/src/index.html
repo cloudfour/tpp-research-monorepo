@@ -34,55 +34,78 @@
   </head>
   <body>
     <c4-container is-prose="true">
-      <c4-heading>C4 Stencil Components</c4-heading>
+      <c4-text>
+        <h1>C4 Stencil Components</h1>
 
-      <p>
-        This is a playground to explore stencil components. These components can
-        then be used in a variety of environments.
-      </p>
+        <p>
+          This is a playground to explore stencil components. These components
+          can then be used in a variety of environments:
+        </p>
 
-      <c4-heading tag="h2">Buttons</c4-heading>
+        <ul>
+          <li>Storybook (Documentation)</li>
+          <li>Storyblok (CMS Preview)</li>
+          <li>Framer (Design Tool)</li>
+          <li>Vanilla JS (Express)</li>
+          <li>React</li>
+          <li>Vue</li>
+          <li>Angular</li>
+        </ul>
 
-      <p>
-        Here are some buttons:
-      </p>
+        <p>There are a few reasons we built these using web components:</p>
 
-      <c4-button>I'm a c4-button!</c4-button>
+        <ol>
+          <li>Standards Based</li>
+          <li>Browser Native</li>
+          <li>Portability</li>
+        </ol>
 
-      <c4-button button-class="secondary">I'm a secondary c4-button!</c4-button>
+        <blockquote>
+          These components are dope! I mean, like really super dope! So dope
+          that I'm going to say a long quote that breaks to multiple lines!
+        </blockquote>
+        <em class="c4-size-n1">— Albert Einstein</em>
 
-      <c4-button button-class="tertiary">I'm a tertiary c4-button!</c4-button>
+        <h2>Buttons</h2>
 
-      <c4-button disabled="true">I'm a disabled c4-button!</c4-button>
+        <p>
+          Here are some buttons:
+        </p>
 
-      <c4-button tag="a">I'm actually a link!</c4-button>
+        <c4-button>I'm a c4-button!</c4-button>
 
-      <div>
+        <c4-button button-class="secondary"
+          >I'm a secondary c4-button!</c4-button
+        >
+
+        <c4-button button-class="tertiary">I'm a tertiary c4-button!</c4-button>
+
+        <c4-button disabled="true">I'm a disabled c4-button!</c4-button>
+
+        <c4-button tag="a">I'm actually a link!</c4-button>
+
         <c4-heading tag="h2">Stepper</c4-heading>
 
         <c4-stepper min="1" max="10" start-value="5"></c4-stepper>
-      </div>
 
-      <div>
         <c4-heading tag="h2">Star Rating</c4-heading>
 
         <c4-star-rating rating="4.6" class="c4-size-6"></c4-star-rating>
-      </div>
 
-      <c4-heading tag="h2">(WIP) Radio Buttons</c4-heading>
+        <c4-heading tag="h2">(WIP) Radio Buttons</c4-heading>
 
-      <p>
-        A simple component to style radio buttons as a button group. Works well
-        for a size selector.
-      </p>
+        <p>
+          A simple component to style radio buttons as a button group. Works
+          well for a size selector.
+        </p>
 
-      <p>
-        This component is a work in progress and needs design improvements.
-      </p>
+        <p>
+          This component is a work in progress and needs design improvements.
+        </p>
 
-      <c4-radio-buttons
-        radio-name="sizes"
-        options-string='[
+        <c4-radio-buttons
+          radio-name="sizes"
+          options-string='[
           {"name": "XXS", "id": "123"},
           {"name": "XS", "id": "124"},
           {"name": "S", "id": "125"},
@@ -91,38 +114,40 @@
           {"name": "XL", "id": "128"},
           {"name": "XXL", "id": "129"}
         ]'
-      ></c4-radio-buttons>
+        ></c4-radio-buttons>
 
-      <c4-heading tag="h2">Color Swatches</c4-heading>
+        <h2>Color Swatches</h2>
 
-      <p>
-        Selected Color:
-        <em id="selected-color">
-          Cloud Blue
-        </em>
-      </p>
+        <p>
+          Selected Color:
+          <em id="selected-color">
+            Cloud Blue
+          </em>
+        </p>
 
-      <c4-product-illustration
-        color="#215cca"
-        reference="/assets/illustrations/socks.svg"
-        alt-text="A pair of blue socks with the Cloud Four logo repeated in white."
-      ></c4-product-illustration>
+        <c4-product-illustration
+          color="#215cca"
+          reference="/assets/illustrations/socks.svg"
+          alt-text="A pair of blue socks with the Cloud Four logo repeated in white."
+        ></c4-product-illustration>
 
-      <c4-color-swatches
-        radio-name="colors"
-        colors-string='[
+        <c4-color-swatches
+          radio-name="colors"
+          colors-string='[
           {"hex": "#215cca", "name": "Cloud Blue", "id": "123"},
           {"hex": "#158466", "name": "PNW Green", "id": "124"},
           {"hex": "#d9118f", "name": "PWA Pink", "id": "125"},
           {"hex": "#f27041", "name": "Cloud Fourange", "id": "126"},
           {"hex": "#485968", "name": "Grey", "id": "127"}
         ]'
-      ></c4-color-swatches>
+        ></c4-color-swatches>
 
-      <p>
-        The color swatches emit an event when the color is changed. This page is
-        using vanilla JS to listen for this event and update the selected color.
-      </p>
+        <p>
+          The color swatches emit an event when the color is changed. This page
+          is using vanilla JS to listen for this event and update the selected
+          color.
+        </p>
+      </c4-text>
     </c4-container>
 
     <script>
@@ -143,16 +168,20 @@
     </script>
 
     <c4-container is-prose="true" is-tall="true" is-dark="true">
-      <c4-heading>Dark Theme</c4-heading>
+      <c4-text>
+        <h2>Dark Theme</h2>
 
-      <p>
-        This container has the dark theme. The dark theme updates custom
-        properties to change colors.
-      </p>
+        <p>
+          This container has the dark theme. The dark theme updates custom
+          properties to change colors.
+        </p>
+      </c4-text>
     </c4-container>
 
     <c4-container>
-      <c4-heading>Columns</c4-heading>
+      <c4-text>
+        <h2>Columns</h2>
+      </c4-text>
 
       <c4-columns
         has-gutter="true"

@@ -51,6 +51,8 @@ export namespace Components {
         "min"?: number;
         "startValue"?: number;
     }
+    interface C4Text {
+    }
 }
 declare global {
     interface HTMLC4ButtonElement extends Components.C4Button, HTMLStencilElement {
@@ -107,6 +109,12 @@ declare global {
         prototype: HTMLC4StepperElement;
         new (): HTMLC4StepperElement;
     };
+    interface HTMLC4TextElement extends Components.C4Text, HTMLStencilElement {
+    }
+    var HTMLC4TextElement: {
+        prototype: HTMLC4TextElement;
+        new (): HTMLC4TextElement;
+    };
     interface HTMLElementTagNameMap {
         "c4-button": HTMLC4ButtonElement;
         "c4-color-swatches": HTMLC4ColorSwatchesElement;
@@ -117,6 +125,7 @@ declare global {
         "c4-radio-buttons": HTMLC4RadioButtonsElement;
         "c4-star-rating": HTMLC4StarRatingElement;
         "c4-stepper": HTMLC4StepperElement;
+        "c4-text": HTMLC4TextElement;
     }
 }
 declare namespace LocalJSX {
@@ -167,6 +176,8 @@ declare namespace LocalJSX {
         "min"?: number;
         "startValue"?: number;
     }
+    interface C4Text {
+    }
     interface IntrinsicElements {
         "c4-button": C4Button;
         "c4-color-swatches": C4ColorSwatches;
@@ -177,6 +188,7 @@ declare namespace LocalJSX {
         "c4-radio-buttons": C4RadioButtons;
         "c4-star-rating": C4StarRating;
         "c4-stepper": C4Stepper;
+        "c4-text": C4Text;
     }
 }
 export { LocalJSX as JSX };
@@ -192,6 +204,7 @@ declare module "@stencil/core" {
             "c4-radio-buttons": LocalJSX.C4RadioButtons & JSXBase.HTMLAttributes<HTMLC4RadioButtonsElement>;
             "c4-star-rating": LocalJSX.C4StarRating & JSXBase.HTMLAttributes<HTMLC4StarRatingElement>;
             "c4-stepper": LocalJSX.C4Stepper & JSXBase.HTMLAttributes<HTMLC4StepperElement>;
+            "c4-text": LocalJSX.C4Text & JSXBase.HTMLAttributes<HTMLC4TextElement>;
         }
     }
 }

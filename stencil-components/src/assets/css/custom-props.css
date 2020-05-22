@@ -51,4 +51,5 @@
   --c4-border-thick: var(--c4-size-n6);
   --c4-border-radius-med: var(--c4-size-n6);
   --c4-focus-shadow: 0 0 0 var(--c4-border-thick) #8abfff;
+  --c4-staggered-margin: var(--c4-size-0);
 }
