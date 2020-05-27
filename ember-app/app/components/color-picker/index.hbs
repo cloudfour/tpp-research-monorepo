@@ -7,5 +7,4 @@
   </em>
 </p>
 
-<c4-color-swatches radio-name="colors" colors-string={{this.colorsString}} {{on 'colorChanged' this.changeColor}}>
-</c4-color-swatches>
+<ColorSwatches @colors={{this.colors}} @changeColor={{this.changeColor}} />
