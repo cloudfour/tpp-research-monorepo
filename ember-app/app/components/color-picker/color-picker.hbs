@@ -1,0 +1,11 @@
+<c4-heading tag="h2">Color Picker</c4-heading>
+
+<p>
+  Selected Color:
+  <em id="selected-color">
+    {{this.currentColor.name}}
+  </em>
+</p>
+
+<c4-color-swatches radio-name="colors" colors-string={{this.colorsString}} {{on 'colorChanged' this.changeColor}}>
+</c4-color-swatches>
