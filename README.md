@@ -11,6 +11,7 @@ Components are written as web components using Stencil JS. These web components 
 - A React app
 - A Vue app
 - An Angular app
+- An Ember app
 - A vanilla JS Express app
 
 ## Designers
@@ -181,6 +182,23 @@ npm ci
 
 # Run and watch a Vue server
 npm run dev
+```
+
+## Building an Ember Site
+
+We're able to use the [ember-cli-stencil](https://github.com/alexlafroscia/ember-cli-stencil) to pull Stencil components into the Ember app. However, they're still using the native component API and syntax. If you want the Ember syntax you'll need to manually wrap your web components as Ember components.
+
+Luckily, Ember works well with web components, so it doesn't take a ton of work to create wrappers. You can see some examples in our Ember app. To run the Ember app, run the following commands:
+
+```zsh
+# Navigate to the `ember-app` repo
+cd ember-app
+
+# Install dependencies
+npm ci
+
+# Run and watch a Ember server
+npm start
 ```
 
 ## Designing with Components in FramerX
