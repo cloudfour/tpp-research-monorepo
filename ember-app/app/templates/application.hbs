@@ -1,4 +1,57 @@
-<c4-button>
-  Hey!
-</c4-button>
+<c4-container is-prose="true">
+  <c4-heading>Ember App</c4-heading>
+
+  <p>
+    This Ember app is build using our Stencil web components.
+  </p>
+
+  <c4-heading tag="h2">Buttons</c4-heading>
+
+  <p>
+    Here are some buttons:
+  </p>
+
+  <c4-button>I'm a c4-button!</c4-button>
+
+  <c4-button button-class="secondary">I'm a secondary c4-button!</c4-button>
+
+  <c4-button button-class="tertiary">I'm a tertiary c4-button!</c4-button>
+
+  <c4-button disabled="true">I'm a disabled c4-button!</c4-button>
+
+  <c4-button tag="a">I'm actually a link!</c4-button>
+
+  <div>
+    <c4-heading tag="h2">Star Rating</c4-heading>
+
+    <c4-star-rating rating="4.6" style="font-size: 3em;"></c4-star-rating>
+  </div>
+
+  <c4-heading tag="h2">Color Swatches</c4-heading>
+
+  <p>
+    Selected Color:
+    <em id="selected-color">
+      Cloud Blue
+    </em>
+  </p>
+
+  <c4-color-swatches radio-name="colors" colors-string='[
+    {"hex": "#215cca", "name": "Cloud Blue", "id": "123"},
+    {"hex": "#158466", "name": "PNW Green", "id": "124"},
+    {"hex": "#d9118f", "name": "PWA Pink", "id": "125"},
+    {"hex": "#f27041", "name": "Cloud Fourange", "id": "126"},
+    {"hex": "#485968", "name": "Grey", "id": "127"}
+  ]'></c4-color-swatches>
+</c4-container>
+
+<c4-container is-prose="true" is-tall="true" is-dark="true">
+  <c4-heading>Dark Theme</c4-heading>
+
+  <p>
+    This container has the dark theme. The dark theme updates custom
+    properties to change colors.
+  </p>
+</c4-container>
+
 {{outlet}}
