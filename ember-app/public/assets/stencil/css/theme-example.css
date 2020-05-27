@@ -1,0 +1,14 @@
+/**
+ * An (ugly) example of overriding our custom properties to theme our components
+ */
+:root {
+  --c4-font-brand: "Georgia", "serif";
+
+  --c4-color-white: #eee;
+  --c4-color-dark: rgba(40, 0, 0, 0.85);
+  --c4-color-brand: #f00;
+  --c4-color-focus: #8abfff;
+
+  --c4-color-background: var(--c4-color-white);
+  --c4-color-text: var(--c4-color-dark);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>EmberApp</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {{content-for "head"}}
+
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css" />
+    <link
+      integrity=""
+      rel="stylesheet"
+      href="{{rootURL}}assets/ember-app.css"
+    />
+
+    <link
+      rel="preload"
+      href="{{rootURL}}assets/stencil/fonts/source-sans-pro-latin-extended/variable-italic.woff2"
+      as="font"
+      type="font/woff2"
+    />
+    <link
+      rel="preload"
+      href="{{rootURL}}assets/stencil/fonts/source-sans-pro-latin-extended/variable-regular.woff2"
+      as="font"
+      type="font/woff2"
+    />
+
+    <link
+      rel="stylesheet"
+      href="{{rootURL}}assets/stencil/css/custom-props.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{rootURL}}assets/stencil/css/document-styles.css"
+    />
+    <link rel="stylesheet" href="{{rootURL}}assets/stencil/css/fonts.css" />
+    <link rel="stylesheet" href="{{rootURL}}assets/stencil/css/utilities.css" />
+
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    {{content-for "body"}}
+
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/ember-app.js"></script>
+
+    {{content-for "body-footer"}}
+  </body>
+</html>

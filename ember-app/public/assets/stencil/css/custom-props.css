@@ -1,0 +1,55 @@
+/**
+ * Custom props that will be referenced from within our custom elements to allow
+ * theming from outside the shadow DOM
+ */
+
+/* Fonts */
+:root {
+  --c4-font-brand: "Source Sans Pro", Tahoma, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
+
+/* Fonts continued... */
+@supports (font-variation-settings: normal) {
+  :root {
+    --c4-font-brand: "Source Sans Pro Variable", Tahoma, "Helvetica Neue",
+      Helvetica, Arial, sans-serif;
+  }
+}
+
+/* Colors */
+:root {
+  --c4-color-white: #fff;
+  --c4-color-dark: rgba(0, 0, 0, 0.85);
+  --c4-color-gray: #738da0;
+  --c4-color-brand: #215cca;
+  --c4-color-focus: #8abfff;
+  --c4-color-background: var(--c4-color-white);
+  --c4-color-text: var(--c4-color-dark);
+}
+
+/* Modular Scale Sizes */
+:root {
+  --c4-size-n6: 0.26em;
+  --c4-size-n5: 0.33em;
+  --c4-size-n4: 0.41em;
+  --c4-size-n3: 0.51em;
+  --c4-size-n2: 0.64em;
+  --c4-size-n1: 0.8em;
+  --c4-size-0: 1em;
+  --c4-size-1: 1.25em;
+  --c4-size-2: 1.56em;
+  --c4-size-3: 1.95em;
+  --c4-size-4: 2.44em;
+  --c4-size-5: 3.05em;
+  --c4-size-6: 3.81em;
+}
+
+/* Misc Sizes */
+:root {
+  --c4-border-med: 0.125rem;
+  --c4-border-thick: var(--c4-size-n6);
+  --c4-border-radius-med: var(--c4-size-n6);
+  --c4-focus-shadow: 0 0 0 var(--c4-border-thick) #8abfff;
+  --c4-staggered-margin: var(--c4-size-0);
+}

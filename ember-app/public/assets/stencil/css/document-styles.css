@@ -1,0 +1,14 @@
+/*
+ * Opinionated styles to make your document defaults match our components
+ */
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background: var(--c4-color-background);
+  color: var(--c4-color-text);
+  font-family: var(--c4-font-brand);
+}
