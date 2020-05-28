@@ -19,11 +19,13 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "source-map-loader": "^1.0.0",
+    "style-loader": "^1.2.1",
     "svg-react-loader": "^0.4.6",
     "webpack": "^4.43.0"
   },
   "devDependencies": {
     "@babel/preset-react": "^7.10.1",
-    "@uxpin/merge-cli": "^2.6.1"
+    "@uxpin/merge-cli": "^2.6.1",
+    "css-loader": "^3.5.3"
   }
 }

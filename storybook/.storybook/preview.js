@@ -19,6 +19,7 @@ addParameters({
     iframeHeight: "200px",
   },
   options: {
+    // _SUPER_ basic sorting. The Welcome story comes first :)
     storySort: (a, b) => {
       const aIsWelcome = getStoryCategory(a) === "Welcome";
       const bIsWelcome = getStoryCategory(b) === "Welcome";
