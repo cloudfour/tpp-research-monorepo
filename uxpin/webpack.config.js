@@ -1,44 +1,23 @@
-const path = require('path');
- 
+const path = require("path");
+
 module.exports = {
-    entry: ['./src/index.js'],
-    output: {
-      path: path.resolve(__dirname, 'build'),
-      filename: 'bundle.js',
-      publicPath: '/',
-    },
-    resolve: {
-      modules: [__dirname, 'node_modules'],
-      extensions: ['*', '.js', '.jsx'],
-    },
-    devtool: 'source-map',
-    module: {
-      rules: [
-        {
-          test: /\.svg$/,
-          exclude: /node_modules/,
-          loader: 'svg-react-loader',
-        },
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          enforce: 'pre',
-          loader: 'eslint-loader',
-          options: {
-            failOnWarning: false,
-            failOnError: true,
-          },
-        },
-        {
-          loader: 'babel-loader',
-          test: /\.js$/,
-          exclude: /node_modules/,
-        },
-        {
-          enforce: 'pre',
-          test: /\.js$/,
-          loader: 'source-map-loader',
-        },
-      ],
-    },
+  output: {
+    path: path.resolve(__dirname, "build"),
+    filename: "bundle.js",
+    publicPath: "/",
+  },
+  resolve: {
+    modules: [__dirname, "node_modules"],
+    extensions: ["*", ".js", ".jsx"],
+  },
+  devtool: "source-map",
+  module: {
+    rules: [
+      {
+        loader: "babel-loader",
+        test: /\.jsx/,
+        exclude: /node_modules/,
+      },
+    ],
+  },
 };

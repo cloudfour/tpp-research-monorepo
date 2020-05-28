@@ -4,8 +4,26 @@
   "description": "",
   "main": "uxpin.config.js",
   "scripts": {
+    "start": "npx uxpin-merge --disable-tunneling",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.10.1",
+    "babel": "^6.23.0",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^7.1.0",
+    "eslint-loader": "^4.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "source-map-loader": "^1.0.0",
+    "svg-react-loader": "^0.4.6",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.10.1",
+    "@uxpin/merge-cli": "^2.6.1"
+  }
 }
