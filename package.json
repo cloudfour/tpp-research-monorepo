@@ -16,7 +16,8 @@
     "start:stencil": "cd stencil-components && npm start && cd ../",
     "start:vue": "cd vue-app && npm start && cd ../",
     "start:storyblok": "cd cms-storyblok && npm start && cd ../",
-    "start:storybook": "cd storybook && npm start && cd ../"
+    "start:storybook": "cd storybook && npm start && cd ../",
+    "start:uxpin": "cd uxpin && npm start && cd ../"
   },
   "repository": {
     "type": "git",
