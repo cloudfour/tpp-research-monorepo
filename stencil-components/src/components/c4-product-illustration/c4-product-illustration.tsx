@@ -28,6 +28,14 @@ export class C4ProductIllustration {
           aria-labelledby="product-title"
         >
           <title id="product-title">{this.altText}</title>
+         {/*
+          // The current production version (1.12) of Stencil does not have
+          // support for `href` on `use` elements.
+          //
+          // This has been added in the prerelease version (1.14.0-3) but I'd
+          // rather stay on a stable version and ignore this error.
+          //
+          // @ts-ignore */}
           <use href={`${this.reference}#illustration`}></use>
         </svg>
       </div>
