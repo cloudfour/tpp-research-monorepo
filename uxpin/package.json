@@ -16,11 +16,13 @@
     "babel-preset-react": "^6.24.1",
     "eslint": "^7.1.0",
     "eslint-loader": "^4.0.2",
+    "file-loader": "^6.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "source-map-loader": "^1.0.0",
     "style-loader": "^1.2.1",
     "svg-react-loader": "^0.4.6",
+    "url-loader": "^4.1.0",
     "webpack": "^4.43.0"
   },
   "devDependencies": {

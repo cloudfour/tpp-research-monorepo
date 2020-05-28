@@ -17,9 +17,14 @@ module.exports = {
         loader: "babel-loader",
         test: /\.jsx/,
         exclude: /node_modules/,
-      },      {
+      },
+      {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.woff2$/,
+        loader: "url-loader?limit=100000",
       },
     ],
   },
