@@ -21,4 +21,8 @@ C4Button.propTypes = {
   size: PropTypes.number,
 };
 
+C4Button.defaultProps = {
+  children: 'C4Button'
+}
+
 export { C4Button as default };
