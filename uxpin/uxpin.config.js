@@ -7,6 +7,7 @@ module.exports = {
           "src/components/c4-button/c4-button.jsx",
           "src/components/c4-star-rating/c4-star-rating.jsx",
           "src/components/c4-container/c4-container.jsx",
+          "src/components/c4-color-swatches/c4-color-swatches.jsx",
         ],
       },
     ],
