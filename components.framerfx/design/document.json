@@ -83,7 +83,7 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/C4Button.tsx_C4Button",
                 "codeComponentProps" : {
-                  "buttonClass" : "",
+                  "buttonClass" : null,
                   "disabled" : false,
                   "href" : "href",
                   "size" : 0,
@@ -263,7 +263,7 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/C4Button.tsx_C4Button",
                 "codeComponentProps" : {
-                  "buttonClass" : "y",
+                  "buttonClass" : null,
                   "disabled" : true,
                   "href" : "href",
                   "size" : 0,
@@ -323,7 +323,7 @@
                 "clip" : true,
                 "codeComponentIdentifier" : ".\/C4Button.tsx_C4Button",
                 "codeComponentProps" : {
-                  "buttonClass" : "y",
+                  "buttonClass" : null,
                   "disabled" : false,
                   "href" : "href",
                   "size" : 0,
@@ -493,7 +493,7 @@
         "clip" : true,
         "codeComponentIdentifier" : ".\/C4Button.tsx_C4Button",
         "codeComponentProps" : {
-          "buttonClass" : "",
+          "buttonClass" : null,
           "disabled" : false,
           "href" : "href",
           "size" : 0,
@@ -898,7 +898,7 @@
         "clip" : true,
         "codeComponentIdentifier" : ".\/C4Button.tsx_C4Button",
         "codeComponentProps" : {
-          "buttonClass" : "",
+          "buttonClass" : null,
           "disabled" : false,
           "href" : "href",
           "size" : 3,

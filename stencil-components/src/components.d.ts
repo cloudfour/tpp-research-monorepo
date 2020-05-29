@@ -7,7 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface C4Button {
-        "buttonClass": string;
+        "buttonClass"?: "secondary" | "tertiary" | "right" | "left";
         "disabled": boolean;
         "href": string;
         "tag": string;
@@ -130,7 +130,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface C4Button {
-        "buttonClass"?: string;
+        "buttonClass"?: "secondary" | "tertiary" | "right" | "left";
         "disabled"?: boolean;
         "href"?: string;
         "tag"?: string;

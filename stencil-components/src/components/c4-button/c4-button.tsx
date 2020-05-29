@@ -1,5 +1,6 @@
 import { Component, Prop, h } from "@stencil/core";
 
+
 @Component({
   tag: "c4-button",
   styleUrl: "c4-button.css",
@@ -10,7 +11,7 @@ export class C4Button {
   @Prop() type: string = "button";
   @Prop() tag: string = "button";
   @Prop() href: string = "#";
-  @Prop() buttonClass: string;
+  @Prop() buttonClass?: 'secondary' | 'tertiary' | 'right' | 'left';
 
   private getClass(): string {
     let className = "button";

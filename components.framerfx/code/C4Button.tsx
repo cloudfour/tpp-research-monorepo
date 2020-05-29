@@ -15,8 +15,10 @@ addPropertyControls(C4Button, {
     defaultValue: "Button",
   },
   buttonClass: {
-    type: ControlType.String,
+    type: ControlType.Enum,
     defaultValue: null,
+    options: [null, "secondary", "tertiary"],
+    displaySegmentedControl: true,
   },
   tag: {
     type: ControlType.Enum,

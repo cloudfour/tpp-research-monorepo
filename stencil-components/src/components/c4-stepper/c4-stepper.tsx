@@ -34,7 +34,7 @@ export class C4Stepper {
         experience. Since they're likely using a keyboard they can use the
         built-in keyboard controls */}
         <c4-button
-          buttonClass="button--left"
+          buttonClass="left"
           onClick={this.updateCount.bind(this, this.value - 1)}
           disabled={this.value === this.min}
           aria-hidden="true"
@@ -50,7 +50,7 @@ export class C4Stepper {
           }
         />
         <c4-button
-          buttonClass="button--right"
+          buttonClass="right"
           onClick={this.updateCount.bind(this, this.value + 1)}
           disabled={this.value === this.max}
           aria-hidden="true"
