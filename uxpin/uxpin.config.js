@@ -4,8 +4,8 @@ module.exports = {
       {
         name: "General",
         include: [
-          "src/c4-button/c4-button.jsx",
-          "src/c4-star-rating/c4-star-rating.jsx",
+          "src/components/c4-button/c4-button.jsx",
+          "src/components/c4-star-rating/c4-star-rating.jsx",
         ],
       },
     ],

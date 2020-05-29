@@ -1,7 +1,7 @@
 import React from "react";
-import { C4Button as _C4Button } from "../../../react-components/dist";
+import { C4Button as _C4Button } from "../../../../react-components/dist";
 import PropTypes, { oneOf } from "prop-types";
-import { sizeToUtility } from "../utilities";
+import { sizeToUtility } from "../../utilities";
 
 function C4Button(props) {
   return (
