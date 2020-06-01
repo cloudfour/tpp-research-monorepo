@@ -16,7 +16,10 @@ Components are written as web components using Stencil JS. These web components 
 
 ## Designers
 
-These same components can be used in design tools allowing you to design with our prebuilt components. Currently components have only been translated for use in Framer X.
+These same components can be used in design tools allowing you to design with our prebuilt components. Currently components have only been translated to two tools:
+
+- Framer
+- UXPin Merge
 
 ## Content Authors
 
@@ -46,7 +49,7 @@ Individual projects can then easily install and reference the relevant component
 The core of the project is a stencil.js directory. To develop these components run the following command:
 
 ```zsh
-# Navigate to the `stencil-components` repo
+# Navigate to the `stencil-components` directory
 cd stencil-components
 
 # Run and watch a stencil JS server
@@ -127,7 +130,7 @@ From the project root you can build Stencil components, convert them to React co
 After running `npm run build` you can develop the Express app by running the following commands:
 
 ```zsh
-# Navigate to the `express-app` repo
+# Navigate to the `express-app` directory
 cd express-app
 
 # Install dependencies
@@ -142,7 +145,7 @@ npm start
 Our React components are consumed by a simple React app. After building our React components you can develop this site by running the following commands:
 
 ```zsh
-# Navigate to the `react-app` repo
+# Navigate to the `react-app` directory
 cd react-app
 
 # Install dependencies
@@ -157,7 +160,7 @@ npm start
 Our Angular components are consumed by a simple Angular app. After building our Angular components you can develop this site by running the following commands:
 
 ```zsh
-# Navigate to the `angular-app` repo
+# Navigate to the `angular-app` directory
 cd angular-app
 
 # Install dependencies
@@ -174,7 +177,7 @@ Unfortunately there's no way to automatically wrap web components in Vue compone
 Luckily, Vue works well with web components, so it doesn't take a ton of work to create wrappers. You can see some examples in our Vue app. To run the Vue app, run the following commands:
 
 ```zsh
-# Navigate to the `vue-app` repo
+# Navigate to the `vue-app` directory
 cd vue-app
 
 # Install dependencies
@@ -191,7 +194,7 @@ We're able to use the [ember-cli-stencil](https://github.com/alexlafroscia/ember
 Luckily, Ember works well with web components, so it doesn't take a ton of work to create wrappers. You can see some examples in our Ember app. To run the Ember app, run the following commands:
 
 ```zsh
-# Navigate to the `ember-app` repo
+# Navigate to the `ember-app` directory
 cd ember-app
 
 # Install dependencies
@@ -217,6 +220,27 @@ I think there's a disconnect between TypeScript and JavaScript imports here. I'm
 
 After building the components and making that change you should be able to open the `components.framerfx` file in Framer X and begin designing with components.
 
+## Designing with Components in UXPin Merge
+
+For this to work you'll need access to UXPin Merge which is in early access. Then you'll need to make the same change mentioned for Framer:
+
+`../../stencil-components/loader` --> `../../stencil-components/loader/index.cjs.js`
+
+Then you should be able to UXPin merge:
+
+```zsh
+# Navigate to the `uxpin` directory
+cd uxpin
+
+# Install dependencies
+npm ci
+
+# Run UXPin merge
+npm start
+```
+
+In the long term we'll explore pushing up components using CI but this works for now.
+
 ## Viewing Components in Storybook
 
 The web components are also documented in storybook. After running the `stencil-components` project, or running `npm build-components` Storybook should
@@ -224,7 +248,7 @@ be ready to document these components. To launch storybook run the following
 commands
 
 ```zsh
-# Navigate to the `storybook` repo
+# Navigate to the `storybook` directory
 cd storybook
 
 # Install dependencies
