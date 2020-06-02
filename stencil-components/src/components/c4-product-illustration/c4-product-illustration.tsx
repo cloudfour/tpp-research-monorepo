@@ -21,7 +21,7 @@ export class C4ProductIllustration {
       <div style={styles}>
         {altTextErrorMessage}
 
-        <img src={this.imgPath} alt="altText"></img>
+        <img src={this.imgPath} alt={this.altText}></img>
       </div>
     );
   }
