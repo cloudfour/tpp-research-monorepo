@@ -7,3 +7,16 @@ storyblok.pingEditor(function () {
     storyblok.enterEditmode();
   }
 });
+
+document
+  .querySelector(".js-swatches")
+  .addEventListener("colorChanged", ({ detail }) => {
+    const illustration = document.querySelector(".js-illustration");
+    illustration.setAttribute("color", detail.hex);
+    illustration.setAttribute(
+      "alt-text",
+      `A pair of ${detail.name} socks with the Cloud Four logo repeated in white.`
+    );
+
+    document.getElementById("selected-color").innerHTML = detail.name;
+  });
