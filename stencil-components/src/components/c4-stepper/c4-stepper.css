@@ -1,7 +1,3 @@
-:host {
-  display: block;
-}
-
 .wrapper {
   display: flex;
   align-items: stretch;
@@ -14,10 +10,10 @@ input {
   border-style: solid none;
   font-size: var(--c4-size-0);
   text-align: center;
-  min-width: var(--c4-size-5);
-  flex-grow: 1;
+  flex: 1;
   -moz-appearance: textfield;
   margin: 0;
+  min-width: 0;
 }
 
 input::-moz-inner-spin-button,
