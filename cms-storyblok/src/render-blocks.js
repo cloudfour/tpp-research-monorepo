@@ -26,8 +26,9 @@ const components = {
 
         <div slot="content">
           <c4-product-illustration 
-            alt-text="filler" 
-            reference="${blok.image}"
+            alt-text="${blok.colors[0].content.alt_text}" 
+            img-path="${blok.colors[0].content.image}"
+            color="${blok.colors[0].content.color_hex}"
             class="js-illustration"
           ></c4-product-illustration>
         </div>
@@ -67,7 +68,12 @@ const components = {
           return components[column.component](column);
         }
       })
-      .join("")}`;
+      .join("")}
+      
+      
+    <script>
+      const colors = ${JSON.stringify(blok.colors)}
+    </script>`;
   },
   container(blok) {
     let classes = "";
@@ -95,17 +101,6 @@ const components = {
   button(blok) {
     return `${blok._editable}
       <c4-button>${blok.text}</c4-button>`;
-  },
-  rating(blok) {
-    return `${blok._editable}
-      <c4-star-rating rating=${blok.rating}></c4-star-rating>`;
-  },
-  swatches(blok) {
-    return `${blok._editable}
-      <c4-color-swatches
-        radio-name='${blok.radio_name}'
-        colors-string='${stringifyColors(blok.colors)}'>
-      </c4-color-swatches>`;
   },
   columns(blok) {
     return `${blok._editable}
@@ -141,8 +136,11 @@ function stringifyColors(colorData) {
     return colorData
       ? JSON.stringify(
           colorData.map((data) => {
-            const { hex, id, name } = data.content;
-            return { hex, id, name };
+            return {
+              hex: data.content.color_hex,
+              id: data.id,
+              name: data.content.color_name,
+            };
           })
         )
       : "";
