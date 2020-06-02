@@ -17,6 +17,4 @@ document
       "alt-text",
       `A pair of ${detail.name} socks with the Cloud Four logo repeated in white.`
     );
-
-    document.getElementById("selected-color").innerHTML = detail.name;
   });

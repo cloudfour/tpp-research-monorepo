@@ -36,7 +36,7 @@ export namespace Components {
     interface C4ProductIllustration {
         "altText": string;
         "color": string;
-        "reference": string;
+        "imgPath": string;
     }
     interface C4RadioButtons {
         "callback"?: Function;
@@ -169,7 +169,7 @@ declare namespace LocalJSX {
     interface C4ProductIllustration {
         "altText"?: string;
         "color"?: string;
-        "reference"?: string;
+        "imgPath"?: string;
     }
     interface C4RadioButtons {
         "callback"?: Function;

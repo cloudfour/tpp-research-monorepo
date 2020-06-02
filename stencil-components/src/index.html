@@ -132,7 +132,7 @@
         <div slot="content">
           <c4-product-illustration
             color="#215cca"
-            reference="/assets/illustrations/socks.svg"
+            img-path="/assets/illustrations/socks/blue.svg"
             alt-text="A pair of blue socks with the Cloud Four logo repeated in white."
           ></c4-product-illustration>
         </div>
@@ -144,9 +144,11 @@
               class="c4-size-n1"
               radio-name="colors"
               colors-string='[
-                {"hex": "#215cca", "name": "Cloud Blue", "id": "123"},
-                {"hex": "#158466", "name": "PNW Green", "id": "124"},
-                {"hex": "#d9118f", "name": "PWA Pink", "id": "125"}
+                {"hex": "#215cca", "name": "Blue", "id": "123"},
+                {"hex": "#158466", "name": "Green", "id": "124"},
+                {"hex": "#d9118f", "name": "Pink", "id": "125"},
+                {"hex": "#f27041", "name": "Orange", "id": "126"},
+                {"hex": "#485968", "name": "Grey", "id": "127"}
               ]'
             ></c4-color-swatches>
 
@@ -183,8 +185,10 @@
             "alt-text",
             `A pair of ${detail.name} socks with the Cloud Four logo repeated in white.`
           );
-
-          document.getElementById("selected-color").innerHTML = detail.name;
+          illustration.setAttribute(
+            "img-path",
+            `/assets/illustrations/socks/${detail.name.toLowerCase()}.svg`
+          );
         });
     </script>
 

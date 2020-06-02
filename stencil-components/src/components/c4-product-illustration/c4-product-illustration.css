@@ -7,8 +7,11 @@ div {
   background: #fff;
   position: relative;
   height: 30em;
-  max-height: 30em;
+  max-height: 100%;
   max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 div::before,
@@ -35,9 +38,9 @@ div::after {
   transform: rotate(180deg);
 }
 
-svg {
-  height: 100%;
-  width: 100%;
+img {
+  max-height: 80%;
+  max-width: 80%;
   position: relative;
   z-index: 1;
 }
