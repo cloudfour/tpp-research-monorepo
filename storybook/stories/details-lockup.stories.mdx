@@ -1,0 +1,87 @@
+import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
+import { html } from "lit-html";
+
+<Meta title="Components/Details Lockup" />
+
+## Details Lockup
+
+The details lockup is a structural component used for page layouts. It organizes
+content into three slots: `header`, `content`, and `footer`. On small screens
+they are stacked vertically in that order with a gap between them. On large
+screens the `content` slot is positioned to the left and has height equal to the
+`header` and `footer` slots combined.
+
+<Preview>
+  <Story name="Basic">
+    {() => {
+      return html`
+        <c4-details-lockup>
+          <div slot="header">
+            <div style="background: #eee;">Header</div>
+          </div>
+          <div slot="content">
+            <div style="background: #eee;">Content</div>
+          </div>
+          <div slot="footer">
+            <div style="background: #eee;">Footer</div>
+          </div>
+        </c4-details-lockup>
+      `;
+    }}
+  </Story>
+</Preview>
+
+## Populated Lockup
+
+Here's an example with the details lockup populated with product details:
+
+<Preview>
+  <Story name="Populated">
+    {() => {
+      return html`
+        <c4-details-lockup>
+          <div slot="header">
+            <c4-text>
+              <h1>Socks</h1>
+              <c4-star-rating rating="4.6"></c4-star-rating>
+              <p>Man, these socks are <em>great!</em></p>
+            </c4-text>
+          </div>
+          <div slot="content">
+            <c4-product-illustration
+              color="#215cca"
+              reference="/assets/illustrations/socks.svg"
+              alt-text="A pair of blue socks with the Cloud Four logo repeated in white."
+            ></c4-product-illustration>
+          </div>
+          <div slot="footer">
+            <c4-text>
+              <h2 class="c4-size-1">Colors</h2>
+              <c4-color-swatches
+                class="c4-size-n1"
+                radio-name="colors"
+                colors-string='[
+                {"hex": "#215cca", "name": "Cloud Blue", "id": "123"},
+                {"hex": "#158466", "name": "PNW Green", "id": "124"},
+                {"hex": "#d9118f", "name": "PWA Pink", "id": "125"}
+              ]'
+              ></c4-color-swatches>
+              <h2 class="c4-size-1">Sizes</h2>
+              <c4-radio-buttons
+                radio-name="sizes"
+                options-string='[
+                {"name": "S", "id": "125"},
+                {"name": "M", "id": "126"},
+                {"name": "L", "id": "127"}
+              ]'
+              ></c4-radio-buttons>
+              <h2 class="c4-size-1">Quantity</h2>
+              <c4-stepper min="1"></c4-stepper>
+              <c4-button>Add To Cart</c4-button>
+            </c4-text>
+          </div>
+        </c4-details-lockup>
+      `;
+    }}
+  </Story>
+</Preview>
