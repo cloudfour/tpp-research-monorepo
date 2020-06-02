@@ -1207,8 +1207,8 @@
         "codeComponentIdentifier" : ".\/C4ProductIllustration.tsx_C4ProductIllustration",
         "codeComponentProps" : {
           "color" : "#09F",
-          "size" : 0,
-          "svg" : "socks"
+          "image" : "design\/assets\/grey.svg",
+          "size" : 0
         },
         "codeOverrideEnabled" : false,
         "constraintsLocked" : false,
@@ -1408,6 +1408,62 @@
         "top" : -1964,
         "visible" : true,
         "width" : 808,
+        "widthType" : 0
+      },
+      {
+        "__class" : "CodeComponentNode",
+        "aspectRatio" : null,
+        "bottom" : null,
+        "centerAnchorX" : 0,
+        "centerAnchorY" : 0,
+        "children" : [
+
+        ],
+        "clip" : true,
+        "codeComponentIdentifier" : ".\/C4ProductIllustration.tsx_C4ProductIllustration",
+        "codeComponentProps" : {
+          "color" : "hsl(25, 100%, 50%)",
+          "image" : "design\/assets\/blue.svg",
+          "size" : 0
+        },
+        "codeOverrideEnabled" : false,
+        "constraintsLocked" : false,
+        "deviceType" : null,
+        "exportOptions" : [
+
+        ],
+        "fillColor" : "rgba(255,255,255,1)",
+        "fillEnabled" : false,
+        "fillImage" : null,
+        "fillImageOriginalName" : null,
+        "fillImagePixelHeight" : null,
+        "fillImagePixelWidth" : null,
+        "fillImageResize" : "fill",
+        "fillType" : "color",
+        "height" : 331,
+        "heightType" : 0,
+        "id" : "seHNl74qz",
+        "intrinsicHeight" : null,
+        "intrinsicWidth" : null,
+        "left" : -851,
+        "locked" : false,
+        "name" : null,
+        "opacity" : 1,
+        "originalid" : null,
+        "parentid" : "mcillDQkZ",
+        "previewSettings" : null,
+        "radius" : 0,
+        "radiusBottomLeft" : 0,
+        "radiusBottomRight" : 0,
+        "radiusIsRelative" : false,
+        "radiusPerCorner" : false,
+        "radiusTopLeft" : 0,
+        "radiusTopRight" : 0,
+        "right" : null,
+        "rotation" : 0,
+        "top" : -2382,
+        "visible" : true,
+        "width" : 369,
         "widthType" : 0
       }
     ],
