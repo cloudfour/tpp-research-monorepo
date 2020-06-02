@@ -257,6 +257,39 @@ if (false) {
      */
     C4Container.prototype.z;
 }
+export class C4DetailsLockup {
+    /**
+     * @param {?} c
+     * @param {?} r
+     * @param {?} z
+     */
+    constructor(c, r, z) {
+        this.z = z;
+        c.detach();
+        this.el = r.nativeElement;
+    }
+}
+C4DetailsLockup.decorators = [
+    { type: Component, args: [{ selector: 'c4-details-lockup', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' },] },
+];
+/** @nocollapse */
+C4DetailsLockup.ctorParameters = () => [
+    { type: ChangeDetectorRef },
+    { type: ElementRef },
+    { type: NgZone }
+];
+if (false) {
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4DetailsLockup.prototype.el;
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4DetailsLockup.prototype.z;
+}
 let C4Heading = class C4Heading {
     /**
      * @param {?} c

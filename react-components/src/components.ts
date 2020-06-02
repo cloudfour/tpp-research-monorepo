@@ -12,6 +12,7 @@ export const C4Button = /*@__PURE__*/createReactComponent<JSX.C4Button, HTMLC4Bu
 export const C4ColorSwatches = /*@__PURE__*/createReactComponent<JSX.C4ColorSwatches, HTMLC4ColorSwatchesElement>('c4-color-swatches');
 export const C4Columns = /*@__PURE__*/createReactComponent<JSX.C4Columns, HTMLC4ColumnsElement>('c4-columns');
 export const C4Container = /*@__PURE__*/createReactComponent<JSX.C4Container, HTMLC4ContainerElement>('c4-container');
+export const C4DetailsLockup = /*@__PURE__*/createReactComponent<JSX.C4DetailsLockup, HTMLC4DetailsLockupElement>('c4-details-lockup');
 export const C4Heading = /*@__PURE__*/createReactComponent<JSX.C4Heading, HTMLC4HeadingElement>('c4-heading');
 export const C4ProductIllustration = /*@__PURE__*/createReactComponent<JSX.C4ProductIllustration, HTMLC4ProductIllustrationElement>('c4-product-illustration');
 export const C4RadioButtons = /*@__PURE__*/createReactComponent<JSX.C4RadioButtons, HTMLC4RadioButtonsElement>('c4-radio-buttons');

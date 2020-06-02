@@ -36,6 +36,13 @@ export declare class C4Container {
     protected el: HTMLElement;
     constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
 }
+export declare interface C4DetailsLockup extends Components.C4DetailsLockup {
+}
+export declare class C4DetailsLockup {
+    protected z: NgZone;
+    protected el: HTMLElement;
+    constructor(c: ChangeDetectorRef, r: ElementRef, z: NgZone);
+}
 export declare interface C4Heading extends Components.C4Heading {
 }
 export declare class C4Heading {

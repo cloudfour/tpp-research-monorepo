@@ -245,6 +245,36 @@ if (false) {
      */
     C4Container.prototype.z;
 }
+var C4DetailsLockup = /** @class */ (function () {
+    function C4DetailsLockup(c, r, z) {
+        this.z = z;
+        c.detach();
+        this.el = r.nativeElement;
+    }
+    C4DetailsLockup.decorators = [
+        { type: Component, args: [{ selector: 'c4-details-lockup', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' },] },
+    ];
+    /** @nocollapse */
+    C4DetailsLockup.ctorParameters = function () { return [
+        { type: ChangeDetectorRef },
+        { type: ElementRef },
+        { type: NgZone }
+    ]; };
+    return C4DetailsLockup;
+}());
+export { C4DetailsLockup };
+if (false) {
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4DetailsLockup.prototype.el;
+    /**
+     * @type {?}
+     * @protected
+     */
+    C4DetailsLockup.prototype.z;
+}
 var C4Heading = /** @class */ (function () {
     function C4Heading(c, r, z) {
         this.z = z;

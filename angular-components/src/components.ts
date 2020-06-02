@@ -89,6 +89,17 @@ export class C4Container {
   }
 }
 
+export declare interface C4DetailsLockup extends Components.C4DetailsLockup {}
+
+@Component({ selector: 'c4-details-lockup', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
+export class C4DetailsLockup {
+  protected el: HTMLElement;
+  constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
+    c.detach();
+    this.el = r.nativeElement;
+  }
+}
+
 export declare interface C4Heading extends Components.C4Heading {}
 @ProxyCmp({inputs: ['tag']})
 @Component({ selector: 'c4-heading', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['tag'] })
