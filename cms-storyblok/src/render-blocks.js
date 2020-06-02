@@ -10,46 +10,54 @@ const components = {
     return `${blok._editable}
 
     <c4-container>
-      <c4-columns has-gutter="true">
-        <div class="column--two-thirds">
-          <c4-product-illustration alt-text="filler" reference="${
-            blok.image
-          }"></c4-product-illustration>
+      <c4-details-lockup>
+        <div slot="header">
+          <c4-text>
+            <h1>${blok.title}</h1>
+
+            <p>$${blok.price}</p>
+          
+            <c4-star-rating rating=${blok.rating}></c4-star-rating>
+
+            <p>${blok.description}</p>
+
+          </c4-text>
         </div>
 
-        <div class="column--one-third">
-          <c4-heading>${blok.title}</c4-heading>
+        <div slot="content">
+          <c4-product-illustration 
+            alt-text="filler" 
+            reference="${blok.image}"
+            class="js-illustration"
+          ></c4-product-illustration>
+        </div>
 
-          <p>$${blok.price}</p>
-        
-          <c4-star-rating rating=${blok.rating}></c4-star-rating>
+        <div slot="footer">
+          <c4-text>
+            <h2 class="c4-size-1">Colors</h2>
 
-          <p>${blok.description}</p>
+            <c4-color-swatches
+              class="js-swatches"
+              radio-name='colors'
+              colors-string='${stringifyColors(blok.colors)}'>
+            </c4-color-swatches>
 
-          <c4-color-swatches
-            radio-name='colors'
-            colors-string='${stringifyColors(blok.colors)}'>
-          </c4-color-swatches>
+            <h2 class="c4-size-1">Sizes</h2>
 
-          <c4-radio-buttons
-            radio-name='sizes'
-            options-string='${stringifyOptions(blok.sizes)}'>
-          </c4-radio-buttons>
+            <c4-radio-buttons
+              radio-name='sizes'
+              options-string='${stringifyOptions(blok.sizes)}'>
+            </c4-radio-buttons>
 
-          <c4-columns has-gutter="true">
-            <div>
-              <c4-stepper
-                min="1"
-                max="${blok.remaining_count ? blok.remaining_count : null}">
-              </c4-stepper>
-            </div>
+            <h2 class="c4-size-1">Quantity</h2>
 
-            <div>
-              <c4-button>${
-                blok.cta_text ? blok.cta_text : "Buy Now"
-              }</c4-button>
-            </div>
-          </c4-columns>
+            <c4-stepper
+              min="1"
+              max="${blok.remaining_count ? blok.remaining_count : null}">
+            </c4-stepper>
+
+            <c4-button>${blok.cta_text ? blok.cta_text : "Buy Now"}</c4-button>
+          </c4-text>
         </div>
     </c4-container>
 
