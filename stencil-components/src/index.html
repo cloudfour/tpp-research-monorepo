@@ -91,81 +91,8 @@
         <c4-heading tag="h2">Star Rating</c4-heading>
 
         <c4-star-rating rating="4.6" class="c4-size-6"></c4-star-rating>
-
-        <c4-heading tag="h2">(WIP) Radio Buttons</c4-heading>
-
-        <p>
-          A simple component to style radio buttons as a button group. Works
-          well for a size selector.
-        </p>
-
-        <p>
-          This component is a work in progress and needs design improvements.
-        </p>
-
-        <c4-radio-buttons
-          radio-name="sizes"
-          options-string='[
-          {"name": "XXS", "id": "123"},
-          {"name": "XS", "id": "124"},
-          {"name": "S", "id": "125"},
-          {"name": "M", "id": "126"},
-          {"name": "L", "id": "127"},
-          {"name": "XL", "id": "128"},
-          {"name": "XXL", "id": "129"}
-        ]'
-        ></c4-radio-buttons>
-
-        <h2>Color Swatches</h2>
-
-        <p>
-          Selected Color:
-          <em id="selected-color">
-            Cloud Blue
-          </em>
-        </p>
-
-        <c4-product-illustration
-          color="#215cca"
-          reference="/assets/illustrations/socks.svg"
-          alt-text="A pair of blue socks with the Cloud Four logo repeated in white."
-        ></c4-product-illustration>
-
-        <c4-color-swatches
-          radio-name="colors"
-          colors-string='[
-          {"hex": "#215cca", "name": "Cloud Blue", "id": "123"},
-          {"hex": "#158466", "name": "PNW Green", "id": "124"},
-          {"hex": "#d9118f", "name": "PWA Pink", "id": "125"},
-          {"hex": "#f27041", "name": "Cloud Fourange", "id": "126"},
-          {"hex": "#485968", "name": "Grey", "id": "127"}
-        ]'
-        ></c4-color-swatches>
-
-        <p>
-          The color swatches emit an event when the color is changed. This page
-          is using vanilla JS to listen for this event and update the selected
-          color.
-        </p>
       </c4-text>
     </c4-container>
-
-    <script>
-      document
-        .querySelector("c4-color-swatches")
-        .addEventListener("colorChanged", ({ detail }) => {
-          const illustration = document.querySelector(
-            "c4-product-illustration"
-          );
-          illustration.setAttribute("color", detail.hex);
-          illustration.setAttribute(
-            "alt-text",
-            `A pair of ${detail.name} socks with the Cloud Four logo repeated in white.`
-          );
-
-          document.getElementById("selected-color").innerHTML = detail.name;
-        });
-    </script>
 
     <c4-container>
       <c4-text>
@@ -194,6 +121,8 @@
         <div slot="header">
           <c4-text>
             <h1>Socks</h1>
+
+            <p>$7.75</p>
 
             <c4-star-rating rating="4.6"></c4-star-rating>
 
@@ -241,6 +170,23 @@
         </div>
       </c4-details-lockup>
     </c4-container>
+
+    <script>
+      document
+        .querySelector("c4-color-swatches")
+        .addEventListener("colorChanged", ({ detail }) => {
+          const illustration = document.querySelector(
+            "c4-product-illustration"
+          );
+          illustration.setAttribute("color", detail.hex);
+          illustration.setAttribute(
+            "alt-text",
+            `A pair of ${detail.name} socks with the Cloud Four logo repeated in white.`
+          );
+
+          document.getElementById("selected-color").innerHTML = detail.name;
+        });
+    </script>
 
     <c4-container is-prose="true" is-tall="true" is-dark="true">
       <c4-text>
