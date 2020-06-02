@@ -316,7 +316,7 @@ var C4ProductIllustration = /** @class */ (function () {
         this.el = r.nativeElement;
     }
     C4ProductIllustration.decorators = [
-        { type: Component, args: [{ selector: 'c4-product-illustration', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['altText', 'color', 'reference'] },] },
+        { type: Component, args: [{ selector: 'c4-product-illustration', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['altText', 'color', 'imgPath'] },] },
     ];
     /** @nocollapse */
     C4ProductIllustration.ctorParameters = function () { return [
@@ -325,7 +325,7 @@ var C4ProductIllustration = /** @class */ (function () {
         { type: NgZone }
     ]; };
     C4ProductIllustration = tslib_1.__decorate([
-        ProxyCmp({ inputs: ['altText', 'color', 'reference'] }),
+        ProxyCmp({ inputs: ['altText', 'color', 'imgPath'] }),
         tslib_1.__metadata("design:paramtypes", [ChangeDetectorRef, ElementRef, NgZone])
     ], C4ProductIllustration);
     return C4ProductIllustration;

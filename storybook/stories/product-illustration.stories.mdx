@@ -1,0 +1,39 @@
+import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
+import { html } from "lit-html";
+import { select, withKnobs } from "@storybook/addon-knobs";
+
+<Meta title="Components/Product Illustration" decorators={[withKnobs]} />
+
+## Product Illustration
+
+Product Illustrations house images of products. Based on the product color
+passed in they also
+[automatically generate complementary backgrounds.](https://cloudfour.com/thinks/generating-complementary-gradients-with-css-filters/)
+
+<Preview>
+  <Story name="Interactive">
+    {() => {
+      const colors = {
+        blue: { hex: "#215cca", name: "blue" },
+        pink: { hex: "#d9118f", name: "pink" },
+        grey: { hex: "#485968", name: "grey" },
+        green: { hex: "#158466", name: "green" },
+        orange: { hex: "#f27041", name: "orange" },
+      };
+      const color = select(
+        "Color",
+        {
+          ...colors,
+        },
+        { hex: "#215cca", name: "blue" }
+      );
+      return html`
+        <c4-product-illustration
+          color="${color.hex}"
+          img-path="/assets/stencil/illustrations/socks/${color.name}.svg"
+          alt-text="A pair of blue socks with the Cloud Four logo repeated in white."
+        ></c4-product-illustration>
+      `;
+    }}
+  </Story>
+</Preview>
