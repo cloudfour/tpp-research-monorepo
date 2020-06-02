@@ -167,6 +167,81 @@
         });
     </script>
 
+    <c4-container is-prose="true">
+      <c4-text>
+        <h2>
+          Basic Details Lockup
+        </h2>
+      </c4-text>
+      <c4-details-lockup>
+        <div slot="header">
+          <div style="background: #eee;">Header</div>
+        </div>
+        <div slot="content">
+          <div style="background: #eee;">Content</div>
+        </div>
+        <div slot="footer">
+          <div style="background: #eee;">Footer</div>
+        </div>
+      </c4-details-lockup>
+
+      <c4-text>
+        <h2>
+          Populated Details Lockup
+        </h2>
+      </c4-text>
+      <c4-details-lockup>
+        <div slot="header">
+          <c4-text>
+            <h1>Socks</h1>
+
+            <c4-star-rating rating="4.6"></c4-star-rating>
+
+            <p>Man, these socks are <em>great!</em></p>
+          </c4-text>
+        </div>
+        <div slot="content">
+          <c4-product-illustration
+            color="#215cca"
+            reference="/assets/illustrations/socks.svg"
+            alt-text="A pair of blue socks with the Cloud Four logo repeated in white."
+          ></c4-product-illustration>
+        </div>
+        <div slot="footer">
+          <c4-text>
+            <h2 class="c4-size-1">Colors</h2>
+
+            <c4-color-swatches
+              class="c4-size-n1"
+              radio-name="colors"
+              colors-string='[
+                {"hex": "#215cca", "name": "Cloud Blue", "id": "123"},
+                {"hex": "#158466", "name": "PNW Green", "id": "124"},
+                {"hex": "#d9118f", "name": "PWA Pink", "id": "125"}
+              ]'
+            ></c4-color-swatches>
+
+            <h2 class="c4-size-1">Sizes</h2>
+
+            <c4-radio-buttons
+              radio-name="sizes"
+              options-string='[
+                {"name": "S", "id": "125"},
+                {"name": "M", "id": "126"},
+                {"name": "L", "id": "127"}
+              ]'
+            ></c4-radio-buttons>
+
+            <h2 class="c4-size-1">Quantity</h2>
+
+            <c4-stepper min="1"></c4-stepper>
+
+            <c4-button>Add To Cart</c4-button>
+          </c4-text>
+        </div>
+      </c4-details-lockup>
+    </c4-container>
+
     <c4-container is-prose="true" is-tall="true" is-dark="true">
       <c4-text>
         <h2>Dark Theme</h2>

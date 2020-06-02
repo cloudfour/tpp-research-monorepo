@@ -1,0 +1,22 @@
+.lockup {
+  display: grid;
+  grid-gap: var(--c4-staggered-margin);
+}
+
+@media (min-width: 45em) {
+  .lockup {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: min-content 1fr;
+  }
+
+  .content {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .header,
+  .footer {
+    grid-row: span 1;
+  }
+}

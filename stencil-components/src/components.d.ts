@@ -28,6 +28,8 @@ export namespace Components {
         "isTall": boolean;
         "tag": string;
     }
+    interface C4DetailsLockup {
+    }
     interface C4Heading {
         "tag": string;
     }
@@ -79,6 +81,12 @@ declare global {
         prototype: HTMLC4ContainerElement;
         new (): HTMLC4ContainerElement;
     };
+    interface HTMLC4DetailsLockupElement extends Components.C4DetailsLockup, HTMLStencilElement {
+    }
+    var HTMLC4DetailsLockupElement: {
+        prototype: HTMLC4DetailsLockupElement;
+        new (): HTMLC4DetailsLockupElement;
+    };
     interface HTMLC4HeadingElement extends Components.C4Heading, HTMLStencilElement {
     }
     var HTMLC4HeadingElement: {
@@ -120,6 +128,7 @@ declare global {
         "c4-color-swatches": HTMLC4ColorSwatchesElement;
         "c4-columns": HTMLC4ColumnsElement;
         "c4-container": HTMLC4ContainerElement;
+        "c4-details-lockup": HTMLC4DetailsLockupElement;
         "c4-heading": HTMLC4HeadingElement;
         "c4-product-illustration": HTMLC4ProductIllustrationElement;
         "c4-radio-buttons": HTMLC4RadioButtonsElement;
@@ -152,6 +161,8 @@ declare namespace LocalJSX {
         "isTall"?: boolean;
         "tag"?: string;
     }
+    interface C4DetailsLockup {
+    }
     interface C4Heading {
         "tag"?: string;
     }
@@ -183,6 +194,7 @@ declare namespace LocalJSX {
         "c4-color-swatches": C4ColorSwatches;
         "c4-columns": C4Columns;
         "c4-container": C4Container;
+        "c4-details-lockup": C4DetailsLockup;
         "c4-heading": C4Heading;
         "c4-product-illustration": C4ProductIllustration;
         "c4-radio-buttons": C4RadioButtons;
@@ -199,6 +211,7 @@ declare module "@stencil/core" {
             "c4-color-swatches": LocalJSX.C4ColorSwatches & JSXBase.HTMLAttributes<HTMLC4ColorSwatchesElement>;
             "c4-columns": LocalJSX.C4Columns & JSXBase.HTMLAttributes<HTMLC4ColumnsElement>;
             "c4-container": LocalJSX.C4Container & JSXBase.HTMLAttributes<HTMLC4ContainerElement>;
+            "c4-details-lockup": LocalJSX.C4DetailsLockup & JSXBase.HTMLAttributes<HTMLC4DetailsLockupElement>;
             "c4-heading": LocalJSX.C4Heading & JSXBase.HTMLAttributes<HTMLC4HeadingElement>;
             "c4-product-illustration": LocalJSX.C4ProductIllustration & JSXBase.HTMLAttributes<HTMLC4ProductIllustrationElement>;
             "c4-radio-buttons": LocalJSX.C4RadioButtons & JSXBase.HTMLAttributes<HTMLC4RadioButtonsElement>;
