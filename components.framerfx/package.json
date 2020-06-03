@@ -1,15 +1,19 @@
 {
-	"main": "dist/index.js",
-	"license": "MIT",
-	"devDependencies": {
-		"@types/react": "^16.8"
-	},
-	"peerDependencies": {
-		"framer": "^1.0",
-		"react": "^16.8"
-	},
-	"framer": {
-		"id": "911df69d-962c-48ef-9c8c-9f239b4ebcea"
-	},
-	"author": "Paul Hebert"
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.8"
+  },
+  "peerDependencies": {
+    "framer": "^1.0",
+    "react": "^16.8"
+  },
+  "framer": {
+    "id": "911df69d-962c-48ef-9c8c-9f239b4ebcea"
+  },
+  "author": "Paul Hebert",
+  "dependencies": {
+    "markdown-to-jsx": "^6.11.4",
+    "react-dom": "^16.13.1"
+  }
 }
