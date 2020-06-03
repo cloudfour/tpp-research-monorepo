@@ -23,5 +23,6 @@ addPropertyControls(C4ProductIllustration, {
     },
     color: {
         type: ControlType.Color,
+        defaultValue: "#215cca",
     },
 })

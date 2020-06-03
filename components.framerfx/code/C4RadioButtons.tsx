@@ -32,6 +32,7 @@ addPropertyControls(C4RadioButtons, {
         propertyControl: {
             type: ControlType.String,
         },
+        defaultValue: ["S", "M", "L", "XL"],
     },
     size: {
         type: ControlType.Number,

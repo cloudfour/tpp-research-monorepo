@@ -33,6 +33,7 @@ addPropertyControls(C4ColorSwatches, {
         propertyControl: {
             type: ControlType.Color,
         },
+        defaultValue: ["#215cca", "#158466", "#d9118f", "#f27041", "#485968"],
     },
     size: {
         type: ControlType.Number,
