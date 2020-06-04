@@ -8,9 +8,8 @@ input {
   cursor: pointer;
   font-size: inherit;
   margin: 0;
-  margin-right: var(--c4-size-n3);
   position: relative;
-  width: var(--c4-size-5);
+  width: 100%;
   height: var(--c4-size-4);
   text-align: center;
   transition: filter 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
@@ -68,4 +67,12 @@ label {
 
 .swatches {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+}
+
+.swatch {
+  margin-right: var(--c4-size-n3);
+  flex-grow: 1;
+  flex-basis: vaR(--c4-size-5)
 }
