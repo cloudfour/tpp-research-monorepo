@@ -8,9 +8,10 @@ export const C4TextLine = (props: any) => {
         fontWeight: props.weight,
         fontStyle: props.italic ? "italic" : "normal",
     }
+
     return (
         <C4Text className={sizeToUtility(props.size)} style={fontStyles}>
-            <p>{props.slot}</p>
+            <props.tag>{props.slot}</props.tag>
         </C4Text>
     )
 }
@@ -34,5 +35,9 @@ addPropertyControls(C4TextLine, {
         max: 900,
         step: 1,
         defaultValue: 400,
+    },
+    tag: {
+        type: ControlType.String,
+        defaultValue: "p",
     },
 })
