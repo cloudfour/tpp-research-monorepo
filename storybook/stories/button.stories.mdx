@@ -19,7 +19,7 @@ tag. It has a number of options.
       const href = text("href", "#");
       const buttonClass = select(
         "Modifier Class",
-        ["", "secondary", "tertiary"],
+        ["", "secondary", "tertiary", "stretch", "left", "right"],
         ""
       );
       return html`
@@ -68,6 +68,41 @@ primary flow.
       </c4-button>
       <c4-button button-class="tertiary">
         Tertiary Button
+      </c4-button>
+    `}
+  </Story>
+</Preview>
+
+## Stretch Buttons
+
+Stretch buttons will stretch to fill available width. These are useful for
+primary calls to action.
+
+<Preview>
+  <Story name="Stretch">
+    {() => html`
+      <c4-button button-class="stretch">
+        Stretch Button
+      </c4-button>
+    `}
+  </Story>
+</Preview>
+
+
+
+## Left and Right Buttons
+
+Buttons can be used to compose more complex button groups. Add the left or
+right class to only round corners on one side of the button.
+
+<Preview>
+  <Story name="Left and Right">
+    {() => html`
+      <c4-button button-class="left">
+        Left Button
+      </c4-button>
+      <c4-button button-class="right">
+        Right Button
       </c4-button>
     `}
   </Story>
