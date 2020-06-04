@@ -66,3 +66,7 @@
 .tertiary {
   border-color: transparent;
 }
+
+.stretch {
+  width: 100%;
+}
