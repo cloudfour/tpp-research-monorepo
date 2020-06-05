@@ -17,7 +17,9 @@ export const C4ColorSwatches = (props: any) => {
     return (
         <_C4ColorSwatches
             colorsData={colorsArray}
-            radioName={props.radioName}
+            // We randomize the radio name so if this is used in multiple designs it's unique each time.
+            // This ensures the first option is checked.
+            radioName={props.radioName + Math.random().toString()}
             className={sizeToUtility(props.size)}
         />
     )

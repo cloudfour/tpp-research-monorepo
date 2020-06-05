@@ -16,7 +16,9 @@ export const C4RadioButtons = (props: any) => {
     return (
         <_C4RadioButtons
             optionsData={optionsArray}
-            radioName={props.radioName}
+            // We randomize the radio name so if this is used in multiple designs it's unique each time.
+            // This ensures the first option is checked.
+            radioName={props.radioName + Math.random().toString()}
             className={sizeToUtility(props.size)}
         />
     )
@@ -25,7 +27,7 @@ export const C4RadioButtons = (props: any) => {
 addPropertyControls(C4RadioButtons, {
     radioName: {
         type: ControlType.String,
-        defaultValue: "color",
+        defaultValue: "sizes",
     },
     options: {
         type: ControlType.Array,
