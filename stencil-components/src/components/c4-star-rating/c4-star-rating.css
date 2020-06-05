@@ -1,9 +1,9 @@
 svg {
   --c4-color-star-full: #f27041;
   --c4-color-star-empty: #c0cfd8;
-}
 
-svg {
+  font-size: var(--c4-size-2);
+
   width: var(--c4-size-0);
   height: var(--c4-size-0);
 }
@@ -17,7 +17,7 @@ svg.full * {
 }
 
 /* screen-reader-only text */
-p {
+.screen-reader-text {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -26,4 +26,9 @@ p {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.inner {
+  display: inline-block;
+  text-align: center;
 }

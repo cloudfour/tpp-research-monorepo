@@ -47,6 +47,8 @@ export namespace Components {
     interface C4StarRating {
         "guid": string;
         "rating": number;
+        "reviewsCount"?: number;
+        "reviewsLink"?: string;
     }
     interface C4Stepper {
         "max"?: number;
@@ -181,6 +183,8 @@ declare namespace LocalJSX {
     interface C4StarRating {
         "guid"?: string;
         "rating"?: number;
+        "reviewsCount"?: number;
+        "reviewsLink"?: string;
     }
     interface C4Stepper {
         "max"?: number;

@@ -8,6 +8,8 @@ import { Component, h, Prop } from "@stencil/core";
 export class C4Container {
   @Prop() rating: number;
   @Prop() guid: string;
+  @Prop() reviewsCount?: number;
+  @Prop() reviewsLink?: string;
 
   render() {
     const stars = [];
@@ -54,9 +56,18 @@ export class C4Container {
     }
 
     return (
-      <div>
-        <p>{this.rating.toString()} stars out of 5.</p>
-        {stars}
+      <div class="wrapper">
+        <p class="screen-reader-text">
+          {this.rating.toString()} stars out of 5.
+        </p>
+
+        <div class="inner">
+          <div class="stars">{stars}</div>
+
+          {this.reviewsCount && this.reviewsLink ? (
+            <a href={this.reviewsLink}>({this.reviewsCount} reviews)</a>
+          ) : null}
+        </div>
       </div>
     );
   }

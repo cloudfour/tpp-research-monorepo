@@ -448,7 +448,7 @@
               "value" : "#485968"
             }
           ],
-          "radioName" : "color",
+          "radioName" : "colors",
           "size" : 0
         },
         "codeOverrideEnabled" : false,
@@ -525,7 +525,7 @@
               "value" : "XL"
             }
           ],
-          "radioName" : "color",
+          "radioName" : "sizes",
           "size" : 1
         },
         "codeOverrideEnabled" : false,
@@ -1608,7 +1608,7 @@
                   "value" : "XL"
                 }
               ],
-              "radioName" : "color",
+              "radioName" : "sizes-2",
               "size" : 1
             },
             "codeOverrideEnabled" : false,
@@ -1810,7 +1810,7 @@
                   "value" : "#485968"
                 }
               ],
-              "radioName" : "color",
+              "radioName" : "colors-2",
               "size" : 1
             },
             "codeOverrideEnabled" : false,

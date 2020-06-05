@@ -1,12 +1,14 @@
 import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
 import { html } from "lit-html";
-import { number, withKnobs } from "@storybook/addon-knobs";
+import { text, number, withKnobs } from "@storybook/addon-knobs";
 
 <Meta title="Components/Star Ratings" decorators={[withKnobs]} />
 
 # Star Ratings
 
-Our `c4-star-rating` component can be used to display a 5 star rating.
+Our `c4-star-rating` component can be used to display a 5 star rating. You can
+optionally include the number of reviews this is based upon and a link to
+those reviews.
 
 <Preview>
   <Story name="Star Rating">
@@ -17,8 +19,14 @@ Our `c4-star-rating` component can be used to display a 5 star rating.
         max: 5,
         step: 0.01,
       });
+      const reviewsCount = number("Reviews Count", 455);
+      const reviewsLink = text("Reviews Link", "#");
       return html`
-        <c4-star-rating rating="${rating}"></c4-star-rating>
+        <c4-star-rating
+          rating="${rating}"
+          reviews-count="${reviewsCount}"
+          reviews-link="${reviewsLink}"
+        ></c4-star-rating>
       `;
     }}
   </Story>

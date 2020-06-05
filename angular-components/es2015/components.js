@@ -420,7 +420,7 @@ let C4StarRating = class C4StarRating {
     }
 };
 C4StarRating.decorators = [
-    { type: Component, args: [{ selector: 'c4-star-rating', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['guid', 'rating'] },] },
+    { type: Component, args: [{ selector: 'c4-star-rating', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['guid', 'rating', 'reviewsCount', 'reviewsLink'] },] },
 ];
 /** @nocollapse */
 C4StarRating.ctorParameters = () => [
@@ -429,7 +429,7 @@ C4StarRating.ctorParameters = () => [
     { type: NgZone }
 ];
 C4StarRating = tslib_1.__decorate([
-    ProxyCmp({ inputs: ['guid', 'rating'] }),
+    ProxyCmp({ inputs: ['guid', 'rating', 'reviewsCount', 'reviewsLink'] }),
     tslib_1.__metadata("design:paramtypes", [ChangeDetectorRef, ElementRef, NgZone])
 ], C4StarRating);
 export { C4StarRating };

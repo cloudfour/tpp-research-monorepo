@@ -136,8 +136,8 @@ export class C4RadioButtons {
 }
 
 export declare interface C4StarRating extends Components.C4StarRating {}
-@ProxyCmp({inputs: ['guid', 'rating']})
-@Component({ selector: 'c4-star-rating', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['guid', 'rating'] })
+@ProxyCmp({inputs: ['guid', 'rating', 'reviewsCount', 'reviewsLink']})
+@Component({ selector: 'c4-star-rating', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['guid', 'rating', 'reviewsCount', 'reviewsLink'] })
 export class C4StarRating {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {

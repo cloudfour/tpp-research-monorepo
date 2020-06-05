@@ -7,10 +7,12 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `guid`   | `guid`    |             | `string` | `undefined` |
-| `rating` | `rating`  |             | `number` | `undefined` |
+| Property       | Attribute       | Description | Type     | Default     |
+| -------------- | --------------- | ----------- | -------- | ----------- |
+| `guid`         | `guid`          |             | `string` | `undefined` |
+| `rating`       | `rating`        |             | `number` | `undefined` |
+| `reviewsCount` | `reviews-count` |             | `number` | `undefined` |
+| `reviewsLink`  | `reviews-link`  |             | `string` | `undefined` |
 
 
 ----------------------------------------------
