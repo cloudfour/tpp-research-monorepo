@@ -196,7 +196,8 @@
             "codeComponentIdentifier" : ".\/C4StarRating.tsx_C4StarRating",
             "codeComponentProps" : {
               "rating" : 4.6100000000000003,
-              "size" : 4
+              "reviewsCount" : 455,
+              "size" : 2
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -2842,8 +2843,8 @@
             "__class" : "CodeComponentNode",
             "aspectRatio" : null,
             "bottom" : null,
-            "centerAnchorX" : 0.77733333333333332,
-            "centerAnchorY" : 0.11919040479760119,
+            "centerAnchorX" : 0.87918660287081341,
+            "centerAnchorY" : 0.61250000000000004,
             "children" : [
 
             ],
@@ -2851,7 +2852,8 @@
             "codeComponentIdentifier" : ".\/C4StarRating.tsx_C4StarRating",
             "codeComponentProps" : {
               "rating" : 4.6100000000000003,
-              "size" : 4
+              "reviewsCount" : 455,
+              "size" : 3
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,
@@ -2867,7 +2869,7 @@
             "fillImagePixelWidth" : null,
             "fillImageResize" : "fill",
             "fillType" : "color",
-            "height" : 29,
+            "height" : 37,
             "heightType" : 0,
             "id" : "KZvMtWUog",
             "intrinsicHeight" : null,
@@ -2890,7 +2892,7 @@
             "rotation" : 0,
             "top" : null,
             "visible" : true,
-            "width" : 135,
+            "width" : 169,
             "widthType" : 0
           }
         ],
@@ -3503,9 +3505,9 @@
           {
             "__class" : "CodeComponentNode",
             "aspectRatio" : null,
-            "bottom" : 23,
-            "centerAnchorX" : 0.80736543909348446,
-            "centerAnchorY" : 0.41153846153846152,
+            "bottom" : -5,
+            "centerAnchorX" : 0.8101983002832861,
+            "centerAnchorY" : 0.51923076923076927,
             "children" : [
               {
                 "__class" : "CodeComponentNode",
@@ -3560,7 +3562,7 @@
                 "radiusTopRight" : 0,
                 "right" : null,
                 "rotation" : 0,
-                "top" : 3,
+                "top" : null,
                 "visible" : true,
                 "width" : 83,
                 "widthType" : 0
@@ -3568,9 +3570,9 @@
               {
                 "__class" : "CodeComponentNode",
                 "aspectRatio" : null,
-                "bottom" : 18,
-                "centerAnchorX" : 0.50357142857142856,
-                "centerAnchorY" : 0.67757009345794394,
+                "bottom" : null,
+                "centerAnchorX" : 0.51071428571428568,
+                "centerAnchorY" : 0.65887850467289721,
                 "children" : [
 
                 ],
@@ -3578,7 +3580,8 @@
                 "codeComponentIdentifier" : ".\/C4StarRating.tsx_C4StarRating",
                 "codeComponentProps" : {
                   "rating" : 4.6100000000000003,
-                  "size" : 4
+                  "reviewsCount" : 455,
+                  "size" : 2
                 },
                 "codeOverrideEnabled" : false,
                 "constraintsLocked" : false,
@@ -3594,70 +3597,12 @@
                 "fillImagePixelWidth" : null,
                 "fillImageResize" : "fill",
                 "fillType" : "color",
-                "height" : 33,
+                "height" : 67,
                 "heightType" : 0,
                 "id" : "roTSStMOZ",
                 "intrinsicHeight" : null,
                 "intrinsicWidth" : null,
-                "left" : 3,
-                "locked" : false,
-                "name" : null,
-                "opacity" : 1,
-                "originalid" : null,
-                "parentid" : "lsqpGWhvW",
-                "previewSettings" : null,
-                "radius" : 0,
-                "radiusBottomLeft" : 0,
-                "radiusBottomRight" : 0,
-                "radiusIsRelative" : false,
-                "radiusPerCorner" : false,
-                "radiusTopLeft" : 0,
-                "radiusTopRight" : 0,
-                "right" : 2,
-                "rotation" : 0,
-                "top" : null,
-                "visible" : true,
-                "width" : 135,
-                "widthType" : 0
-              },
-              {
-                "__class" : "CodeComponentNode",
-                "aspectRatio" : null,
-                "bottom" : null,
-                "centerAnchorX" : 0.9410112359550562,
-                "centerAnchorY" : 0.55000000000000004,
-                "children" : [
-
-                ],
-                "clip" : true,
-                "codeComponentIdentifier" : ".\/C4TextLine.tsx_C4TextLine",
-                "codeComponentProps" : {
-                  "italic" : false,
-                  "size" : 1,
-                  "slot" : "(455 Reviews)",
-                  "tag" : "a",
-                  "weight" : 400
-                },
-                "codeOverrideEnabled" : false,
-                "constraintsLocked" : false,
-                "deviceType" : null,
-                "exportOptions" : [
-
-                ],
-                "fillColor" : "rgba(255,255,255,1)",
-                "fillEnabled" : false,
-                "fillImage" : null,
-                "fillImageOriginalName" : null,
-                "fillImagePixelHeight" : null,
-                "fillImagePixelWidth" : null,
-                "fillImageResize" : "fill",
-                "fillType" : "color",
-                "height" : 20,
-                "heightType" : 0,
-                "id" : "kpkkoToRt",
-                "intrinsicHeight" : null,
-                "intrinsicWidth" : null,
-                "left" : 0,
+                "left" : null,
                 "locked" : false,
                 "name" : null,
                 "opacity" : 1,
@@ -3673,9 +3618,9 @@
                 "radiusTopRight" : 0,
                 "right" : null,
                 "rotation" : 0,
-                "top" : 0,
+                "top" : null,
                 "visible" : true,
-                "width" : 98,
+                "width" : 139,
                 "widthType" : 0
               }
             ],
@@ -3707,7 +3652,7 @@
             "fillImagePixelWidth" : null,
             "fillImageResize" : "fill",
             "fillType" : "color",
-            "height" : 107,
+            "height" : 135,
             "heightType" : 0,
             "id" : "lsqpGWhvW",
             "intrinsicHeight" : null,
@@ -3726,7 +3671,7 @@
             "radiusPerCorner" : false,
             "radiusTopLeft" : 0,
             "radiusTopRight" : 0,
-            "right" : -2,
+            "right" : -3,
             "rotation" : 0,
             "top" : 0,
             "visible" : true,
@@ -4300,7 +4245,8 @@
             "codeComponentIdentifier" : ".\/C4StarRating.tsx_C4StarRating",
             "codeComponentProps" : {
               "rating" : 4.6100000000000003,
-              "size" : 4
+              "reviewsCount" : 455,
+              "size" : 2
             },
             "codeOverrideEnabled" : false,
             "constraintsLocked" : false,

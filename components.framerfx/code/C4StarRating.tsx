@@ -6,6 +6,7 @@ import { sizeSelectorPresets, sizeToUtility } from "./Utilities"
 export const C4StarRating = (props: any) => (
     <_C4StarRating
         {...props}
+        reviewsLink="#"
         className={sizeToUtility(props.size)}
     ></_C4StarRating>
 )
@@ -17,6 +18,10 @@ addPropertyControls(C4StarRating, {
         step: 0.01,
         min: 0,
         max: 5,
+    },
+    reviewsCount: {
+        type: ControlType.Number,
+        defaultValue: null,
     },
     size: {
         type: ControlType.Number,
