@@ -1,21 +1,29 @@
 :host {
-  display: block;
+  --aspect-ratio: calc(9 / 16 * 100%);
 }
 
-div {
+/* This wrapper uses the ratio box padding hack to enforce a specific */
+.ratio-box {
+  display: block;
+  position: relative;
+  padding-top: var(--aspect-ratio);
+}
+
+.content {
   --base-filters: saturate(300%) brightness(120%) opacity(25%);
   background: #fff;
-  position: relative;
-  height: 30em;
-  max-height: 100%;
-  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-div::before,
-div::after {
+.content::before,
+.content::after {
   content: "";
   background: linear-gradient(
     -30deg,
@@ -30,11 +38,11 @@ div::after {
   z-index: 0;
 }
 
-div::before {
+.content::before {
   filter: hue-rotate(220deg) var(--base-filters);
 }
 
-div::after {
+.content::after {
   filter: hue-rotate(140deg) var(--base-filters);
   transform: rotate(180deg);
 }

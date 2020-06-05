@@ -1,6 +1,6 @@
 import { Story, Preview, Meta, Props } from "@storybook/addon-docs/blocks";
 import { html } from "lit-html";
-import { select, withKnobs } from "@storybook/addon-knobs";
+import { number, select, withKnobs } from "@storybook/addon-knobs";
 
 <Meta title="Components/Product Illustration" decorators={[withKnobs]} />
 
@@ -8,10 +8,13 @@ import { select, withKnobs } from "@storybook/addon-knobs";
 
 Product Illustrations house images of products. Based on the product color
 passed in they also
-[automatically generate complementary backgrounds.](https://cloudfour.com/thinks/generating-complementary-gradients-with-css-filters/)
+[automatically generate complementary backgrounds.](https://cloudfour.com/thinks/generating-complementary-gradients-with-css-filters/).
+
+By default they're displayed with a 9/16 aspect ratio, but this can be
+overwritten by passing a percentage number as their `aspect-ratio` attribute.
 
 <Preview>
-  <Story name="Interactive">
+  <Story name="Product Illustration">
     {() => {
       const colors = {
         blue: { hex: "#215cca", name: "blue" },
@@ -27,11 +30,18 @@ passed in they also
         },
         { hex: "#215cca", name: "blue" }
       );
+      const ratio = number("Aspect Ratio", 56.25, {
+        range: true,
+        min: 0,
+        max: 100,
+        step: 0.25,
+      });
       return html`
         <c4-product-illustration
           color="${color.hex}"
           img-path="/assets/stencil/illustrations/socks/${color.name}.svg"
           alt-text="A pair of ${color.name} socks with the Cloud Four logo repeated in white."
+          aspect-ratio="${ratio}"
         ></c4-product-illustration>
       `;
     }}

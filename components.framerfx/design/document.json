@@ -840,8 +840,9 @@
             "clip" : true,
             "codeComponentIdentifier" : ".\/C4ProductIllustration.tsx_C4ProductIllustration",
             "codeComponentProps" : {
+              "aspectRatio" : 60,
               "color" : "#215cca",
-              "image" : "design\/assets\/blue.svg",
+              "imgPath" : "design\/assets\/blue.svg",
               "size" : 0
             },
             "codeOverrideEnabled" : false,
@@ -2238,8 +2239,9 @@
             "clip" : true,
             "codeComponentIdentifier" : ".\/C4ProductIllustration.tsx_C4ProductIllustration",
             "codeComponentProps" : {
+              "aspectRatio" : 60,
               "color" : "#215cca",
-              "image" : "design\/assets\/blue.svg",
+              "imgPath" : "design\/assets\/blue.svg",
               "size" : 0
             },
             "codeOverrideEnabled" : false,
@@ -2593,15 +2595,16 @@
             "aspectRatio" : null,
             "bottom" : null,
             "centerAnchorX" : 0.30859375,
-            "centerAnchorY" : 0.3215277777777778,
+            "centerAnchorY" : 0.31319444444444444,
             "children" : [
 
             ],
             "clip" : true,
             "codeComponentIdentifier" : ".\/C4ProductIllustration.tsx_C4ProductIllustration",
             "codeComponentProps" : {
+              "aspectRatio" : 65,
               "color" : "#215cca",
-              "image" : "design\/assets\/blue.svg",
+              "imgPath" : "design\/assets\/blue.svg",
               "size" : 0
             },
             "codeOverrideEnabled" : false,
@@ -2618,7 +2621,7 @@
             "fillImagePixelWidth" : null,
             "fillImageResize" : "fill",
             "fillType" : "color",
-            "height" : 463,
+            "height" : 451,
             "heightType" : 0,
             "id" : "bOPIehTFx",
             "intrinsicHeight" : null,
@@ -2941,8 +2944,9 @@
             "clip" : true,
             "codeComponentIdentifier" : ".\/C4ProductIllustration.tsx_C4ProductIllustration",
             "codeComponentProps" : {
+              "aspectRatio" : 60,
               "color" : "#215cca",
-              "image" : "design\/assets\/blue.svg",
+              "imgPath" : "design\/assets\/blue.svg",
               "size" : 0
             },
             "codeOverrideEnabled" : false,
@@ -3680,8 +3684,9 @@
             "clip" : true,
             "codeComponentIdentifier" : ".\/C4ProductIllustration.tsx_C4ProductIllustration",
             "codeComponentProps" : {
+              "aspectRatio" : 60,
               "color" : "#215cca",
-              "image" : "design\/assets\/blue.svg",
+              "imgPath" : "design\/assets\/blue.svg",
               "size" : 0
             },
             "codeOverrideEnabled" : false,

@@ -35,6 +35,7 @@ export namespace Components {
     }
     interface C4ProductIllustration {
         "altText": string;
+        "aspectRatio": number;
         "color": string;
         "imgPath": string;
     }
@@ -170,6 +171,7 @@ declare namespace LocalJSX {
     }
     interface C4ProductIllustration {
         "altText"?: string;
+        "aspectRatio"?: number;
         "color"?: string;
         "imgPath"?: string;
     }

@@ -7,11 +7,12 @@
 
 ## Properties
 
-| Property  | Attribute  | Description | Type     | Default     |
-| --------- | ---------- | ----------- | -------- | ----------- |
-| `altText` | `alt-text` |             | `string` | `undefined` |
-| `color`   | `color`    |             | `string` | `"#215CCA"` |
-| `imgPath` | `img-path` |             | `string` | `undefined` |
+| Property      | Attribute      | Description | Type     | Default     |
+| ------------- | -------------- | ----------- | -------- | ----------- |
+| `altText`     | `alt-text`     |             | `string` | `undefined` |
+| `aspectRatio` | `aspect-ratio` |             | `number` | `undefined` |
+| `color`       | `color`        |             | `string` | `"#215CCA"` |
+| `imgPath`     | `img-path`     |             | `string` | `undefined` |
 
 
 ----------------------------------------------

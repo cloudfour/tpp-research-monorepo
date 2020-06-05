@@ -112,8 +112,8 @@ export class C4Heading {
 }
 
 export declare interface C4ProductIllustration extends Components.C4ProductIllustration {}
-@ProxyCmp({inputs: ['altText', 'color', 'imgPath']})
-@Component({ selector: 'c4-product-illustration', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['altText', 'color', 'imgPath'] })
+@ProxyCmp({inputs: ['altText', 'aspectRatio', 'color', 'imgPath']})
+@Component({ selector: 'c4-product-illustration', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['altText', 'aspectRatio', 'color', 'imgPath'] })
 export class C4ProductIllustration {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
