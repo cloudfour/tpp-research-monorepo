@@ -53,7 +53,7 @@ input:checked::before {
   transform: scale(1);
 }
 
-/* sr-only class */
+/* screen-reader-only text */
 label {
   border: 0;
   clip: rect(0 0 0 0);
@@ -72,7 +72,10 @@ label {
 }
 
 .swatch {
-  margin-right: var(--c4-size-n3);
   flex-grow: 1;
-  flex-basis: vaR(--c4-size-5)
+  flex-basis: var(--c4-size-5);
+}
+
+.swatch:not(:last-of-type) {
+  margin-right: var(--c4-size-n3);
 }

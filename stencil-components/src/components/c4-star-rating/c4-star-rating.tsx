@@ -53,6 +53,11 @@ export class C4Container {
       );
     }
 
-    return <div>{stars}</div>;
+    return (
+      <div>
+        <p>{this.rating.toString()} stars out of 5.</p>
+        {stars}
+      </div>
+    );
   }
 }
