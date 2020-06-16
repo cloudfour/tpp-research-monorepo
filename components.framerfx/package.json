@@ -13,6 +13,7 @@
   },
   "author": "Paul Hebert",
   "dependencies": {
+    "@framer/framer.default": "^1.71.0",
     "markdown-to-jsx": "^6.11.4",
     "react-dom": "^16.13.1"
   }
