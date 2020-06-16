@@ -8,8 +8,8 @@ import "../../stencil-components/src/assets/css/utilities.css";
 // import "../../stencil-components/src/assets/css/theme-example.css";
 
 import { url } from "framer/resource";
-const regularUrl = url("/code/fonts/variable-regular.woff2");
-const italicUrl = url("/code/fonts/variable-italic.woff2");
+const regularUrl = url("code/fonts/variable-regular.woff2");
+const italicUrl = url("code/fonts/variable-italic.woff2");
 
 async function importStylesheets() {
   let css = document.createElement("style");
