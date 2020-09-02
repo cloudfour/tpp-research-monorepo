@@ -117,10 +117,11 @@ This project uses Stencil's `@stencil/angular-output-target` plugin to generate 
 
 ### Building All Components
 
-From the project root you can build Stencil components, convert them to React components, and populate our Express app in a single command: `npm run build`.
+From the project root (`/`) you can build Stencil components, convert them to React components, and populate our various apps in a single command: `npm run build`.
 
-**Note:** Before this command to work you'll need to have installed dependencies in the following subdirectories (`npm ci`):
+**Note:** Before running this command you'll need to have installed dependencies in the following subdirectories (`npm ci`):
 
+- The root directory (`/`)
 - `angular-components`
 - `react-components`
 - `stencil-components`
