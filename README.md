@@ -140,6 +140,8 @@ npm ci
 npm start
 ```
 
+There's currently an issue where the app doesn't report the URL for you to visit. This should generally be http://localhost:3000/
+
 ## Building a React Site
 
 Our React components are consumed by a simple React app. After building our React components you can develop this site by running the following commands:
