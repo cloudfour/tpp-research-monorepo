@@ -190,6 +190,8 @@ npm ci
 npm run dev
 ```
 
+**Note:** Stencil now has an [output target for Vue](https://www.npmjs.com/package/@stencil/vue-output-target)! We should implement this so we can automatically generate Vue components.
+
 ## Building an Ember Site
 
 We're able to use the [ember-cli-stencil](https://github.com/alexlafroscia/ember-cli-stencil) to pull Stencil components into the Ember app. However, they're still using the native component API and syntax. If you want the Ember syntax you'll need to manually wrap your web components as Ember components.
@@ -206,6 +208,10 @@ npm ci
 # Run and watch a Ember server
 npm start
 ```
+
+## Building a Svelte Site
+
+We currently don't have an example of a Svelte site, but Stencil recently added a [Svelte output target](https://www.npmjs.com/package/@stencil/svelte-output-target) so it would be easy to automatically generate the components.
 
 ## Designing with Components in FramerX
 
