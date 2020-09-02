@@ -1,1 +1,3 @@
-public/stencil
+
+public/stencil/**/*
+!public/stencil/.gitkeep
