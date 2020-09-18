@@ -17,7 +17,9 @@
     "start:vue": "cd vue-app && npm start && cd ../",
     "start:storyblok": "cd cms-storyblok && npm start && cd ../",
     "start:storybook": "cd storybook && npm start && cd ../",
-    "start:uxpin": "cd uxpin && npm start && cd ../"
+    "start:uxpin": "cd uxpin && npm start && cd ../",
+    "start:all": "npm run start:bg --prefix stencil-components && npm run start:bg --prefix angular-app && npm run start:bg --prefix cms-storyblok && npm run start:bg --prefix ember-app && npm run start:bg --prefix express-app && npm run start:bg --prefix storybook && npm run start:bg --prefix uxpin && npm run start:bg --prefix vue-app",
+    "stop:all": "npm stop --prefix angular-app && npm stop --prefix cms-storyblok && npm stop --prefix ember-app && npm stop --prefix express-app && npm stop --prefix storybook && npm stop --prefix uxpin && npm stop --prefix vue-app && npm stop --prefix stencil-components"
   },
   "repository": {
     "type": "git",
