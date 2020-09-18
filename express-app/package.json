@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "start:bg": "node ./bin/www &",
+    "stop": "kill -9 $(lsof -t -i:3000)"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

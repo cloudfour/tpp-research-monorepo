@@ -16,8 +16,10 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
+    "start:bg": "ember serve &",
     "test": "npm-run-all lint:* test:*",
-    "test:ember": "ember test"
+    "test:ember": "ember test",
+    "stop": "pkill -9 ember"
   },
   "dependencies": {
     "c4-stencil-components": "file:../stencil-components"

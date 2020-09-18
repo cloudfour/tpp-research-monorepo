@@ -10,7 +10,9 @@
   "scripts": {
     "build-storybook": "build-storybook -s ./public",
     "storybook": "start-storybook -s ./public -p 9006",
-    "start": "start-storybook -s ./public -p 9006"
+    "start": "start-storybook -s ./public -p 9006",
+    "start:bg": "start-storybook -s ./public -p 9006 &",
+    "stop": "pkill -f storybook"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "^5.3.18",

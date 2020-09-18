@@ -5,6 +5,8 @@
   "main": "uxpin.config.js",
   "scripts": {
     "start": "npx uxpin-merge --disable-tunneling",
+    "start:bg": "npx uxpin-merge --disable-tunneling &",
+    "stop": "pkill -f uxpin-merge",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
