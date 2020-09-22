@@ -136,6 +136,9 @@ export const C4StarRating = /*@__PURE__*/ Vue.extend({
   },
 
 
+  methods: {
+    getRating: createCommonMethod('getRating') as Components.C4StarRating['getRating'],
+  },
   render: createCommonRender('c4-star-rating', []),
 });
 

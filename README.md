@@ -115,7 +115,7 @@ This project uses Stencil's `@stencil/angular-output-target` plugin to generate 
 1. Building the output of our `stencil-components` directory which adds files to our `angular-components` directory
 2. Building the output of our `angular-components` directory with the new files from `stencil-components`
 
-### Building Angular Components
+### Building Vue Components
 
 This project uses Stencil's `@stencil/vue-output-target` plugin to generate Vue wrappers for components. Building these components is a two step process:
 

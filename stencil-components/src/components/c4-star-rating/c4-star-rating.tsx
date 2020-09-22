@@ -1,8 +1,8 @@
-import { Component, h, Prop } from "@stencil/core";
+import { Component, h, Prop, Method } from '@stencil/core';
 
 @Component({
-  tag: "c4-star-rating",
-  styleUrl: "c4-star-rating.css",
+  tag: 'c4-star-rating',
+  styleUrl: 'c4-star-rating.css',
   shadow: true,
 })
 export class C4Container {
@@ -11,18 +11,23 @@ export class C4Container {
   @Prop() reviewsCount?: number;
   @Prop() reviewsLink?: string;
 
+  @Method()
+  async getRating() {
+    return this.rating;
+  }
+
   render() {
     const stars = [];
 
     for (let i = 0; i < 5; i++) {
-      let svgClass = "";
-      let gradient = "";
-      let gradientId = "";
+      let svgClass = '';
+      let gradient = '';
+      let gradientId = '';
 
       const remainingStars = this.rating - i;
 
       if (remainingStars >= 1) {
-        svgClass = "full";
+        svgClass = 'full';
       } else if (remainingStars > 0) {
         const remainingPercent = remainingStars * 100;
         gradientId = `star-gradient-${this.guid}`;
@@ -41,7 +46,7 @@ export class C4Container {
           </defs>
         );
       } else {
-        svgClass = "empty";
+        svgClass = 'empty';
       }
 
       stars.push(

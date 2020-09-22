@@ -15,6 +15,19 @@
 | `reviewsLink`  | `reviews-link`  |             | `string` | `undefined` |
 
 
+## Methods
+
+### `getRating() => Promise<number>`
+
+
+
+#### Returns
+
+Type: `Promise<number>`
+
+
+
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
