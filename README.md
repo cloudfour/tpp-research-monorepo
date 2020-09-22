@@ -115,6 +115,13 @@ This project uses Stencil's `@stencil/angular-output-target` plugin to generate 
 1. Building the output of our `stencil-components` directory which adds files to our `angular-components` directory
 2. Building the output of our `angular-components` directory with the new files from `stencil-components`
 
+### Building Angular Components
+
+This project uses Stencil's `@stencil/vue-output-target` plugin to generate Vue wrappers for components. Building these components is a two step process:
+
+1. Building the output of our `stencil-components` directory which adds files to our `vue-components` directory
+2. Building the output of our `vue-components` directory with the new files from `stencil-components`
+
 ### Building All Components
 
 From the project root (`/`) you can build Stencil components, convert them to React components, and populate our various apps in a single command: `npm run build`.
@@ -122,6 +129,7 @@ From the project root (`/`) you can build Stencil components, convert them to Re
 **Note:** Before running this command you'll need to have installed dependencies in the following subdirectories (`npm ci`):
 
 - The root directory (`/`)
+- `vue-components`
 - `angular-components`
 - `react-components`
 - `stencil-components`
@@ -175,9 +183,7 @@ npm start
 
 ## Building a Vue Site
 
-Unfortunately there's no way to automatically wrap web components in Vue components, so if you want the Vue syntax you'll need to manually wrap your web components as Vue components.
-
-Luckily, Vue works well with web components, so it doesn't take a ton of work to create wrappers. You can see some examples in our Vue app. To run the Vue app, run the following commands:
+Our Vue components are consumed by a simple Vue app. After building our Vue components you can develop this site by running the following commands:
 
 ```zsh
 # Navigate to the `vue-app` directory
@@ -187,10 +193,8 @@ cd vue-app
 npm ci
 
 # Run and watch a Vue server
-npm run dev
+npm start
 ```
-
-**Note:** Stencil now has an [output target for Vue](https://www.npmjs.com/package/@stencil/vue-output-target)! We should implement this so we can automatically generate Vue components.
 
 ## Building an Ember Site
 
