@@ -1,7 +1,56 @@
 <c4-container is-prose="true">
   <c4-heading>Ember App</c4-heading>
 
+  <p>
+    This is an Ember app built using Stencil web components. The components
+    are loaded automatically when referenced.
+  </p>
+
+  {{input value=testingValue}}
+
+  <c4-heading tag="h2">{{testingValue}}</c4-heading>
+
+  {{input type="checkbox" name="isDisabled" checked=isDisabled}}
+
+  <c4-button disabled={{isDisabled}}>I'm {{if isDisabled "a" "not a"}} disabled c4-button!</c4-button>
+
+  <c4-heading tag="h2">Buttons</c4-heading>
+
+  <p>
+    Here are some buttons:
+  </p>
+
+  <c4-button>I'm a c4-button!</c4-button>
+
+  <c4-button button-class="secondary">I'm a secondary c4-button!</c4-button>
+
+  <c4-button button-class="tertiary">I'm a tertiary c4-button!</c4-button>
+
+  <c4-button disabled="true">I'm a disabled c4-button!</c4-button>
+
+  <c4-button tag="a">I'm actually a link!</c4-button>
+
+  <div>
+    <c4-heading tag="h2">Star Rating</c4-heading>
+
+    <c4-star-rating rating="4.6" style="font-size: 3em;"></c4-star-rating>
+  </div>
+
   <ColorPicker />
+
+  <p>
+    The color swatches emit an event when the color is changed.
+    This page is using Ember event binding.
+  </p>
+</c4-container>
+
+<c4-container is-prose="true" is-tall="true" is-dark="true">
+  <c4-heading>Dark Theme</c4-heading>
+
+  <p>
+    This container has the dark theme. The dark theme updates custom
+    properties to change colors.
+  </p>
 </c4-container>
 
 {{outlet}}
