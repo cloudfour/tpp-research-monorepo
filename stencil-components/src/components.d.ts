@@ -46,6 +46,7 @@ export namespace Components {
         "radioName": string;
     }
     interface C4StarRating {
+        "getRating": () => Promise<number>;
         "guid": string;
         "rating": number;
         "reviewsCount"?: number;
