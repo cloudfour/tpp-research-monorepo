@@ -28,7 +28,7 @@
         <C4StarRating rating="4.6" style="font-size: 3em"></C4StarRating>
       </div>
 
-      <h2>Color Swatches</h2>
+      <C4Heading tag="h2">Color Swatches</C4Heading>
 
       <p>
         Selected Color:
@@ -43,7 +43,7 @@
 
       <p>
         The color swatches emit an event when the color is changed. This page is
-        using React event binding.
+        using Vue event binding.
       </p>
     </C4Container>
     <C4Container isProse="true" isTall="true" isDark="true">
