@@ -1,48 +1,48 @@
-<c4-container is-prose="true">
-  <c4-heading>Ember App</c4-heading>
+<C4Container @isProse="true">
+  <C4Heading>Ember App</C4Heading>
 
   <p>
     This is an Ember app built using Stencil web components. The components
-    are loaded automatically when referenced.
+    have been wrapped in Ember components.
   </p>
 
-  <c4-heading tag="h2">Buttons</c4-heading>
+  <C4Heading @tag="h2">Buttons</C4Heading>
 
   <p>
     Here are some buttons:
   </p>
 
-  <c4-button>I'm a c4-button!</c4-button>
+  <C4Button>I'm a c4-button!</C4Button>
 
-  <c4-button button-class="secondary">I'm a secondary c4-button!</c4-button>
+  <C4Button @buttonClass="secondary">I'm a secondary c4-button!</C4Button>
 
-  <c4-button button-class="tertiary">I'm a tertiary c4-button!</c4-button>
+  <C4Button @buttonClass="tertiary">I'm a tertiary c4-button!</C4Button>
 
-  <c4-button disabled="true">I'm a disabled c4-button!</c4-button>
+  <C4Button @disabled="true">I'm a disabled c4-button!</C4Button>
 
-  <c4-button tag="a">I'm actually a link!</c4-button>
+  <C4Button @tag="a">I'm actually a link!</C4Button>
 
   <div>
-    <c4-heading tag="h2">Star Rating</c4-heading>
+    <C4Heading @tag="h2">Star Rating</C4Heading>
 
-    <c4-star-rating rating="4.6" style="font-size: 3em;"></c4-star-rating>
+    <C4StarRating @rating="4.6" style="font-size: 3em;"></C4StarRating>
   </div>
 
-  <ColorPicker />
+  <C4ColorPicker />
 
   <p>
     The color swatches emit an event when the color is changed.
     This page is using Ember event binding.
   </p>
-</c4-container>
+</C4Container>
 
-<c4-container is-prose="true" is-tall="true" is-dark="true">
-  <c4-heading>Dark Theme</c4-heading>
+<C4Container @isProse="true" @isTall="true" @isDark="true">
+  <C4Heading>Dark Theme</C4Heading>
 
   <p>
     This container has the dark theme. The dark theme updates custom
     properties to change colors.
   </p>
-</c4-container>
+</C4Container>
 
 {{outlet}}

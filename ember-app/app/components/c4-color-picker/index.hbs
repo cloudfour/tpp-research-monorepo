@@ -1,0 +1,10 @@
+<C4Heading @tag="h2">Color Picker</C4Heading>
+
+<p>
+  Selected Color:
+  <em id="selected-color">
+    {{this.currentColor.name}}
+  </em>
+</p>
+
+<C4ColorSwatches @colors={{this.colors}} @changeColor={{this.changeColor}} />
