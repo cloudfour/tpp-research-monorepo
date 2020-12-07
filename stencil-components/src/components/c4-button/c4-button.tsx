@@ -3,8 +3,7 @@ import { Component, Prop, h } from "@stencil/core";
 
 @Component({
   tag: "c4-button",
-  styleUrl: "c4-button.css",
-  shadow: true,
+  styleUrl: "c4-button.css"
 })
 export class C4Button {
   @Prop() disabled: boolean = false;
@@ -14,10 +13,10 @@ export class C4Button {
   @Prop() buttonClass?: 'secondary' | 'tertiary' | 'right' | 'left';
 
   private getClass(): string {
-    let className = "button";
+    let className = "c4-button";
 
     if (this.buttonClass) {
-      className += ` ${this.buttonClass}`;
+      className += ` c4-button--${this.buttonClass}`;
     }
 
     return className;
