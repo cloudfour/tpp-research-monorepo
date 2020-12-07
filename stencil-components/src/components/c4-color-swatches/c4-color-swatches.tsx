@@ -8,8 +8,7 @@ interface Color {
 
 @Component({
   tag: "c4-color-swatches",
-  styleUrl: "c4-color-swatches.css",
-  shadow: true,
+  styleUrl: "c4-color-swatches.css"
 })
 export class C4ColorSwatches {
   @Prop() colorsString?: string;
@@ -45,8 +44,9 @@ export class C4ColorSwatches {
           const checked = index === 0;
 
           return (
-            <div class="swatch">
+            <div class="swatches__swatch">
               <input
+                class="swatches__input"
                 type="radio"
                 id={color.id}
                 name={this.radioName}
@@ -55,7 +55,9 @@ export class C4ColorSwatches {
                 checked={checked}
                 onClick={() => this.changeHandler(color)}
               />
-              <label htmlFor={color.id}>{color.name}</label>
+              <label class="swatches__label" htmlFor={color.id}>
+                {color.name}
+              </label>
             </div>
           );
         })}
