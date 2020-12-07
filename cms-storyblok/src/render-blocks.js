@@ -114,7 +114,7 @@ const components = {
   },
   column(blok) {
     return `${blok._editable}
-      <div ${blok.width ? `class="column--${blok.width}"` : ""}>
+      <div ${blok.width ? `class="c4-column--${blok.width}"` : ""}>
 
       ${blok.content
         .map((block) => {
