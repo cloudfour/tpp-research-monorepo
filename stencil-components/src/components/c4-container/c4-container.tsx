@@ -17,12 +17,6 @@ export class C4Container {
       className += " c4-container--dark";
     }
 
-    return className;
-  }
-
-  private getContentClass(): string {
-    let className = "";
-
     if (this.isProse) {
       className += " c4-container--prose";
     }
@@ -37,7 +31,7 @@ export class C4Container {
   render() {
     return (
       <this.tag class={this.getContainerClass()}>
-        <div class={this.getContentClass()}>
+        <div class="c4-container__content">
           <slot />
         </div>
       </this.tag>
