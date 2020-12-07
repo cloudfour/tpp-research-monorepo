@@ -1,29 +1,29 @@
-:host > * {
+.c4-heading {
   color: var(--c4-color-text, rgba(0, 0, 0, 0.85));
   font-family: var(--c4-font-brand, sans-serif);
   font-weight: 600;
   margin: 0;
 }
 
-h1 {
+.c4-heading--h1 {
   font-size: calc(var(--c4-size-2) + 0.390625 * ((100vw - 20em) / 28));
 }
 
-h2 {
+.c4-heading--h2 {
   font-size: calc(var(--c4-size-1) + 0.3125 * ((100vw - 20em) / 28));
 }
 
-h3 {
+.c4-heading--h3 {
   font-size: calc(var(--c4-size-0) + 0.25 * ((100vw - 20em) / 28));
 }
 
-h4 {
+.c4-heading--h4 {
   font-size: inherit;
   line-height: inherit;
 }
 
-h5,
-h6 {
+.c4-heading--h5,
+.c4-heading--h6 {
   font-size: var(--c4-size-n1);
   line-height: inherit;
 }
