@@ -2,8 +2,7 @@ import { Component, Prop, h } from "@stencil/core";
 
 @Component({
   tag: "c4-container",
-  styleUrl: "c4-container.css",
-  shadow: true,
+  styleUrl: "c4-container.css"
 })
 export class C4Container {
   @Prop() tag: string = "div";
@@ -12,10 +11,10 @@ export class C4Container {
   @Prop() isTall: boolean;
 
   private getContainerClass(): string {
-    let className = "container";
+    let className = "c4-container";
 
     if (this.isDark) {
-      className += ` dark`;
+      className += " c4-container--dark";
     }
 
     return className;
@@ -25,11 +24,11 @@ export class C4Container {
     let className = "";
 
     if (this.isProse) {
-      className += ` prose`;
+      className += " c4-container--prose";
     }
 
     if (this.isTall) {
-      className += ` tall`;
+      className += " c4-container--tall";
     }
 
     return className;

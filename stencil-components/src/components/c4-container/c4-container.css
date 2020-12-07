@@ -1,29 +1,24 @@
-.container {
+.c4-container {
   background: var(--c4-color-background);
   color: var(--c4-color-text);
   font-family: var(--c4-font-brand, "sans-serif");
 }
 
-.dark {
+.c4-container--dark {
   --c4-color-background: var(--c4-color-brand, #215cca);
   --c4-color-text: var(--c4-color-white, #fff);
 }
 
-.container > * {
+.c4-container > * {
   padding: var(--c4-size-0);
   margin: 0 auto;
   max-width: 80em;
 }
 
-.prose {
+.c4-container--prose {
   max-width: 40em;
 }
 
-.container > * > ::slotted(*:not(:first-child)) {
-  display: block;
-  margin: var(--c4-staggered-margin) 0 0 0;
-}
-
-.tall {
+.c4-container--tall {
   padding: var(--c4-size-5) var(--c4-size-0);
 }
