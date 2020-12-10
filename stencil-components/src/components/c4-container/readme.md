@@ -5,12 +5,13 @@
 
 ## Properties
 
-| Property  | Attribute  | Description | Type      | Default     |
-| --------- | ---------- | ----------- | --------- | ----------- |
-| `isDark`  | `is-dark`  |             | `boolean` | `undefined` |
-| `isProse` | `is-prose` |             | `boolean` | `undefined` |
-| `isTall`  | `is-tall`  |             | `boolean` | `undefined` |
-| `tag`     | `tag`      |             | `string`  | `"div"`     |
+| Property      | Attribute      | Description | Type      | Default     |
+| ------------- | -------------- | ----------- | --------- | ----------- |
+| `isDark`      | `is-dark`      |             | `boolean` | `undefined` |
+| `isProse`     | `is-prose`     |             | `boolean` | `undefined` |
+| `isStaggered` | `is-staggered` |             | `boolean` | `undefined` |
+| `isTall`      | `is-tall`      |             | `boolean` | `undefined` |
+| `tag`         | `tag`          |             | `string`  | `"div"`     |
 
 
 ----------------------------------------------

@@ -9,6 +9,7 @@ export class C4Container {
   @Prop() isProse: boolean;
   @Prop() isDark: boolean;
   @Prop() isTall: boolean;
+  @Prop() isStaggered: boolean;
 
   private getContainerClass(): string {
     let className = "c4-container";
@@ -28,10 +29,20 @@ export class C4Container {
     return className;
   }
 
+  private getContentClass(): string {
+    let className = "c4-container__content";
+
+    if (this.isStaggered) {
+      className += " c4-stagger-base";
+    }
+
+    return className;
+  }
+
   render() {
     return (
       <this.tag class={this.getContainerClass()}>
-        <div class="c4-container__content">
+        <div class={this.getContentClass()}>
           <slot />
         </div>
       </this.tag>

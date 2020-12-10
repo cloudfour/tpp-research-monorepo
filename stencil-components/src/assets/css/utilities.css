@@ -37,3 +37,8 @@
 .c4-size-6 {
   font-size: var(--c4-size-6) !important;
 }
+
+.c4-stagger-base > * + * {
+  display: block !important;
+  margin-top: var(--c4-staggered-margin) !important;
+}
