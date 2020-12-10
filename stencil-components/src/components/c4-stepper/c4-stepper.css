@@ -1,11 +1,11 @@
-.wrapper {
+.c4-stepper {
   display: flex;
   align-items: stretch;
   justify-content: stretch;
   height: var(--c4-size-4);
 }
 
-input {
+.c4-stepper__input {
   border-color: var(--c4-color-gray);
   border-width: var(--c4-border-med);
   border-style: solid none;
@@ -17,20 +17,20 @@ input {
   min-width: 0;
 }
 
-input::-moz-inner-spin-button,
-input::-moz-outer-spin-button {
+.c4-stepper__input::-moz-inner-spin-button,
+.c4-stepper__input::-moz-outer-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
 
-input:focus {
+.c4-stepper__input:focus {
   box-shadow: var(--c4-focus-shadow);
   z-index: 1;
 }
 
-.button-content {
+.c4-stepper__button-content {
   font-size: var(--c4-size-2);
   position: absolute;
   top: 0;
@@ -40,6 +40,6 @@ input:focus {
   text-align: center;
 }
 
-c4-button {
+.c4-stepper__button {
   height: 100%;
 }
