@@ -1,4 +1,4 @@
-input {
+.c4-radio-buttons__input {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -14,60 +14,60 @@ input {
   font-size: var(--c4-size-n2);
 }
 
-input,
-input + * {
+.c4-radio-buttons__input,
+.c4-radio-buttons__text {
   transition: filter 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     background-color 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     color 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.option:first-of-type input {
+.c4-radio-buttons__label:first-of-type input {
   border-top-left-radius: var(--c4-border-radius-med);
   border-bottom-left-radius: var(--c4-border-radius-med);
   border-left-width: var(--c4-border-med);
 }
 
-.option:last-of-type input {
+.c4-radio-buttons__label:last-of-type input {
   border-top-right-radius: var(--c4-border-radius-med);
   border-bottom-right-radius: var(--c4-border-radius-med);
   border-right-width: var(--c4-border-med);
 }
 
-input:focus,
-input:focus + * {
+.c4-radio-buttons__input:focus,
+.c4-radio-buttons__input:focus + .c4-radio-buttons__text {
   box-shadow: var(--c4-focus-shadow);
   z-index: 1;
 }
 
-input:hover,
-input:hover + * {
+.c4-radio-buttons__input:hover,
+.c4-radio-buttons__input:hover + .c4-radio-buttons__text {
   filter: brightness(110%);
   transform: scale(1.05);
   z-index: 1;
 }
 
-input:active,
-input:active + * {
+.c4-radio-buttons__input:active,
+.c4-radio-buttons__input:active + .c4-radio-buttons__text {
   transform: scale(1);
 }
 
-input:checked {
+.c4-radio-buttons__input:checked {
   background: #c2dcfc;
 }
 
-.options {
+.c4-radio-buttons {
   display: flex;
   justify-content: stretch;
 }
 
-.option {
+.c4-radio-buttons__label {
   display: flex;
   position: relative;
   flex-grow: 1;
 }
 
-.option-text {
+.c4-radio-buttons__text {
   color: var(--c4-color-dark);
   position: absolute;
   width: 100%;
