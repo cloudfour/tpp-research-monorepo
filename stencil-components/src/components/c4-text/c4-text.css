@@ -1,62 +1,57 @@
-:host {
+.c4-text {
   display: block;
 }
 
-::slotted(*) {
+.c4-text > * {
   color: var(--c4-color-text, rgba(0, 0, 0, 0.85));
   font-family: var(--c4-font-brand, sans-serif);
   margin: 0;
   line-height: 1.5;
 }
 
-:host > ::slotted(:not(:first-child)) {
+.c4-text > * + * {
   display: block;
   margin-top: var(--c4-staggered-margin);
 }
 
-::slotted(h1),
-::slotted(h2),
-::slotted(h3),
-::slotted(h4),
-::slotted(h5),
-::slotted(h6) {
+.c4-text :is(h1, h2, h3, h4, h5, h6) {
   font-weight: 600;
   line-height: 1.2;
 }
 
-::slotted(h1) {
+.c4-text h1 {
   font-size: calc(var(--c4-size-2) + 0.390625 * ((100vw - 20em) / 28));
 }
 
-::slotted(h2) {
+.c4-text h2 {
   font-size: calc(var(--c4-size-1) + 0.3125 * ((100vw - 20em) / 28));
 }
 
-::slotted(h3) {
+.c4-text h3 {
   font-size: calc(var(--c4-size-0) + 0.25 * ((100vw - 20em) / 28));
 }
 
-::slotted(h4) {
+.c4-text h4 {
   font-size: inherit;
   line-height: inherit;
 }
 
-::slotted(h5),
-::slotted(h6) {
+.c4-text h5,
+.c4-text h6 {
   font-size: var(--c4-size-n1);
   line-height: inherit;
 }
 
-::slotted(ul),
-::slotted(ol) {
+.c4-text ul,
+.c4-text ol {
   padding-left: var(--c4-size-0);
 }
 
-::slotted(li:not(:first-child)) {
+.c4-text li + li {
   margin-top: var(--c4-size-n2);
 }
 
-::slotted(blockquote) {
+.c4-text blockquote {
   font-style: italic;
   font-size: var(--c4-size-1);
   padding: var(--c4-size-n5) var(--c4-size-1);
