@@ -1,4 +1,4 @@
-import { Component, h, Prop } from "@stencil/core";
+import { Component, h, Prop, Method } from '@stencil/core';
 
 @Component({
   tag: "c4-star-rating",
@@ -9,6 +9,11 @@ export class C4Container {
   @Prop() guid: string;
   @Prop() reviewsCount?: number;
   @Prop() reviewsLink?: string;
+
+  @Method()
+  async getRating() {
+    return this.rating;
+  }
 
   render() {
     const stars = [];
@@ -40,7 +45,7 @@ export class C4Container {
           </defs>
         );
       } else {
-        svgClass += " c4-stars__star--full";
+        svgClass += " c4-stars__star--empty";
       }
 
       stars.push(

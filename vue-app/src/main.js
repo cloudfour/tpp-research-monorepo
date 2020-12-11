@@ -2,14 +2,15 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
 import App from './App';
+
+// We shouldn't need to load the custom elements by hand, it should be
+// handled by vue-components. However, there's a bug in Stencil's Vue
+// output target, which requires this workaround:
+// @see https://github.com/ionic-team/stencil-ds-output-targets/issues/77
 import {
   applyPolyfills,
   defineCustomElements,
 } from '../../stencil-components/loader/index.cjs';
-
-// Let Vue know that anything starting with `c4` is a custom element, not a Vue
-// component
-Vue.config.ignoredElements = [/c4-\w*/];
 
 // Bind the custom elements to the window object
 applyPolyfills().then(() => {

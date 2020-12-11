@@ -429,7 +429,7 @@ C4StarRating.ctorParameters = () => [
     { type: NgZone }
 ];
 C4StarRating = tslib_1.__decorate([
-    ProxyCmp({ inputs: ['guid', 'rating', 'reviewsCount', 'reviewsLink'] }),
+    ProxyCmp({ inputs: ['guid', 'rating', 'reviewsCount', 'reviewsLink'], 'methods': ['getRating'] }),
     tslib_1.__metadata("design:paramtypes", [ChangeDetectorRef, ElementRef, NgZone])
 ], C4StarRating);
 export { C4StarRating };
