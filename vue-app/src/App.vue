@@ -1,6 +1,6 @@
 <template>
   <div>
-    <C4Container isProse="true">
+    <C4Container isProse="true" isStaggered="true">
       <C4Heading>Vue App</C4Heading>
 
       <p>
@@ -46,7 +46,7 @@
         using Vue event binding.
       </p>
     </C4Container>
-    <C4Container isProse="true" isTall="true" isDark="true">
+    <C4Container isProse="true" isTall="true" isDark="true" isStaggered="true">
       <C4Heading tag="h1">Dark Theme</C4Heading>
       <p>
         This container has the dark theme. The dark theme updates custom
