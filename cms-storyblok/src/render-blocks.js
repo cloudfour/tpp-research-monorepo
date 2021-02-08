@@ -26,9 +26,9 @@ const components = {
 
         <div slot="content">
           <c4-product-illustration 
-            alt-text="${blok.colors[0].content.alt_text}" 
-            img-path="${blok.colors[0].content.image}"
-            color="${blok.colors[0].content.color_hex}"
+            alt-text="${blok.colors && blok.colors[0] && blok.colors[0].content.alt_text}" 
+            img-path="${blok.colors && blok.colors[0] && blok.colors[0].content.image}"
+            color="${blok.colors && blok.colors[0] && blok.colors[0].content.color_hex}"
             class="js-illustration"
           ></c4-product-illustration>
         </div>
@@ -76,14 +76,14 @@ const components = {
     </script>`;
   },
   container(blok) {
-    let classes = "";
+    let attributes = 'is-staggered="true"';
 
     if (blok.isDarkTheme) {
-      classes += 'is-dark="true"';
+      attributes += ' is-dark="true"';
     }
 
     return `${blok._editable}
-    <c4-container ${classes}>
+    <c4-container ${attributes}>
       ${blok.blocks
         .map((block) => {
           if (components[block.component]) {
