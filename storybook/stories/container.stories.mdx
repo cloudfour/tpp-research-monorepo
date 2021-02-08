@@ -15,17 +15,16 @@ modifiers for consistent `max-width`, `padding`, and theming that can be applied
       const isProse = boolean("is-prose", false);
       const isTall = boolean("is-tall", false);
       const isDark = boolean("is-dark", false);
+      const isStaggered = boolean("is-staggered", false);
       return html`
         <c4-container
           is-prose="${isProse}"
           is-tall="${isTall}"
           is-dark="${isDark}"
+          is-staggered="${isStaggered}"
         >
           <p>
-            This is the content of the container. As you can see when the text
-            becomes very long it will wrap at predefined breakpoints on large
-            screens. Depending on whether the <code>prose</code> class is
-            assigned
+            This is the content of the container.
           </p>
         </c4-container>
       `;
@@ -42,9 +41,7 @@ Prose containers have a smaller max width for ideal paragraph line length.
     {() => html`
       <c4-container is-prose="${true}">
         <p>
-          This is the content of the container. As you can see when the text
-          becomes very long it will wrap at predefined breakpoints on large
-          screens. Depending on whether the <code>prose</code> class is assigned
+          This is the content of the container.
         </p>
       </c4-container>
     `}
@@ -62,9 +59,7 @@ theme alternates.
     {() => html`
       <c4-container is-dark="${true}">
         <p>
-          This is the content of the container. As you can see when the text
-          becomes very long it will wrap at predefined breakpoints on large
-          screens. Depending on whether the <code>prose</code> class is assigned
+          This is the content of the container.
         </p>
       </c4-container>
     `}
@@ -80,11 +75,27 @@ Tall containers have a additional vertical padding
     {() => html`
       <c4-container is-tall="${true}">
         <p>
-          This is the content of the container. As you can see when the text
-          becomes very long it will wrap at predefined breakpoints on large
-          screens. Depending on whether the <code>prose</code> class is assigned
+          This is the content of the container.
         </p>
       </c4-container>
     `}
   </Story>
 </Preview>
+
+## Staggered
+
+Staggered containers automatically add vertical space between child elements.
+
+<Preview>
+  <Story name="Staggered">
+    {() => html`
+      <c4-container is-staggered="${true}">
+        <p>
+          This is the content of the container.
+        </p>
+        <p>I have a top margin!</p>
+      </c4-container>
+    `}
+  </Story>
+</Preview>
+
