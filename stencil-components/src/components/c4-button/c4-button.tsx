@@ -13,13 +13,13 @@ export class C4Button {
   @Prop() buttonClass?: 'secondary' | 'tertiary' | 'right' | 'left';
 
   private getClass(): string {
-    let className = "c4-button";
+    let classes = ["c4-button"];
 
     if (this.buttonClass) {
-      className += ` c4-button--${this.buttonClass}`;
+      classes.push(`c4-button--${this.buttonClass}`);
     }
 
-    return className;
+    return classes.join(' ');
   }
 
   render() {
