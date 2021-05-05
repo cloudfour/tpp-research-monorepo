@@ -25,12 +25,16 @@ const components = {
         </div>
 
         <div slot="content">
-          <c4-product-illustration 
-            alt-text="${blok.colors[0].content.alt_text}" 
-            img-path="${blok.colors[0].content.image}"
-            color="${blok.colors[0].content.color_hex}"
-            class="js-illustration"
-          ></c4-product-illustration>
+          ${
+            blok.colors?.[0]?.content
+              ? `<c4-product-illustration 
+                  alt-text="${blok.colors[0].content.alt_text || ''}" 
+                  img-path="${blok.colors[0].content.image}"
+                  color="${blok.colors[0].content.color_hex}"
+                  class="js-illustration"
+                ></c4-product-illustration>`
+              : ''
+          }
         </div>
 
         <div slot="footer">
@@ -62,28 +66,25 @@ const components = {
         </div>
     </c4-container>
 
-    ${blok.blocks
-      .map((column) => {
-        if (components[column.component]) {
-          return components[column.component](column);
-        }
-      })
-      .join("")}
-      
+    ${blok.blocks?.map((column) => {
+      if (components[column.component]) {
+        return components[column.component](column);
+      }
+    }).join("")}
       
     <script>
       const colors = ${JSON.stringify(blok.colors)}
     </script>`;
   },
   container(blok) {
-    let classes = "";
+    let attributes = ['is-staggered="true"'];
 
     if (blok.isDarkTheme) {
-      classes += 'is-dark="true"';
+      attributes.push('is-dark="true"');
     }
 
     return `${blok._editable}
-    <c4-container ${classes}>
+    <c4-container ${attributes.join(' ')}>
       ${blok.blocks
         .map((block) => {
           if (components[block.component]) {
@@ -114,7 +115,7 @@ const components = {
   },
   column(blok) {
     return `${blok._editable}
-      <div ${blok.width ? `class="column--${blok.width}"` : ""}>
+      <div ${blok.width ? `class="c4-column--${blok.width}"` : ""}>
 
       ${blok.content
         .map((block) => {

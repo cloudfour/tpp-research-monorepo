@@ -25,6 +25,7 @@ export namespace Components {
     interface C4Container {
         "isDark": boolean;
         "isProse": boolean;
+        "isStaggered": boolean;
         "isTall": boolean;
         "tag": string;
     }
@@ -162,6 +163,7 @@ declare namespace LocalJSX {
     interface C4Container {
         "isDark"?: boolean;
         "isProse"?: boolean;
+        "isStaggered"?: boolean;
         "isTall"?: boolean;
         "tag"?: string;
     }

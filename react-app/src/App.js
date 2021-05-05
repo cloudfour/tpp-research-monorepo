@@ -11,7 +11,7 @@ import { SwatchWrapper } from "./components/swatch-wrapper";
 function App() {
   return (
     <div className="App">
-      <C4Container isProse="true">
+      <C4Container isProse="true" isStaggered="true">
         <C4Heading>React App</C4Heading>
 
         <p>

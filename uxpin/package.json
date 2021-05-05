@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.10.1",
-    "@uxpin/merge-cli": "^2.6.1",
+    "@uxpin/merge-cli": "^2.7.2",
     "css-loader": "^3.5.3"
   }
 }

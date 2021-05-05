@@ -2,8 +2,7 @@ import { Component, h, State, Prop } from "@stencil/core";
 
 @Component({
   tag: "c4-stepper",
-  styleUrl: "c4-stepper.css",
-  shadow: true,
+  styleUrl: "c4-stepper.css"
 })
 export class C4Stepper {
   @Prop() min?: number = null;
@@ -29,11 +28,12 @@ export class C4Stepper {
 
   render() {
     return (
-      <div class="wrapper">
+      <div class="c4-stepper">
         {/* Buttons are hidden from screen readers to avoid a confusing
         experience. Since they're likely using a keyboard they can use the
         built-in keyboard controls */}
         <c4-button
+          class="c4-stepper__button"
           buttonClass="left"
           onClick={this.updateCount.bind(this, this.value - 1)}
           disabled={this.value === this.min}
@@ -42,6 +42,7 @@ export class C4Stepper {
           <span class="button-content">&minus;</span>
         </c4-button>
         <input
+          class="c4-stepper__input"
           type="number"
           {...{ min: this.min, max: this.max }}
           value={this.value}
@@ -50,6 +51,7 @@ export class C4Stepper {
           }
         />
         <c4-button
+          class="c4-stepper__button"
           buttonClass="right"
           onClick={this.updateCount.bind(this, this.value + 1)}
           disabled={this.value === this.max}

@@ -72,6 +72,7 @@ export const C4Container = /*@__PURE__*/ Vue.extend({
     isProse: {} as PropOptions<Components.C4Container['isProse']>,
     isDark: {} as PropOptions<Components.C4Container['isDark']>,
     isTall: {} as PropOptions<Components.C4Container['isTall']>,
+    isStaggered: {} as PropOptions<Components.C4Container['isStaggered']>,
   },
 
 

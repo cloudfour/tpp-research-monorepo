@@ -1,4 +1,4 @@
-svg {
+.c4-stars__star {
   --c4-color-star-full: #f27041;
   --c4-color-star-empty: #c0cfd8;
 
@@ -8,16 +8,16 @@ svg {
   height: var(--c4-size-0);
 }
 
-svg.empty * {
+.c4-stars__star--empty * {
   fill: var(--c4-color-star-empty);
 }
 
-svg.full * {
+.c4-stars__star--full * {
   fill: var(--c4-color-star-full);
 }
 
 /* screen-reader-only text */
-.screen-reader-text {
+.c4-stars__screen-reader-text {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -28,7 +28,7 @@ svg.full * {
   width: 1px;
 }
 
-.inner {
+.c4-stars__inner {
   display: inline-block;
   text-align: center;
 }

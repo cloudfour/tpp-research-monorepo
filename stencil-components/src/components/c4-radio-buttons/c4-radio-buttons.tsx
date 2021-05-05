@@ -36,13 +36,14 @@ export class C4RadioButtons {
 
   render() {
     return (
-      <div class="options">
+      <div class="c4-radio-buttons">
         {this.parsedOptions().map((option, index) => {
           const checked = index === 0;
 
           return (
-            <label class="option" htmlFor={option.id}>
+            <label class="c4-radio-buttons__label" htmlFor={option.id}>
               <input
+                class="c4-radio-buttons__input"
                 type="radio"
                 id={option.id}
                 name={this.radioName}
@@ -50,7 +51,7 @@ export class C4RadioButtons {
                 checked={checked}
                 onClick={() => this.changeHandler(option)}
               />
-              <span class="option-text">
+              <span class="c4-radio-buttons__text">
                 <span>{option.name}</span>
               </span>
             </label>

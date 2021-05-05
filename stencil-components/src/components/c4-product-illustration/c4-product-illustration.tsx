@@ -2,8 +2,7 @@ import { Component, h, Prop } from "@stencil/core";
 
 @Component({
   tag: "c4-product-illustration",
-  styleUrl: "c4-product-illustration.css",
-  shadow: true,
+  styleUrl: "c4-product-illustration.css"
 })
 export class C4ProductIllustration {
   @Prop() color: string = "#215CCA";
@@ -12,7 +11,7 @@ export class C4ProductIllustration {
   @Prop() aspectRatio: number;
 
   render() {
-    const ratioBoxStyles = this.aspectRatio
+    const illustrationStyles = this.aspectRatio
       ? { "--aspect-ratio": `${this.aspectRatio}%` }
       : null;
 
@@ -23,11 +22,11 @@ export class C4ProductIllustration {
       : "ERROR: Please provide alt text for this product illustration!";
 
     return (
-      <div class="ratio-box" style={ratioBoxStyles}>
-        <div class="content" style={contentStyles}>
+      <div class="c4-product-illustration" style={illustrationStyles}>
+        <div class="c4-product-illustration__content" style={contentStyles}>
           {altTextErrorMessage}
 
-          <img src={this.imgPath} alt={this.altText}></img>
+          <img src={this.imgPath} alt={this.altText} class="c4-product-illustration__img"></img>
         </div>
       </div>
     );

@@ -1,9 +1,8 @@
 import { Component, h, Prop, Method } from '@stencil/core';
 
 @Component({
-  tag: 'c4-star-rating',
-  styleUrl: 'c4-star-rating.css',
-  shadow: true,
+  tag: "c4-star-rating",
+  styleUrl: "c4-star-rating.css"
 })
 export class C4Container {
   @Prop() rating: number;
@@ -20,14 +19,14 @@ export class C4Container {
     const stars = [];
 
     for (let i = 0; i < 5; i++) {
-      let svgClass = '';
-      let gradient = '';
-      let gradientId = '';
+      let svgClass = "c4-stars__star";
+      let gradient = "";
+      let gradientId = "";
 
       const remainingStars = this.rating - i;
 
       if (remainingStars >= 1) {
-        svgClass = 'full';
+        svgClass += " c4-stars__star--full";
       } else if (remainingStars > 0) {
         const remainingPercent = remainingStars * 100;
         gradientId = `star-gradient-${this.guid}`;
@@ -46,7 +45,7 @@ export class C4Container {
           </defs>
         );
       } else {
-        svgClass = 'empty';
+        svgClass += " c4-stars__star--empty";
       }
 
       stars.push(
@@ -61,13 +60,13 @@ export class C4Container {
     }
 
     return (
-      <div class="wrapper">
-        <p class="screen-reader-text">
+      <div class="c4-stars">
+        <p class="c4-stars__screen-reader-text">
           {this.rating.toString()} stars out of 5.
         </p>
 
-        <div class="inner">
-          <div class="stars">{stars}</div>
+        <div class="c4-stars__inner">
+          <div class="c4-stars__stars">{stars}</div>
 
           {this.reviewsCount && this.reviewsLink ? (
             <a href={this.reviewsLink}>({this.reviewsCount} reviews)</a>
