@@ -9,11 +9,7 @@
     "build:components:angular-components": "cd angular-components && npm run build && cd ../",
     "build:components:vue-components": "cd vue-components && npm run build && cd ../",
 
-    "build:app:angular": "cd angular-app && npm run build && cd ../",
-    "build:app:ember": "cd ember-app && npm run build && cd ../",
-    "build:app:react": "cd react-app && npm run build && cd ../",
     "build:app:storybook": "cd storybook && npm run build && cd ../",
-    "build:app:vue": "cd vue-app && npm run build && cd ../",
 
     "build:components": "npm-run-all -s build:components:* copy-stencil-output",
     "build": "npm-run-all -s build:components:* copy-stencil-output && npm-run-all -s build:app:*",
