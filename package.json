@@ -4,22 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install-all": "npm ci && npm ci --prefix stencil-components && npm ci --prefix angular-components && npm ci --prefix angular-app && npm ci --prefix cms-storyblok && npm ci --prefix ember-components && npm ci --prefix ember-app && npm ci --prefix express-app && npm ci --prefix storybook && npm ci --prefix uxpin && npm ci --prefix vue-components && npm ci --prefix vue-app && npm ci --prefix react-components && npm ci --prefix react-app",
-
+    "install:components": "npm ci --prefix stencil-components && npm ci --prefix angular-components && npm ci --prefix storybook && npm ci --prefix vue-components && npm ci --prefix react-components",
 
     "build:components:stencil": "cd stencil-components && npm run build && cd ../",
     "build:components:react-components": "cd react-components && npm run build && cd ../",
     "build:components:angular-components": "cd angular-components && npm run build && cd ../",
     "build:components:vue-components": "cd vue-components && npm run build && cd ../",
 
-    "build:app:angular": "npm run build --prefix angular-app",
-    "build:app:ember": "npm run build --prefix ember-app",
-    "build:app:react": "npm run build --prefix react-app",
-    "build:app:storybook": "npm run build --prefix storybook",
-    "build:app:vue": "npm run build --prefix vue-app",
+    "build:app:angular": "npm ci --prefix angular-app && npm run build --prefix angular-app",
+    "build:app:ember": "npm ci --prefix ember-app && npm run build --prefix ember-app",
+    "build:app:react": "npm ci --prefix react-app && npm run build --prefix react-app",
+    "build:app:storybook": "npm ci --prefix storybook && npm run build --prefix storybook",
+    "build:app:vue": "npm ci --prefix vue-app npm run build --prefix vue-app",
 
     "build:components": "npm-run-all -s build:components:* copy-stencil-output",
-    "build": "npm run install-all && npm-run-all -s build:components:* copy-stencil-output && npm-run-all -s build:app:*",
+    "build": "npm run install:components && npm-run-all -s build:components:* copy-stencil-output && npm-run-all -s build:app:*",
 
     "copy-stencil-output": "node copy-stencil-output",
 
