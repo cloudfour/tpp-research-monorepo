@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:components:stencil": "cd stencil-components && npm run build && cd ../",
+    "build:components:stencil": "npm run build  --prefix stencil-components",
 
-    "build:app:storybook": "cd storybook && npm run build && cd ../",
+    "build:app:storybook": "npm run build  --prefix storybook",
 
     "build:components": "npm-run-all -s build:components:* copy-stencil-output",
     "build": "npm-run-all -s build:components:* copy-stencil-output && npm-run-all -s build:app:*",
