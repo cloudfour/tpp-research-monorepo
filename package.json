@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:components:stencil": "npm run build  --prefix stencil-components",
+    "build:components:stencil": "npm i --prefix stencil-components && npm run build --prefix stencil-components",
 
     "build:app:storybook": "npm i --prefix storybook && npm run build --prefix storybook",
 
