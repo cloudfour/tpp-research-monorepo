@@ -6,7 +6,7 @@
   "scripts": {
     "build:components:stencil": "npm run build  --prefix stencil-components",
 
-    "build:app:storybook": "npm run build  --prefix storybook",
+    "build:app:storybook": "npm i --prefix storybook && npm run build --prefix storybook",
 
     "build:components": "npm-run-all -s build:components:* copy-stencil-output",
     "build": "npm-run-all -s build:components:* copy-stencil-output && npm-run-all -s build:app:*",
