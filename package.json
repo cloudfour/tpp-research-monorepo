@@ -16,8 +16,10 @@
     "build:app:vue": "cd vue-app && npm run build && cd ../",
 
     "build:components": "npm-run-all -s build:components:* copy-stencil-output",
-    "build": "npm-run-all -s build:components:* copy-stencil-output npm-run-all -s build:app:*",
+    "build": "npm-run-all -s build:components:* copy-stencil-output && npm-run-all -s build:app:*",
+
     "copy-stencil-output": "node copy-stencil-output",
+
     "start:angular": "cd angular-app && npm start && cd ../",
     "start:express": "cd express-app && npm start && cd ../",
     "start:ember": "cd ember-app && npm start && cd ../",
