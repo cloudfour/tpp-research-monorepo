@@ -5,9 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build:components:stencil": "cd stencil-components && npm run build && cd ../",
-    "build:components:react-components": "cd react-components && npm run build && cd ../",
-    "build:components:angular-components": "cd angular-components && npm run build && cd ../",
-    "build:components:vue-components": "cd vue-components && npm run build && cd ../",
 
     "build:app:storybook": "cd storybook && npm run build && cd ../",
 
