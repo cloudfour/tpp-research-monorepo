@@ -13,11 +13,12 @@
 
     "build:app:angular": "npm run build --prefix angular-app",
     "build:app:ember": "npm run build --prefix ember-app",
+    "build:app:react": "npm run build --prefix react-app",
     "build:app:storybook": "npm run build --prefix storybook",
     "build:app:vue": "npm run build --prefix vue-app",
 
     "build:components": "npm-run-all -s build:components:* copy-stencil-output",
-    "build": "npm=intall-all && npm-run-all -s build:components:* copy-stencil-output && npm-run-all -s build:app:*",
+    "build": "npm run install-all && npm-run-all -s build:components:* copy-stencil-output && npm-run-all -s build:app:*",
 
     "copy-stencil-output": "node copy-stencil-output",
 
