@@ -13,7 +13,6 @@
 
     "build:app:angular": "npm run build --prefix angular-app",
     "build:app:ember": "npm run build --prefix ember-app",
-    "build:app:react": "npm run build --prefix react-app",
     "build:app:storybook": "npm run build --prefix storybook",
     "build:app:vue": "npm run build --prefix vue-app",
 
