@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install-all": "npm ci && npm run ci --prefix stencil-components && npm run ci --prefix angular-components && npm run ci --prefix angular-app && npm run ci --prefix cms-storyblok && npm run ci --prefix ember-components && npm run ci --prefix ember-app && npm run ci --prefix express-app && npm run ci --prefix storybook && npm run ci --prefix uxpin && npm run ci --prefix vue-components && npm run ci --prefix vue-app && npm run ci --prefix react-components && npm run ci --prefix react-app",
+    "install-all": "npm ci && npm ci --prefix stencil-components && npm ci --prefix angular-components && npm ci --prefix angular-app && npm ci --prefix cms-storyblok && npm ci --prefix ember-components && npm ci --prefix ember-app && npm ci --prefix express-app && npm ci --prefix storybook && npm ci --prefix uxpin && npm ci --prefix vue-components && npm ci --prefix vue-app && npm ci --prefix react-components && npm ci --prefix react-app",
 
 
     "build:components:stencil": "cd stencil-components && npm run build && cd ../",
