@@ -18,9 +18,10 @@
     "build:app:vue": "npm ci --prefix vue-app && npm run build --prefix vue-app",
 
     "build:components": "npm-run-all -s build:components:* copy-stencil-output",
-    "build": "npm run install:components && npm-run-all -s build:components:* copy-stencil-output && npm-run-all -s build:app:*",
+    "build": "npm run install:components && npm-run-all -s build:components:* copy-stencil-output && npm-run-all -s build:app:* && npm run copy-vanilla-html",
 
     "copy-stencil-output": "node copy-stencil-output",
+    "copy-vanilla-html": "node copy-vanilla-html",
 
     "start:angular": "cd angular-app && npm start && cd ../",
     "start:express": "cd express-app && npm start && cd ../",
