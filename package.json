@@ -7,9 +7,9 @@
     "install:components": "npm ci --prefix stencil-components && npm ci --prefix angular-components && npm ci --prefix storybook && npm ci --prefix vue-components && npm ci --prefix react-components",
 
     "build:components:stencil": "cd stencil-components && npm run build && cd ../",
-    "build:components:react-components": "cd react-components && npm run build && cd ../",
-    "build:components:angular-components": "cd angular-components && npm run build && cd ../",
-    "build:components:vue-components": "cd vue-components && npm run build && cd ../",
+    "build:components:react": "cd react-components && npm run build && cd ../",
+    "build:components:angular": "cd angular-components && npm run build && cd ../",
+    "build:components:vue": "cd vue-components && npm run build && cd ../",
 
     "build:app:angular": "npm ci --prefix angular-app && npm run build --prefix angular-app",
     "build:app:ember": "npm ci --prefix ember-app && npm run build --prefix ember-app",
