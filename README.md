@@ -124,15 +124,7 @@ This project uses Stencil's `@stencil/vue-output-target` plugin to generate Vue 
 
 ### Building All Components
 
-From the project root (`/`) you can build Stencil components, convert them to React components, and populate our various apps in a single command: `npm run build:components`.
-
-**Note:** Before running this command you'll need to have installed dependencies in the following subdirectories (`npm ci`):
-
-- The root directory (`/`)
-- `vue-components`
-- `angular-components`
-- `react-components`
-- `stencil-components`
+Before building components you'll need to install all the component dependencies by running `npm run install:components` from the project root.(`/`). Then you can build Stencil components, convert them to React components, and populate our various apps in a single command: `npm run build:components`.
 
 ## Building an Express App
 
