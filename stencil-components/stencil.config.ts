@@ -54,6 +54,10 @@ export const config: Config = {
         },
         {
           src: 'assets',
+          dest: '../../vanilla-html/public/stencil/assets',
+        },
+        {
+          src: 'assets',
           dest: '../../react-app/public/assets/stencil',
         },
         {

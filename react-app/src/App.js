@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <C4Container isProse="true" isStaggered="true">
-        <C4Heading>React App</C4Heading>
+        <C4Heading>Truly Portable Patterns | React</C4Heading>
 
         <p>
           This is a React app built using Stencil web components. The components

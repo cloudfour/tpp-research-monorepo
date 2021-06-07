@@ -4,12 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:stencil": "cd stencil-components && npm run build && cd ../",
-    "build:react-components": "cd react-components && npm run build && cd ../",
-    "build:angular-components": "cd angular-components && npm run build && cd ../",
-    "build:vue-components": "cd vue-components && npm run build && cd ../",
-    "build": "npm-run-all -s build:* copy-stencil-output",
+    "install:components": "npm ci --prefix stencil-components && npm ci --prefix angular-components && npm ci --prefix storybook && npm ci --prefix vue-components && npm ci --prefix react-components",
+
+    "build:components:stencil": "cd stencil-components && npm run build && cd ../",
+    "build:components:react": "cd react-components && npm run build && cd ../",
+    "build:components:angular": "cd angular-components && npm run build && cd ../",
+    "build:components:vue": "cd vue-components && npm run build && cd ../",
+
+    "build:app:angular": "npm ci --prefix angular-app && npm run build --prefix angular-app",
+    "build:app:ember": "npm ci --prefix ember-app && npm run build --prefix ember-app",
+    "build:app:react": "npm ci --prefix react-app && npm run build --prefix react-app",
+    "build:app:storybook": "npm ci --prefix storybook && npm run build --prefix storybook",
+    "build:app:vue": "npm ci --prefix vue-app && npm run build --prefix vue-app",
+
+    "build:components": "npm-run-all -s build:components:* copy-stencil-output",
+    "build": "npm run install:components && npm-run-all -s build:components:* copy-stencil-output && npm-run-all -s build:app:* && npm run copy-vanilla-html",
+
     "copy-stencil-output": "node copy-stencil-output",
+    "copy-vanilla-html": "node copy-vanilla-html",
+
     "start:angular": "cd angular-app && npm start && cd ../",
     "start:express": "cd express-app && npm start && cd ../",
     "start:ember": "cd ember-app && npm start && cd ../",

@@ -1,7 +1,7 @@
 <template>
   <div>
     <C4Container isProse="true" isStaggered="true">
-      <C4Heading>Vue App</C4Heading>
+      <C4Heading>Truly Portable Patterns | Vue</C4Heading>
 
       <p>
         This is a Vue app built using Stencil web components. The components

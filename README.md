@@ -124,19 +124,11 @@ This project uses Stencil's `@stencil/vue-output-target` plugin to generate Vue 
 
 ### Building All Components
 
-From the project root (`/`) you can build Stencil components, convert them to React components, and populate our various apps in a single command: `npm run build`.
-
-**Note:** Before running this command you'll need to have installed dependencies in the following subdirectories (`npm ci`):
-
-- The root directory (`/`)
-- `vue-components`
-- `angular-components`
-- `react-components`
-- `stencil-components`
+Before building components you'll need to install all the component dependencies by running `npm run install:components` from the project root.(`/`). Then you can build Stencil components, convert them to React components, and populate our various apps in a single command: `npm run build:components`.
 
 ## Building an Express App
 
-After running `npm run build` you can develop the Express app by running the following commands:
+After running `npm run build:components` you can develop the Express app by running the following commands:
 
 ```zsh
 # Navigate to the `express-app` directory
@@ -256,7 +248,7 @@ In the long term we'll explore pushing up components using CI but this works for
 
 ## Viewing Components in Storybook
 
-The web components are also documented in storybook. After running the `stencil-components` project, or running `npm build-components` Storybook should
+The web components are also documented in storybook. After running the `stencil-components` project, or running `npm run build:components` Storybook should
 be ready to document these components. To launch storybook run the following
 commands
 

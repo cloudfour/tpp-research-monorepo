@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Truly Portable Patterns</title>
+
+  <link rel="preload" href="public/stencil/assets/fonts/source-sans-pro-latin-extended/variable-italic.woff2" as="font"
+    type="font/woff2" />
+  <link rel="preload" href="public/stencil/assets/fonts/source-sans-pro-latin-extended/variable-regular.woff2" as="font"
+    type="font/woff2" />
+
+  <link rel="stylesheet" href="public/stencil/assets/css/custom-props.css">
+  <link rel="stylesheet" href="public/stencil/assets/css/document-styles.css">
+  <link rel="stylesheet" href="public/stencil/assets/css/fonts.css">
+  <link rel="stylesheet" href="public/stencil/assets/css/utilities.css" />
+
+  <script src="public/stencil/stencil-components.js"></script>
+</head>
+
+<body>
+  <c4-container is-prose="true" is-staggered="true">
+    <c4-heading tag="h1">Truly Portable Patterns</c4-heading>
+
+    <p>
+      A design system is meant to be a source of truth that is shared throughout
+      an organization's digital presence. But in reality it often becomes 
+      fragmented as it is shared between design tools, documentation, and
+      front-end frameworks.
+    </p>
+
+    <p>
+      This project is an exploration of how web components can be leveraged to
+      share components and design patterns across systems.
+    </p>
+
+    <p>
+      By using native web components as a base for components we hope to
+      use long-lasting, native web technologies to bridge the divides between
+      these different environments. We wrote and compiled these components 
+      using <a href="https://stenciljs.com/">StencilJS</a>, and used its built-in
+      <a href="https://stenciljs.com/docs/overview">output targets</a> to generate 
+      component wrappers for a number of popular frameworks.
+    </p>
+
+    <p>
+      In addition we documented these components in <a href="https://storybook.js.org/">Storybook</a>,
+      designed with them in visual design tools like <a href="https://www.framer.com/">Framer</a>
+      and <a href="https://www.uxpin.com/merge">UXPin Merge</a>, and integrated them into a 
+      block-based CMS editing experience with <a href="https://www.storyblok.com/">Storyblok</a>.
+    </p>
+
+    <p>
+      By bridging the gap between code, design tools, documentation, and content 
+      editing tools, we were able to write component code once, and share it
+      across an entire organization, empowering diverse teams to create and
+      contribute to the design system.
+    </p>
+
+    <p>
+      Below you can view a few examples of how these components were leveraged
+      in different environments.
+    </p>
+
+    <div>
+      <c4-button tag="a" href="/angular">Angular</c4-button>
+      <c4-button tag="a" href="/ember">Ember</c4-button>
+      <c4-button tag="a" href="/storybook">Storybook</c4-button>
+      <c4-button tag="a" href="/react">React</c4-button>
+      <c4-button tag="a" href="/vue">Vue</c4-button>
+    </div>
+  </c4-container>
+</body>
+
+</html>
