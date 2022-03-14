@@ -1,11 +1,11 @@
-import { Component, Prop, h } from "@stencil/core";
+import { Component, Prop, h } from '@stencil/core';
 
 @Component({
-  tag: "c4-heading",
-  styleUrl: "c4-heading.css"
+  tag: 'cfour-heading',
+  styleUrl: 'c4-heading.css',
 })
 export class C4Heading {
-  @Prop() tag: string = "h1";
+  @Prop() tag: string = 'h1';
 
   render() {
     return (

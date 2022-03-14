@@ -43,10 +43,10 @@ export function ProxyCmp(opts: { inputs?: any; methods?: any }) {
 
 import { Components } from '../../stencil-components'
 
-export declare interface C4Button extends Components.C4Button {}
+export declare interface CfourButton extends Components.CfourButton {}
 @ProxyCmp({inputs: ['buttonClass', 'disabled', 'href', 'tag', 'type']})
-@Component({ selector: 'c4-button', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['buttonClass', 'disabled', 'href', 'tag', 'type'] })
-export class C4Button {
+@Component({ selector: 'cfour-button', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['buttonClass', 'disabled', 'href', 'tag', 'type'] })
+export class CfourButton {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -54,10 +54,10 @@ export class C4Button {
   }
 }
 
-export declare interface C4ColorSwatches extends Components.C4ColorSwatches {}
+export declare interface CfourColorSwatches extends Components.CfourColorSwatches {}
 @ProxyCmp({inputs: ['callback', 'colorsData', 'colorsString', 'radioName']})
-@Component({ selector: 'c4-color-swatches', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['callback', 'colorsData', 'colorsString', 'radioName'] })
-export class C4ColorSwatches {
+@Component({ selector: 'cfour-color-swatches', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['callback', 'colorsData', 'colorsString', 'radioName'] })
+export class CfourColorSwatches {
   colorChanged!: EventEmitter<CustomEvent>;
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -67,10 +67,10 @@ export class C4ColorSwatches {
   }
 }
 
-export declare interface C4Columns extends Components.C4Columns {}
+export declare interface CfourColumns extends Components.CfourColumns {}
 @ProxyCmp({inputs: ['hasGutter']})
-@Component({ selector: 'c4-columns', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['hasGutter'] })
-export class C4Columns {
+@Component({ selector: 'cfour-columns', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['hasGutter'] })
+export class CfourColumns {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -78,10 +78,10 @@ export class C4Columns {
   }
 }
 
-export declare interface C4Container extends Components.C4Container {}
+export declare interface CfourContainer extends Components.CfourContainer {}
 @ProxyCmp({inputs: ['isDark', 'isProse', 'isStaggered', 'isTall', 'tag']})
-@Component({ selector: 'c4-container', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['isDark', 'isProse', 'isStaggered', 'isTall', 'tag'] })
-export class C4Container {
+@Component({ selector: 'cfour-container', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['isDark', 'isProse', 'isStaggered', 'isTall', 'tag'] })
+export class CfourContainer {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -89,10 +89,10 @@ export class C4Container {
   }
 }
 
-export declare interface C4DetailsLockup extends Components.C4DetailsLockup {}
+export declare interface CfourDetailsLockup extends Components.CfourDetailsLockup {}
 
-@Component({ selector: 'c4-details-lockup', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
-export class C4DetailsLockup {
+@Component({ selector: 'cfour-details-lockup', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
+export class CfourDetailsLockup {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -100,10 +100,10 @@ export class C4DetailsLockup {
   }
 }
 
-export declare interface C4Heading extends Components.C4Heading {}
+export declare interface CfourHeading extends Components.CfourHeading {}
 @ProxyCmp({inputs: ['tag']})
-@Component({ selector: 'c4-heading', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['tag'] })
-export class C4Heading {
+@Component({ selector: 'cfour-heading', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['tag'] })
+export class CfourHeading {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -111,10 +111,10 @@ export class C4Heading {
   }
 }
 
-export declare interface C4ProductIllustration extends Components.C4ProductIllustration {}
+export declare interface CfourProductIllustration extends Components.CfourProductIllustration {}
 @ProxyCmp({inputs: ['altText', 'aspectRatio', 'color', 'imgPath']})
-@Component({ selector: 'c4-product-illustration', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['altText', 'aspectRatio', 'color', 'imgPath'] })
-export class C4ProductIllustration {
+@Component({ selector: 'cfour-product-illustration', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['altText', 'aspectRatio', 'color', 'imgPath'] })
+export class CfourProductIllustration {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -122,10 +122,10 @@ export class C4ProductIllustration {
   }
 }
 
-export declare interface C4RadioButtons extends Components.C4RadioButtons {}
+export declare interface CfourRadioButtons extends Components.CfourRadioButtons {}
 @ProxyCmp({inputs: ['callback', 'optionsData', 'optionsString', 'radioName']})
-@Component({ selector: 'c4-radio-buttons', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['callback', 'optionsData', 'optionsString', 'radioName'] })
-export class C4RadioButtons {
+@Component({ selector: 'cfour-radio-buttons', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['callback', 'optionsData', 'optionsString', 'radioName'] })
+export class CfourRadioButtons {
   colorChanged!: EventEmitter<CustomEvent>;
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
@@ -135,10 +135,10 @@ export class C4RadioButtons {
   }
 }
 
-export declare interface C4StarRating extends Components.C4StarRating {}
+export declare interface CfourStarRating extends Components.CfourStarRating {}
 @ProxyCmp({inputs: ['guid', 'rating', 'reviewsCount', 'reviewsLink'], 'methods': ['getRating']})
-@Component({ selector: 'c4-star-rating', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['guid', 'rating', 'reviewsCount', 'reviewsLink'] })
-export class C4StarRating {
+@Component({ selector: 'cfour-star-rating', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['guid', 'rating', 'reviewsCount', 'reviewsLink'] })
+export class CfourStarRating {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -146,10 +146,10 @@ export class C4StarRating {
   }
 }
 
-export declare interface C4Stepper extends Components.C4Stepper {}
+export declare interface CfourStepper extends Components.CfourStepper {}
 @ProxyCmp({inputs: ['max', 'min', 'startValue']})
-@Component({ selector: 'c4-stepper', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['max', 'min', 'startValue'] })
-export class C4Stepper {
+@Component({ selector: 'cfour-stepper', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>', inputs: ['max', 'min', 'startValue'] })
+export class CfourStepper {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();
@@ -157,10 +157,10 @@ export class C4Stepper {
   }
 }
 
-export declare interface C4Text extends Components.C4Text {}
+export declare interface CfourText extends Components.CfourText {}
 
-@Component({ selector: 'c4-text', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
-export class C4Text {
+@Component({ selector: 'cfour-text', changeDetection: ChangeDetectionStrategy.OnPush, template: '<ng-content></ng-content>' })
+export class CfourText {
   protected el: HTMLElement;
   constructor(c: ChangeDetectorRef, r: ElementRef, protected z: NgZone) {
     c.detach();

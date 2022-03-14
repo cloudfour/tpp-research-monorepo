@@ -1,0 +1,417 @@
+{
+	"components": {
+		"C4ReactComponents_CfourButton": {
+			"id": "C4ReactComponents_CfourButton",
+			"name": "CfourButton",
+			"code": {
+				"packageName": "c4-react-components",
+				"exportName": "CfourButton",
+				"lib": "c4ReactComponents"
+			},
+			"props": {
+				"buttonClass": {
+					"name": "buttonClass",
+					"type": "string",
+					"enum": [
+						"secondary",
+						"tertiary",
+						"right",
+						"left"
+					],
+					"parent": "CfourButton"
+				},
+				"disabled": {
+					"name": "disabled",
+					"type": "boolean",
+					"parent": "CfourButton"
+				},
+				"href": {
+					"name": "href",
+					"type": "string",
+					"parent": "CfourButton"
+				},
+				"tag": {
+					"name": "tag",
+					"type": "string",
+					"parent": "CfourButton"
+				},
+				"type": {
+					"name": "type",
+					"type": "string",
+					"parent": "CfourButton"
+				},
+				"class": {
+					"name": "class",
+					"type": "string",
+					"parent": "ReactProps"
+				},
+				"ref": {
+					"name": "ref",
+					"type": "Event",
+					"parent": "RefAttributes"
+				}
+			},
+			"relativePath": "src/components.ts"
+		},
+		"C4ReactComponents_CfourColorSwatches": {
+			"id": "C4ReactComponents_CfourColorSwatches",
+			"name": "CfourColorSwatches",
+			"code": {
+				"packageName": "c4-react-components",
+				"exportName": "CfourColorSwatches",
+				"lib": "c4ReactComponents"
+			},
+			"props": {
+				"callback": {
+					"name": "callback",
+					"type": "Event",
+					"parent": "CfourColorSwatches"
+				},
+				"colorsData": {
+					"name": "colorsData",
+					"type": "unknown",
+					"parent": "CfourColorSwatches"
+				},
+				"colorsString": {
+					"name": "colorsString",
+					"type": "string",
+					"parent": "CfourColorSwatches"
+				},
+				"onColorChanged": {
+					"name": "onColorChanged",
+					"type": "Event",
+					"parent": "CfourColorSwatches"
+				},
+				"radioName": {
+					"name": "radioName",
+					"type": "string",
+					"parent": "CfourColorSwatches"
+				},
+				"class": {
+					"name": "class",
+					"type": "string",
+					"parent": "ReactProps"
+				},
+				"ref": {
+					"name": "ref",
+					"type": "Event",
+					"parent": "RefAttributes"
+				}
+			},
+			"relativePath": "src/components.ts"
+		},
+		"C4ReactComponents_CfourColumns": {
+			"id": "C4ReactComponents_CfourColumns",
+			"name": "CfourColumns",
+			"code": {
+				"packageName": "c4-react-components",
+				"exportName": "CfourColumns",
+				"lib": "c4ReactComponents"
+			},
+			"props": {
+				"hasGutter": {
+					"name": "hasGutter",
+					"type": "boolean",
+					"parent": "CfourColumns"
+				},
+				"class": {
+					"name": "class",
+					"type": "string",
+					"parent": "ReactProps"
+				},
+				"ref": {
+					"name": "ref",
+					"type": "Event",
+					"parent": "RefAttributes"
+				}
+			},
+			"relativePath": "src/components.ts"
+		},
+		"C4ReactComponents_CfourContainer": {
+			"id": "C4ReactComponents_CfourContainer",
+			"name": "CfourContainer",
+			"code": {
+				"packageName": "c4-react-components",
+				"exportName": "CfourContainer",
+				"lib": "c4ReactComponents"
+			},
+			"props": {
+				"isDark": {
+					"name": "isDark",
+					"type": "boolean",
+					"parent": "CfourContainer"
+				},
+				"isProse": {
+					"name": "isProse",
+					"type": "boolean",
+					"parent": "CfourContainer"
+				},
+				"isStaggered": {
+					"name": "isStaggered",
+					"type": "boolean",
+					"parent": "CfourContainer"
+				},
+				"isTall": {
+					"name": "isTall",
+					"type": "boolean",
+					"parent": "CfourContainer"
+				},
+				"tag": {
+					"name": "tag",
+					"type": "string",
+					"parent": "CfourContainer"
+				},
+				"class": {
+					"name": "class",
+					"type": "string",
+					"parent": "ReactProps"
+				},
+				"ref": {
+					"name": "ref",
+					"type": "Event",
+					"parent": "RefAttributes"
+				}
+			},
+			"relativePath": "src/components.ts"
+		},
+		"C4ReactComponents_CfourDetailsLockup": {
+			"id": "C4ReactComponents_CfourDetailsLockup",
+			"name": "CfourDetailsLockup",
+			"code": {
+				"packageName": "c4-react-components",
+				"exportName": "CfourDetailsLockup",
+				"lib": "c4ReactComponents"
+			},
+			"props": {
+				"class": {
+					"name": "class",
+					"type": "string",
+					"parent": "ReactProps"
+				},
+				"ref": {
+					"name": "ref",
+					"type": "Event",
+					"parent": "RefAttributes"
+				}
+			},
+			"relativePath": "src/components.ts"
+		},
+		"C4ReactComponents_CfourHeading": {
+			"id": "C4ReactComponents_CfourHeading",
+			"name": "CfourHeading",
+			"code": {
+				"packageName": "c4-react-components",
+				"exportName": "CfourHeading",
+				"lib": "c4ReactComponents"
+			},
+			"props": {
+				"tag": {
+					"name": "tag",
+					"type": "string",
+					"parent": "CfourHeading"
+				},
+				"class": {
+					"name": "class",
+					"type": "string",
+					"parent": "ReactProps"
+				},
+				"ref": {
+					"name": "ref",
+					"type": "Event",
+					"parent": "RefAttributes"
+				}
+			},
+			"relativePath": "src/components.ts"
+		},
+		"C4ReactComponents_CfourProductIllustration": {
+			"id": "C4ReactComponents_CfourProductIllustration",
+			"name": "CfourProductIllustration",
+			"code": {
+				"packageName": "c4-react-components",
+				"exportName": "CfourProductIllustration",
+				"lib": "c4ReactComponents"
+			},
+			"props": {
+				"altText": {
+					"name": "altText",
+					"type": "string",
+					"parent": "CfourProductIllustration"
+				},
+				"aspectRatio": {
+					"name": "aspectRatio",
+					"type": "number",
+					"parent": "CfourProductIllustration"
+				},
+				"color": {
+					"name": "color",
+					"type": "string",
+					"parent": "CfourProductIllustration"
+				},
+				"imgPath": {
+					"name": "imgPath",
+					"type": "string",
+					"parent": "CfourProductIllustration"
+				},
+				"class": {
+					"name": "class",
+					"type": "string",
+					"parent": "ReactProps"
+				},
+				"ref": {
+					"name": "ref",
+					"type": "Event",
+					"parent": "RefAttributes"
+				}
+			},
+			"relativePath": "src/components.ts"
+		},
+		"C4ReactComponents_CfourRadioButtons": {
+			"id": "C4ReactComponents_CfourRadioButtons",
+			"name": "CfourRadioButtons",
+			"code": {
+				"packageName": "c4-react-components",
+				"exportName": "CfourRadioButtons",
+				"lib": "c4ReactComponents"
+			},
+			"props": {
+				"callback": {
+					"name": "callback",
+					"type": "Event",
+					"parent": "CfourRadioButtons"
+				},
+				"onColorChanged": {
+					"name": "onColorChanged",
+					"type": "Event",
+					"parent": "CfourRadioButtons"
+				},
+				"optionsData": {
+					"name": "optionsData",
+					"type": "unknown",
+					"parent": "CfourRadioButtons"
+				},
+				"optionsString": {
+					"name": "optionsString",
+					"type": "string",
+					"parent": "CfourRadioButtons"
+				},
+				"radioName": {
+					"name": "radioName",
+					"type": "string",
+					"parent": "CfourRadioButtons"
+				},
+				"class": {
+					"name": "class",
+					"type": "string",
+					"parent": "ReactProps"
+				},
+				"ref": {
+					"name": "ref",
+					"type": "Event",
+					"parent": "RefAttributes"
+				}
+			},
+			"relativePath": "src/components.ts"
+		},
+		"C4ReactComponents_CfourStarRating": {
+			"id": "C4ReactComponents_CfourStarRating",
+			"name": "CfourStarRating",
+			"code": {
+				"packageName": "c4-react-components",
+				"exportName": "CfourStarRating",
+				"lib": "c4ReactComponents"
+			},
+			"props": {
+				"guid": {
+					"name": "guid",
+					"type": "string",
+					"parent": "CfourStarRating"
+				},
+				"rating": {
+					"name": "rating",
+					"type": "number",
+					"parent": "CfourStarRating"
+				},
+				"reviewsCount": {
+					"name": "reviewsCount",
+					"type": "number",
+					"parent": "CfourStarRating"
+				},
+				"reviewsLink": {
+					"name": "reviewsLink",
+					"type": "string",
+					"parent": "CfourStarRating"
+				},
+				"class": {
+					"name": "class",
+					"type": "string",
+					"parent": "ReactProps"
+				},
+				"ref": {
+					"name": "ref",
+					"type": "Event",
+					"parent": "RefAttributes"
+				}
+			},
+			"relativePath": "src/components.ts"
+		},
+		"C4ReactComponents_CfourStepper": {
+			"id": "C4ReactComponents_CfourStepper",
+			"name": "CfourStepper",
+			"code": {
+				"packageName": "c4-react-components",
+				"exportName": "CfourStepper",
+				"lib": "c4ReactComponents"
+			},
+			"props": {
+				"max": {
+					"name": "max",
+					"type": "number",
+					"parent": "CfourStepper"
+				},
+				"min": {
+					"name": "min",
+					"type": "number",
+					"parent": "CfourStepper"
+				},
+				"startValue": {
+					"name": "startValue",
+					"type": "number",
+					"parent": "CfourStepper"
+				},
+				"class": {
+					"name": "class",
+					"type": "string",
+					"parent": "ReactProps"
+				},
+				"ref": {
+					"name": "ref",
+					"type": "Event",
+					"parent": "RefAttributes"
+				}
+			},
+			"relativePath": "src/components.ts"
+		},
+		"C4ReactComponents_CfourText": {
+			"id": "C4ReactComponents_CfourText",
+			"name": "CfourText",
+			"code": {
+				"packageName": "c4-react-components",
+				"exportName": "CfourText",
+				"lib": "c4ReactComponents"
+			},
+			"props": {
+				"class": {
+					"name": "class",
+					"type": "string",
+					"parent": "ReactProps"
+				},
+				"ref": {
+					"name": "ref",
+					"type": "Event",
+					"parent": "RefAttributes"
+				}
+			},
+			"relativePath": "src/components.ts"
+		}
+	}
+}

@@ -10,157 +10,157 @@ import type { Components } from '../../stencil-components';
 
 
 const customElementTags: string[] = [
- 'c4-button',
- 'c4-color-swatches',
- 'c4-columns',
- 'c4-container',
- 'c4-details-lockup',
- 'c4-heading',
- 'c4-product-illustration',
- 'c4-radio-buttons',
- 'c4-star-rating',
- 'c4-stepper',
- 'c4-text',
+ 'cfour-button',
+ 'cfour-color-swatches',
+ 'cfour-columns',
+ 'cfour-container',
+ 'cfour-details-lockup',
+ 'cfour-heading',
+ 'cfour-product-illustration',
+ 'cfour-radio-buttons',
+ 'cfour-star-rating',
+ 'cfour-stepper',
+ 'cfour-text',
 ];
 Vue.config.ignoredElements = [...Vue.config.ignoredElements, ...customElementTags];
 
 
-export const C4Button = /*@__PURE__*/ Vue.extend({
+export const CfourButton = /*@__PURE__*/ Vue.extend({
 
   props: {
-    disabled: {} as PropOptions<Components.C4Button['disabled']>,
-    type: {} as PropOptions<Components.C4Button['type']>,
-    tag: {} as PropOptions<Components.C4Button['tag']>,
-    href: {} as PropOptions<Components.C4Button['href']>,
-    buttonClass: {} as PropOptions<Components.C4Button['buttonClass']>,
+    disabled: {} as PropOptions<Components.CfourButton['disabled']>,
+    type: {} as PropOptions<Components.CfourButton['type']>,
+    tag: {} as PropOptions<Components.CfourButton['tag']>,
+    href: {} as PropOptions<Components.CfourButton['href']>,
+    buttonClass: {} as PropOptions<Components.CfourButton['buttonClass']>,
   },
 
 
-  render: createCommonRender('c4-button', []),
+  render: createCommonRender('cfour-button', []),
 });
 
 
-export const C4ColorSwatches = /*@__PURE__*/ Vue.extend({
+export const CfourColorSwatches = /*@__PURE__*/ Vue.extend({
 
   props: {
-    colorsString: {} as PropOptions<Components.C4ColorSwatches['colorsString']>,
-    colorsData: {} as PropOptions<Components.C4ColorSwatches['colorsData']>,
-    callback: {} as PropOptions<Components.C4ColorSwatches['callback']>,
-    radioName: {} as PropOptions<Components.C4ColorSwatches['radioName']>,
+    colorsString: {} as PropOptions<Components.CfourColorSwatches['colorsString']>,
+    colorsData: {} as PropOptions<Components.CfourColorSwatches['colorsData']>,
+    callback: {} as PropOptions<Components.CfourColorSwatches['callback']>,
+    radioName: {} as PropOptions<Components.CfourColorSwatches['radioName']>,
   },
 
 
-  render: createCommonRender('c4-color-swatches', ['colorChanged']),
+  render: createCommonRender('cfour-color-swatches', ['colorChanged']),
 });
 
 
-export const C4Columns = /*@__PURE__*/ Vue.extend({
+export const CfourColumns = /*@__PURE__*/ Vue.extend({
 
   props: {
-    hasGutter: {} as PropOptions<Components.C4Columns['hasGutter']>,
+    hasGutter: {} as PropOptions<Components.CfourColumns['hasGutter']>,
   },
 
 
-  render: createCommonRender('c4-columns', []),
+  render: createCommonRender('cfour-columns', []),
 });
 
 
-export const C4Container = /*@__PURE__*/ Vue.extend({
+export const CfourContainer = /*@__PURE__*/ Vue.extend({
 
   props: {
-    tag: {} as PropOptions<Components.C4Container['tag']>,
-    isProse: {} as PropOptions<Components.C4Container['isProse']>,
-    isDark: {} as PropOptions<Components.C4Container['isDark']>,
-    isTall: {} as PropOptions<Components.C4Container['isTall']>,
-    isStaggered: {} as PropOptions<Components.C4Container['isStaggered']>,
+    tag: {} as PropOptions<Components.CfourContainer['tag']>,
+    isProse: {} as PropOptions<Components.CfourContainer['isProse']>,
+    isDark: {} as PropOptions<Components.CfourContainer['isDark']>,
+    isTall: {} as PropOptions<Components.CfourContainer['isTall']>,
+    isStaggered: {} as PropOptions<Components.CfourContainer['isStaggered']>,
   },
 
 
-  render: createCommonRender('c4-container', []),
+  render: createCommonRender('cfour-container', []),
 });
 
 
-export const C4DetailsLockup = /*@__PURE__*/ Vue.extend({
+export const CfourDetailsLockup = /*@__PURE__*/ Vue.extend({
 
 
 
-  render: createCommonRender('c4-details-lockup', []),
+  render: createCommonRender('cfour-details-lockup', []),
 });
 
 
-export const C4Heading = /*@__PURE__*/ Vue.extend({
+export const CfourHeading = /*@__PURE__*/ Vue.extend({
 
   props: {
-    tag: {} as PropOptions<Components.C4Heading['tag']>,
+    tag: {} as PropOptions<Components.CfourHeading['tag']>,
   },
 
 
-  render: createCommonRender('c4-heading', []),
+  render: createCommonRender('cfour-heading', []),
 });
 
 
-export const C4ProductIllustration = /*@__PURE__*/ Vue.extend({
+export const CfourProductIllustration = /*@__PURE__*/ Vue.extend({
 
   props: {
-    color: {} as PropOptions<Components.C4ProductIllustration['color']>,
-    altText: {} as PropOptions<Components.C4ProductIllustration['altText']>,
-    imgPath: {} as PropOptions<Components.C4ProductIllustration['imgPath']>,
-    aspectRatio: {} as PropOptions<Components.C4ProductIllustration['aspectRatio']>,
+    color: {} as PropOptions<Components.CfourProductIllustration['color']>,
+    altText: {} as PropOptions<Components.CfourProductIllustration['altText']>,
+    imgPath: {} as PropOptions<Components.CfourProductIllustration['imgPath']>,
+    aspectRatio: {} as PropOptions<Components.CfourProductIllustration['aspectRatio']>,
   },
 
 
-  render: createCommonRender('c4-product-illustration', []),
+  render: createCommonRender('cfour-product-illustration', []),
 });
 
 
-export const C4RadioButtons = /*@__PURE__*/ Vue.extend({
+export const CfourRadioButtons = /*@__PURE__*/ Vue.extend({
 
   props: {
-    optionsString: {} as PropOptions<Components.C4RadioButtons['optionsString']>,
-    optionsData: {} as PropOptions<Components.C4RadioButtons['optionsData']>,
-    callback: {} as PropOptions<Components.C4RadioButtons['callback']>,
-    radioName: {} as PropOptions<Components.C4RadioButtons['radioName']>,
+    optionsString: {} as PropOptions<Components.CfourRadioButtons['optionsString']>,
+    optionsData: {} as PropOptions<Components.CfourRadioButtons['optionsData']>,
+    callback: {} as PropOptions<Components.CfourRadioButtons['callback']>,
+    radioName: {} as PropOptions<Components.CfourRadioButtons['radioName']>,
   },
 
 
-  render: createCommonRender('c4-radio-buttons', ['colorChanged']),
+  render: createCommonRender('cfour-radio-buttons', ['colorChanged']),
 });
 
 
-export const C4StarRating = /*@__PURE__*/ Vue.extend({
+export const CfourStarRating = /*@__PURE__*/ Vue.extend({
 
   props: {
-    rating: {} as PropOptions<Components.C4StarRating['rating']>,
-    guid: {} as PropOptions<Components.C4StarRating['guid']>,
-    reviewsCount: {} as PropOptions<Components.C4StarRating['reviewsCount']>,
-    reviewsLink: {} as PropOptions<Components.C4StarRating['reviewsLink']>,
+    rating: {} as PropOptions<Components.CfourStarRating['rating']>,
+    guid: {} as PropOptions<Components.CfourStarRating['guid']>,
+    reviewsCount: {} as PropOptions<Components.CfourStarRating['reviewsCount']>,
+    reviewsLink: {} as PropOptions<Components.CfourStarRating['reviewsLink']>,
   },
 
 
   methods: {
-    getRating: createCommonMethod('getRating') as Components.C4StarRating['getRating'],
+    getRating: createCommonMethod('getRating') as Components.CfourStarRating['getRating'],
   },
-  render: createCommonRender('c4-star-rating', []),
+  render: createCommonRender('cfour-star-rating', []),
 });
 
 
-export const C4Stepper = /*@__PURE__*/ Vue.extend({
+export const CfourStepper = /*@__PURE__*/ Vue.extend({
 
   props: {
-    min: {} as PropOptions<Components.C4Stepper['min']>,
-    max: {} as PropOptions<Components.C4Stepper['max']>,
-    startValue: {} as PropOptions<Components.C4Stepper['startValue']>,
+    min: {} as PropOptions<Components.CfourStepper['min']>,
+    max: {} as PropOptions<Components.CfourStepper['max']>,
+    startValue: {} as PropOptions<Components.CfourStepper['startValue']>,
   },
 
 
-  render: createCommonRender('c4-stepper', []),
+  render: createCommonRender('cfour-stepper', []),
 });
 
 
-export const C4Text = /*@__PURE__*/ Vue.extend({
+export const CfourText = /*@__PURE__*/ Vue.extend({
 
 
 
-  render: createCommonRender('c4-text', []),
+  render: createCommonRender('cfour-text', []),
 });
 

@@ -1,8 +1,8 @@
-import { Component, Host, h } from "@stencil/core";
+import { Component, Host, h } from '@stencil/core';
 
 @Component({
-  tag: "c4-text",
-  styleUrl: "c4-text.css"
+  tag: 'cfour-text',
+  styleUrl: 'c4-text.css',
 })
 export class C4Text {
   render() {

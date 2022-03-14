@@ -11,7 +11,7 @@
 | `isProse`     | `is-prose`     |             | `boolean` | `undefined` |
 | `isStaggered` | `is-staggered` |             | `boolean` | `undefined` |
 | `isTall`      | `is-tall`      |             | `boolean` | `undefined` |
-| `tag`         | `tag`          |             | `string`  | `"div"`     |
+| `tag`         | `tag`          |             | `string`  | `'div'`     |
 
 
 ----------------------------------------------

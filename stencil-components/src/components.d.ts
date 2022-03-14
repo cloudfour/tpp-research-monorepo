@@ -6,227 +6,227 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface C4Button {
+    interface CfourButton {
         "buttonClass"?: "secondary" | "tertiary" | "right" | "left";
         "disabled": boolean;
         "href": string;
         "tag": string;
         "type": string;
     }
-    interface C4ColorSwatches {
+    interface CfourColorSwatches {
         "callback"?: Function;
         "colorsData"?: Array<any>;
         "colorsString"?: string;
         "radioName": string;
     }
-    interface C4Columns {
+    interface CfourColumns {
         "hasGutter": boolean;
     }
-    interface C4Container {
+    interface CfourContainer {
         "isDark": boolean;
         "isProse": boolean;
         "isStaggered": boolean;
         "isTall": boolean;
         "tag": string;
     }
-    interface C4DetailsLockup {
+    interface CfourDetailsLockup {
     }
-    interface C4Heading {
+    interface CfourHeading {
         "tag": string;
     }
-    interface C4ProductIllustration {
+    interface CfourProductIllustration {
         "altText": string;
         "aspectRatio": number;
         "color": string;
         "imgPath": string;
     }
-    interface C4RadioButtons {
+    interface CfourRadioButtons {
         "callback"?: Function;
         "optionsData"?: Array<any>;
         "optionsString"?: string;
         "radioName": string;
     }
-    interface C4StarRating {
+    interface CfourStarRating {
         "getRating": () => Promise<number>;
         "guid": string;
         "rating": number;
         "reviewsCount"?: number;
         "reviewsLink"?: string;
     }
-    interface C4Stepper {
+    interface CfourStepper {
         "max"?: number;
         "min"?: number;
         "startValue"?: number;
     }
-    interface C4Text {
+    interface CfourText {
     }
 }
 declare global {
-    interface HTMLC4ButtonElement extends Components.C4Button, HTMLStencilElement {
+    interface HTMLCfourButtonElement extends Components.CfourButton, HTMLStencilElement {
     }
-    var HTMLC4ButtonElement: {
-        prototype: HTMLC4ButtonElement;
-        new (): HTMLC4ButtonElement;
+    var HTMLCfourButtonElement: {
+        prototype: HTMLCfourButtonElement;
+        new (): HTMLCfourButtonElement;
     };
-    interface HTMLC4ColorSwatchesElement extends Components.C4ColorSwatches, HTMLStencilElement {
+    interface HTMLCfourColorSwatchesElement extends Components.CfourColorSwatches, HTMLStencilElement {
     }
-    var HTMLC4ColorSwatchesElement: {
-        prototype: HTMLC4ColorSwatchesElement;
-        new (): HTMLC4ColorSwatchesElement;
+    var HTMLCfourColorSwatchesElement: {
+        prototype: HTMLCfourColorSwatchesElement;
+        new (): HTMLCfourColorSwatchesElement;
     };
-    interface HTMLC4ColumnsElement extends Components.C4Columns, HTMLStencilElement {
+    interface HTMLCfourColumnsElement extends Components.CfourColumns, HTMLStencilElement {
     }
-    var HTMLC4ColumnsElement: {
-        prototype: HTMLC4ColumnsElement;
-        new (): HTMLC4ColumnsElement;
+    var HTMLCfourColumnsElement: {
+        prototype: HTMLCfourColumnsElement;
+        new (): HTMLCfourColumnsElement;
     };
-    interface HTMLC4ContainerElement extends Components.C4Container, HTMLStencilElement {
+    interface HTMLCfourContainerElement extends Components.CfourContainer, HTMLStencilElement {
     }
-    var HTMLC4ContainerElement: {
-        prototype: HTMLC4ContainerElement;
-        new (): HTMLC4ContainerElement;
+    var HTMLCfourContainerElement: {
+        prototype: HTMLCfourContainerElement;
+        new (): HTMLCfourContainerElement;
     };
-    interface HTMLC4DetailsLockupElement extends Components.C4DetailsLockup, HTMLStencilElement {
+    interface HTMLCfourDetailsLockupElement extends Components.CfourDetailsLockup, HTMLStencilElement {
     }
-    var HTMLC4DetailsLockupElement: {
-        prototype: HTMLC4DetailsLockupElement;
-        new (): HTMLC4DetailsLockupElement;
+    var HTMLCfourDetailsLockupElement: {
+        prototype: HTMLCfourDetailsLockupElement;
+        new (): HTMLCfourDetailsLockupElement;
     };
-    interface HTMLC4HeadingElement extends Components.C4Heading, HTMLStencilElement {
+    interface HTMLCfourHeadingElement extends Components.CfourHeading, HTMLStencilElement {
     }
-    var HTMLC4HeadingElement: {
-        prototype: HTMLC4HeadingElement;
-        new (): HTMLC4HeadingElement;
+    var HTMLCfourHeadingElement: {
+        prototype: HTMLCfourHeadingElement;
+        new (): HTMLCfourHeadingElement;
     };
-    interface HTMLC4ProductIllustrationElement extends Components.C4ProductIllustration, HTMLStencilElement {
+    interface HTMLCfourProductIllustrationElement extends Components.CfourProductIllustration, HTMLStencilElement {
     }
-    var HTMLC4ProductIllustrationElement: {
-        prototype: HTMLC4ProductIllustrationElement;
-        new (): HTMLC4ProductIllustrationElement;
+    var HTMLCfourProductIllustrationElement: {
+        prototype: HTMLCfourProductIllustrationElement;
+        new (): HTMLCfourProductIllustrationElement;
     };
-    interface HTMLC4RadioButtonsElement extends Components.C4RadioButtons, HTMLStencilElement {
+    interface HTMLCfourRadioButtonsElement extends Components.CfourRadioButtons, HTMLStencilElement {
     }
-    var HTMLC4RadioButtonsElement: {
-        prototype: HTMLC4RadioButtonsElement;
-        new (): HTMLC4RadioButtonsElement;
+    var HTMLCfourRadioButtonsElement: {
+        prototype: HTMLCfourRadioButtonsElement;
+        new (): HTMLCfourRadioButtonsElement;
     };
-    interface HTMLC4StarRatingElement extends Components.C4StarRating, HTMLStencilElement {
+    interface HTMLCfourStarRatingElement extends Components.CfourStarRating, HTMLStencilElement {
     }
-    var HTMLC4StarRatingElement: {
-        prototype: HTMLC4StarRatingElement;
-        new (): HTMLC4StarRatingElement;
+    var HTMLCfourStarRatingElement: {
+        prototype: HTMLCfourStarRatingElement;
+        new (): HTMLCfourStarRatingElement;
     };
-    interface HTMLC4StepperElement extends Components.C4Stepper, HTMLStencilElement {
+    interface HTMLCfourStepperElement extends Components.CfourStepper, HTMLStencilElement {
     }
-    var HTMLC4StepperElement: {
-        prototype: HTMLC4StepperElement;
-        new (): HTMLC4StepperElement;
+    var HTMLCfourStepperElement: {
+        prototype: HTMLCfourStepperElement;
+        new (): HTMLCfourStepperElement;
     };
-    interface HTMLC4TextElement extends Components.C4Text, HTMLStencilElement {
+    interface HTMLCfourTextElement extends Components.CfourText, HTMLStencilElement {
     }
-    var HTMLC4TextElement: {
-        prototype: HTMLC4TextElement;
-        new (): HTMLC4TextElement;
+    var HTMLCfourTextElement: {
+        prototype: HTMLCfourTextElement;
+        new (): HTMLCfourTextElement;
     };
     interface HTMLElementTagNameMap {
-        "c4-button": HTMLC4ButtonElement;
-        "c4-color-swatches": HTMLC4ColorSwatchesElement;
-        "c4-columns": HTMLC4ColumnsElement;
-        "c4-container": HTMLC4ContainerElement;
-        "c4-details-lockup": HTMLC4DetailsLockupElement;
-        "c4-heading": HTMLC4HeadingElement;
-        "c4-product-illustration": HTMLC4ProductIllustrationElement;
-        "c4-radio-buttons": HTMLC4RadioButtonsElement;
-        "c4-star-rating": HTMLC4StarRatingElement;
-        "c4-stepper": HTMLC4StepperElement;
-        "c4-text": HTMLC4TextElement;
+        "cfour-button": HTMLCfourButtonElement;
+        "cfour-color-swatches": HTMLCfourColorSwatchesElement;
+        "cfour-columns": HTMLCfourColumnsElement;
+        "cfour-container": HTMLCfourContainerElement;
+        "cfour-details-lockup": HTMLCfourDetailsLockupElement;
+        "cfour-heading": HTMLCfourHeadingElement;
+        "cfour-product-illustration": HTMLCfourProductIllustrationElement;
+        "cfour-radio-buttons": HTMLCfourRadioButtonsElement;
+        "cfour-star-rating": HTMLCfourStarRatingElement;
+        "cfour-stepper": HTMLCfourStepperElement;
+        "cfour-text": HTMLCfourTextElement;
     }
 }
 declare namespace LocalJSX {
-    interface C4Button {
+    interface CfourButton {
         "buttonClass"?: "secondary" | "tertiary" | "right" | "left";
         "disabled"?: boolean;
         "href"?: string;
         "tag"?: string;
         "type"?: string;
     }
-    interface C4ColorSwatches {
+    interface CfourColorSwatches {
         "callback"?: Function;
         "colorsData"?: Array<any>;
         "colorsString"?: string;
         "onColorChanged"?: (event: CustomEvent<any>) => void;
         "radioName"?: string;
     }
-    interface C4Columns {
+    interface CfourColumns {
         "hasGutter"?: boolean;
     }
-    interface C4Container {
+    interface CfourContainer {
         "isDark"?: boolean;
         "isProse"?: boolean;
         "isStaggered"?: boolean;
         "isTall"?: boolean;
         "tag"?: string;
     }
-    interface C4DetailsLockup {
+    interface CfourDetailsLockup {
     }
-    interface C4Heading {
+    interface CfourHeading {
         "tag"?: string;
     }
-    interface C4ProductIllustration {
+    interface CfourProductIllustration {
         "altText"?: string;
         "aspectRatio"?: number;
         "color"?: string;
         "imgPath"?: string;
     }
-    interface C4RadioButtons {
+    interface CfourRadioButtons {
         "callback"?: Function;
         "onColorChanged"?: (event: CustomEvent<any>) => void;
         "optionsData"?: Array<any>;
         "optionsString"?: string;
         "radioName"?: string;
     }
-    interface C4StarRating {
+    interface CfourStarRating {
         "guid"?: string;
         "rating"?: number;
         "reviewsCount"?: number;
         "reviewsLink"?: string;
     }
-    interface C4Stepper {
+    interface CfourStepper {
         "max"?: number;
         "min"?: number;
         "startValue"?: number;
     }
-    interface C4Text {
+    interface CfourText {
     }
     interface IntrinsicElements {
-        "c4-button": C4Button;
-        "c4-color-swatches": C4ColorSwatches;
-        "c4-columns": C4Columns;
-        "c4-container": C4Container;
-        "c4-details-lockup": C4DetailsLockup;
-        "c4-heading": C4Heading;
-        "c4-product-illustration": C4ProductIllustration;
-        "c4-radio-buttons": C4RadioButtons;
-        "c4-star-rating": C4StarRating;
-        "c4-stepper": C4Stepper;
-        "c4-text": C4Text;
+        "cfour-button": CfourButton;
+        "cfour-color-swatches": CfourColorSwatches;
+        "cfour-columns": CfourColumns;
+        "cfour-container": CfourContainer;
+        "cfour-details-lockup": CfourDetailsLockup;
+        "cfour-heading": CfourHeading;
+        "cfour-product-illustration": CfourProductIllustration;
+        "cfour-radio-buttons": CfourRadioButtons;
+        "cfour-star-rating": CfourStarRating;
+        "cfour-stepper": CfourStepper;
+        "cfour-text": CfourText;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "c4-button": LocalJSX.C4Button & JSXBase.HTMLAttributes<HTMLC4ButtonElement>;
-            "c4-color-swatches": LocalJSX.C4ColorSwatches & JSXBase.HTMLAttributes<HTMLC4ColorSwatchesElement>;
-            "c4-columns": LocalJSX.C4Columns & JSXBase.HTMLAttributes<HTMLC4ColumnsElement>;
-            "c4-container": LocalJSX.C4Container & JSXBase.HTMLAttributes<HTMLC4ContainerElement>;
-            "c4-details-lockup": LocalJSX.C4DetailsLockup & JSXBase.HTMLAttributes<HTMLC4DetailsLockupElement>;
-            "c4-heading": LocalJSX.C4Heading & JSXBase.HTMLAttributes<HTMLC4HeadingElement>;
-            "c4-product-illustration": LocalJSX.C4ProductIllustration & JSXBase.HTMLAttributes<HTMLC4ProductIllustrationElement>;
-            "c4-radio-buttons": LocalJSX.C4RadioButtons & JSXBase.HTMLAttributes<HTMLC4RadioButtonsElement>;
-            "c4-star-rating": LocalJSX.C4StarRating & JSXBase.HTMLAttributes<HTMLC4StarRatingElement>;
-            "c4-stepper": LocalJSX.C4Stepper & JSXBase.HTMLAttributes<HTMLC4StepperElement>;
-            "c4-text": LocalJSX.C4Text & JSXBase.HTMLAttributes<HTMLC4TextElement>;
+            "cfour-button": LocalJSX.CfourButton & JSXBase.HTMLAttributes<HTMLCfourButtonElement>;
+            "cfour-color-swatches": LocalJSX.CfourColorSwatches & JSXBase.HTMLAttributes<HTMLCfourColorSwatchesElement>;
+            "cfour-columns": LocalJSX.CfourColumns & JSXBase.HTMLAttributes<HTMLCfourColumnsElement>;
+            "cfour-container": LocalJSX.CfourContainer & JSXBase.HTMLAttributes<HTMLCfourContainerElement>;
+            "cfour-details-lockup": LocalJSX.CfourDetailsLockup & JSXBase.HTMLAttributes<HTMLCfourDetailsLockupElement>;
+            "cfour-heading": LocalJSX.CfourHeading & JSXBase.HTMLAttributes<HTMLCfourHeadingElement>;
+            "cfour-product-illustration": LocalJSX.CfourProductIllustration & JSXBase.HTMLAttributes<HTMLCfourProductIllustrationElement>;
+            "cfour-radio-buttons": LocalJSX.CfourRadioButtons & JSXBase.HTMLAttributes<HTMLCfourRadioButtonsElement>;
+            "cfour-star-rating": LocalJSX.CfourStarRating & JSXBase.HTMLAttributes<HTMLCfourStarRatingElement>;
+            "cfour-stepper": LocalJSX.CfourStepper & JSXBase.HTMLAttributes<HTMLCfourStepperElement>;
+            "cfour-text": LocalJSX.CfourText & JSXBase.HTMLAttributes<HTMLCfourTextElement>;
         }
     }
 }

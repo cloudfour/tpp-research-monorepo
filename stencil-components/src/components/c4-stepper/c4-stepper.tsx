@@ -1,8 +1,8 @@
-import { Component, h, State, Prop } from "@stencil/core";
+import { Component, h, State, Prop } from '@stencil/core';
 
 @Component({
-  tag: "c4-stepper",
-  styleUrl: "c4-stepper.css"
+  tag: 'cfour-stepper',
+  styleUrl: 'c4-stepper.css',
 })
 export class C4Stepper {
   @Prop() min?: number = null;

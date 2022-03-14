@@ -11,7 +11,7 @@
 | ------------- | -------------- | ----------- | -------- | ----------- |
 | `altText`     | `alt-text`     |             | `string` | `undefined` |
 | `aspectRatio` | `aspect-ratio` |             | `number` | `undefined` |
-| `color`       | `color`        |             | `string` | `"#215CCA"` |
+| `color`       | `color`        |             | `string` | `'#215CCA'` |
 | `imgPath`     | `img-path`     |             | `string` | `undefined` |
 
 

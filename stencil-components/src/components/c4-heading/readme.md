@@ -9,7 +9,7 @@
 
 | Property | Attribute | Description | Type     | Default |
 | -------- | --------- | ----------- | -------- | ------- |
-| `tag`    | `tag`     |             | `string` | `"h1"`  |
+| `tag`    | `tag`     |             | `string` | `'h1'`  |
 
 
 ----------------------------------------------

@@ -1,6 +1,6 @@
 // This component is a work in progress. It should be improved from a design perspective
 
-import { Component, Prop, h, Event, EventEmitter } from "@stencil/core";
+import { Component, Prop, h, Event, EventEmitter } from '@stencil/core';
 
 interface Option {
   name: string;
@@ -8,8 +8,8 @@ interface Option {
 }
 
 @Component({
-  tag: "c4-radio-buttons",
-  styleUrl: "c4-radio-buttons.css",
+  tag: 'cfour-radio-buttons',
+  styleUrl: 'c4-radio-buttons.css',
   shadow: true,
 })
 export class C4RadioButtons {

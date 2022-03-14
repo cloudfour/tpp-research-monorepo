@@ -1,0 +1,47 @@
+{
+	"build": {
+		"cdnFolder": "1647291506147",
+		"basePath": "/Users/paulhebert/repos/tpp-research-monorepo/react-components",
+		"publicPath": "https://cdn.interplay.io/sZ9uqgjoBl/t05bREBkYJ/master/1647291506147/.interplay/stage/files/interplay/build/",
+		"outputFolder": "/Users/paulhebert/repos/tpp-research-monorepo/react-components/.interplay/stage/files/interplay/build/",
+		"entry": {
+			"c4-react-components": "/Users/paulhebert/repos/tpp-research-monorepo/react-components/dist/index.js"
+		},
+		"alias": {
+			"~": "/Users/paulhebert/repos/tpp-research-monorepo/react-components",
+			"c4-react-components": "/Users/paulhebert/repos/tpp-research-monorepo/react-components"
+		},
+		"format": "umd",
+		"externals": {
+			"react": {
+				"root": "React",
+				"commonjs2": "react",
+				"commonjs": "react",
+				"amd": "react",
+				"umd": "react"
+			},
+			"react-dom": {
+				"root": "ReactDOM",
+				"commonjs2": "react-dom",
+				"commonjs": "react-dom",
+				"amd": "react-dom",
+				"umd": "react-dom"
+			}
+		},
+		"extensions": [
+			".ts",
+			".tsx",
+			".js",
+			".jsx",
+			".json",
+			".mjs",
+			".vue",
+			".scss",
+			".sass",
+			".css",
+			".svg",
+			".json",
+			".d.ts"
+		]
+	}
+}

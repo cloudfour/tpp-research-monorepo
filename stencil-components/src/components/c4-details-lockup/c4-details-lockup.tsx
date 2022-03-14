@@ -1,8 +1,8 @@
-import { Component, h } from "@stencil/core";
+import { Component, h } from '@stencil/core';
 
 @Component({
-  tag: "c4-details-lockup",
-  styleUrl: "c4-details-lockup.css"
+  tag: 'cfour-details-lockup',
+  styleUrl: 'c4-details-lockup.css',
 })
 export class C4DetailsLockup {
   render() {

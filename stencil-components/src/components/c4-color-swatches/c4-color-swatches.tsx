@@ -1,4 +1,4 @@
-import { Component, Prop, h, Event, EventEmitter } from "@stencil/core";
+import { Component, Prop, h, Event, EventEmitter } from '@stencil/core';
 
 interface Color {
   name: string;
@@ -7,8 +7,8 @@ interface Color {
 }
 
 @Component({
-  tag: "c4-color-swatches",
-  styleUrl: "c4-color-swatches.css"
+  tag: 'cfour-color-swatches',
+  styleUrl: 'c4-color-swatches.css',
 })
 export class C4ColorSwatches {
   @Prop() colorsString?: string;
